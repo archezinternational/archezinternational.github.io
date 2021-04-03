@@ -8,11 +8,20 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Oct 2019 10:07:47 +0600</lastBuildDate><atom:link href="https://archezinternational.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Android And Gaming</title>
-      <link>https://archezinternational.com/categories/android-and-gaming/</link>
+      <title>best-seller</title>
+      <link>https://archezinternational.com/categories/best-seller/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
-      <guid>https://archezinternational.com/categories/android-and-gaming/</guid>
+      <guid>https://archezinternational.com/categories/best-seller/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CAT</title>
+      <link>https://archezinternational.com/categories/cat/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://archezinternational.com/categories/cat/</guid>
       <description></description>
     </item>
     
