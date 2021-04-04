@@ -2,8 +2,35 @@ img[alt="Archez International"] {
     height: 49px !important;
 }
 
-* {
-    /* font-family: "Open Sans" !important; */
+h4 {
+    font-weight: 800 !important;
+}
+
+*:not(i) {
+    font-family: "Poppins" !important;
+}
+
+a.h5 {
+    font-weight: 600 !important;
+}
+
+a[aria-label="Next"], a[aria-label="Next"] > span,
+a[aria-label="Previous"], a[aria-label="Previous"] > span,
+a[aria-label="First"], a[aria-label="First"] > span,
+a[aria-label="Last"], a[aria-label="Last"] > span {
+    visibility: hidden;
+}
+
+.price > p {
+    margin: 0px;
+    font-weight: 700;
+}
+
+.price {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .best-seller {
@@ -27,4 +54,26 @@ img[alt="Archez International"] {
 
 .magazine-sub-title {
     margin: 0px;
+}
+
+.widget-title {
+    border-top: transparent !important;
+    border-bottom: transparent !important;
+}
+
+.flex-h {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center; }
+  
+.flex-v {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center; }
+
+.purchase-disclaimer {
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    font-size: 10px;
 }
