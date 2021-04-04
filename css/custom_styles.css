@@ -33,6 +33,7 @@ a[aria-label="Last"], a[aria-label="Last"] > span {
     height: 100%;
 }
 
+
 .best-seller {
     position: absolute;
     top: 0;
@@ -47,12 +48,14 @@ a[aria-label="Last"], a[aria-label="Last"] > span {
 }
 
 .magazine-title {
+    color: #000;
     font-size: 22px;
     font-weight: 700;
     margin: 0px;
 }
 
 .magazine-sub-title {
+    color: #000;
     margin: 0px;
 }
 
