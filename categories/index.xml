@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Oct 2019 10:07:47 +0600</lastBuildDate><atom:link href="https://archezinternational.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>ARCHEZ MAGAZINE</title>
+      <link>https://archezinternational.com/categories/archez-magazine/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://archezinternational.com/categories/archez-magazine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>BEST SELLER</title>
       <link>https://archezinternational.com/categories/best-seller/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
@@ -17,29 +26,65 @@
     </item>
     
     <item>
-      <title>Go Language</title>
-      <link>https://archezinternational.com/categories/go-language/</link>
+      <title>CAD BLOCKS</title>
+      <link>https://archezinternational.com/categories/cad-blocks/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
-      <guid>https://archezinternational.com/categories/go-language/</guid>
+      <guid>https://archezinternational.com/categories/cad-blocks/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>HTML</title>
-      <link>https://archezinternational.com/categories/html/</link>
+      <title>COUPON</title>
+      <link>https://archezinternational.com/categories/coupon/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
-      <guid>https://archezinternational.com/categories/html/</guid>
+      <guid>https://archezinternational.com/categories/coupon/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Programming Language</title>
-      <link>https://archezinternational.com/categories/programming-language/</link>
+      <title>CUTOUTS</title>
+      <link>https://archezinternational.com/categories/cutouts/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
-      <guid>https://archezinternational.com/categories/programming-language/</guid>
+      <guid>https://archezinternational.com/categories/cutouts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FREE</title>
+      <link>https://archezinternational.com/categories/free/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://archezinternational.com/categories/free/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GROW WITH ARCHEZ</title>
+      <link>https://archezinternational.com/categories/grow-with-archez/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://archezinternational.com/categories/grow-with-archez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JPG</title>
+      <link>https://archezinternational.com/categories/jpg/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://archezinternational.com/categories/jpg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PNG</title>
+      <link>https://archezinternational.com/categories/png/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://archezinternational.com/categories/png/</guid>
       <description></description>
     </item>
     
@@ -53,11 +98,11 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://archezinternational.com/categories/python/</link>
+      <title>TEXTURES</title>
+      <link>https://archezinternational.com/categories/textures/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
-      <guid>https://archezinternational.com/categories/python/</guid>
+      <guid>https://archezinternational.com/categories/textures/</guid>
       <description></description>
     </item>
     
