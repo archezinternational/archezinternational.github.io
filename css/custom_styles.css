@@ -38,8 +38,10 @@ table, tbody, thead, tr, td, th {
     background: transparent !important;
 }
 
+a:focus { outline: 0; }
+
 table tr td:first-child {
-    border-right: 1px solid rgba(0,0,0,0.05) !important;
+    border-right: 1px solid rgba(0,0,0,0.1) !important;
 }
 
 td {
