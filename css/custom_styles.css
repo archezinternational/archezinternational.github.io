@@ -30,6 +30,10 @@ a[aria-label="Last"], a[aria-label="Last"] > span {
     text-align: center !important;
 }
 
+th > strong {
+    font-weight: bold !important;
+}
+
 table, tbody, thead, tr, td, th {
     border: 0 !important;
     outline: 0 !important;
