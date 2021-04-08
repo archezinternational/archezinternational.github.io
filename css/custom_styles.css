@@ -6,12 +6,33 @@ img[alt="Archez International"] {
     margin-left: 0px !important;
 }
 
+.magazine-version {
+    color: #f0c05a;
+    margin-top: -22px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
 h4 {
     font-weight: 800 !important;
 }
 
 *:not(i) {
     font-family: "Poppins" !important;
+}
+
+.over-image-container {
+    position: absolute;
+    z-index: 1;
+}
+
+.over-image-container > img {
+    transition: opacity .5s ease-in;
+}
+
+.over-image-container > img:hover {
+    opacity: 0;
+    z-index: -1;
 }
 
 a.h5 {
