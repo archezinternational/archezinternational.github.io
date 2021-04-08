@@ -2,6 +2,10 @@ img[alt="Archez International"] {
     height: 25px !important;
 }
 
+.featured-post .card-title {
+    margin-left: 0px !important;
+}
+
 h4 {
     font-weight: 800 !important;
 }
