@@ -6,6 +6,10 @@ img[alt="Archez International"] {
     margin-left: 0px !important;
 }
 
+#instafeed > a > img {
+    width: 33%;
+}
+
 .magazine-version {
     color: #f0c05a;
     margin-top: -22px;
