@@ -166,15 +166,40 @@
     
     <article class="card">
         
-        <a href="https://archezinternational.com/shop/archezmagazine2021supporter/">
-            <img src="https://archezinternational.com/images/coup/magazine_back.jpeg" class="card-img-top" alt="ARCHEZ MAGAZINE 2021 | SUPPORTER">
-        </a>
+        <section class="carousel" id='archezmagazine2021supporter'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/archezmagazine2021supporter/">
+              
+              <img src="https://archezinternational.com/images/packages/magazine_1.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/magazine_2.jpeg" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            <div id="archezmagazine2021supporter_prev-button" class='prev-button'></div>
+            <div id="archezmagazine2021supporter_next-button" class='next-button'></div>
+          </div>
+        </section>
         
-        
-        <a href="https://archezinternational.com/shop/archezmagazine2021supporter/" class='over-image-container'>
-            <img src="https://archezinternational.com/images/coup/magazine.png" class="card-img-top" alt="ARCHEZ MAGAZINE 2021 | SUPPORTER">
-        </a>
-        
+        <div id="archezmagazine2021supporter_single-image-container">
+          
+          <img src="https://archezinternational.com/images/packages/magazine_1.png" class="img-fluid w-100 mb-4" alt="ARCHEZ MAGAZINE 2021 | SUPPORTER">
+          
+        </div>
 
         <div class="card-body px-0">
             
@@ -191,6 +216,50 @@
         </div>
     </article>
 </div>
+
+<script>
+    carousel["archezmagazine2021supporter_index"] = 0;
+    carousel["archezmagazine2021supporter_bullets"] = document.querySelectorAll("#archezmagazine2021supporter .carousel__navigation-button")
+    carousel["archezmagazine2021supporter_images"] = document.querySelectorAll("#archezmagazine2021supporter .carousel-image-item")
+    if (carousel["archezmagazine2021supporter_images"].length > 0) document.querySelector("#archezmagazine2021supporter_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["archezmagazine2021supporter_images"].length; i++) {
+      let image = carousel["archezmagazine2021supporter_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["archezmagazine2021supporter_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#archezmagazine2021supporter_prev-button')) {
+        carousel["archezmagazine2021supporter_index"]--;
+        if (carousel["archezmagazine2021supporter_index"] < 0) carousel["archezmagazine2021supporter_index"] = carousel["archezmagazine2021supporter_images"].length - 1;
+        for (let i = 0; i < carousel["archezmagazine2021supporter_images"].length; i++) {
+          carousel["archezmagazine2021supporter_images"][i].classList.add('hidden');
+          carousel["archezmagazine2021supporter_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["archezmagazine2021supporter_images"][carousel["archezmagazine2021supporter_index"]].classList.remove('hidden')
+        carousel["archezmagazine2021supporter_bullets"][carousel["archezmagazine2021supporter_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#archezmagazine2021supporter_next-button')) {
+        carousel["archezmagazine2021supporter_index"]++;
+        if (carousel["archezmagazine2021supporter_index"] >= carousel["archezmagazine2021supporter_images"].length) carousel["archezmagazine2021supporter_index"] = 0;
+        for (let i = 0; i < carousel["archezmagazine2021supporter_images"].length; i++) {
+          carousel["archezmagazine2021supporter_images"][i].classList.add('hidden');
+          carousel["archezmagazine2021supporter_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["archezmagazine2021supporter_images"][carousel["archezmagazine2021supporter_index"]].classList.remove('hidden')
+        carousel["archezmagazine2021supporter_bullets"][carousel["archezmagazine2021supporter_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
           
         </div>
       </div>

@@ -168,15 +168,46 @@
     
     <article class="card">
         
-        <a href="https://archezinternational.com/shop/plantspack/">
-            <img src="https://archezinternational.com/images/packages/plants%20pack%202.png" class="card-img-top" alt="PLANTS PACK">
-        </a>
+        <section class="carousel" id='plantspack'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/plantspack/">
+              
+              <img src="https://archezinternational.com/images/packages/plantspack_1.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/plantspack_2.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/plantspack_3.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            <div id="plantspack_prev-button" class='prev-button'></div>
+            <div id="plantspack_next-button" class='next-button'></div>
+          </div>
+        </section>
         
-        
-        <a href="https://archezinternational.com/shop/plantspack/" class='over-image-container'>
-            <img src="https://archezinternational.com/images/packages/plants_pack.png" class="card-img-top" alt="PLANTS PACK">
-        </a>
-        
+        <div id="plantspack_single-image-container">
+          
+          <img src="https://archezinternational.com/images/packages/plantspack_1.png" class="img-fluid w-100 mb-4" alt="PLANTS PACK">
+          
+        </div>
 
         <div class="card-body px-0">
             
@@ -196,6 +227,50 @@
         </div>
     </article>
 </div>
+
+<script>
+    carousel["plantspack_index"] = 0;
+    carousel["plantspack_bullets"] = document.querySelectorAll("#plantspack .carousel__navigation-button")
+    carousel["plantspack_images"] = document.querySelectorAll("#plantspack .carousel-image-item")
+    if (carousel["plantspack_images"].length > 0) document.querySelector("#plantspack_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["plantspack_images"].length; i++) {
+      let image = carousel["plantspack_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["plantspack_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#plantspack_prev-button')) {
+        carousel["plantspack_index"]--;
+        if (carousel["plantspack_index"] < 0) carousel["plantspack_index"] = carousel["plantspack_images"].length - 1;
+        for (let i = 0; i < carousel["plantspack_images"].length; i++) {
+          carousel["plantspack_images"][i].classList.add('hidden');
+          carousel["plantspack_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["plantspack_images"][carousel["plantspack_index"]].classList.remove('hidden')
+        carousel["plantspack_bullets"][carousel["plantspack_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#plantspack_next-button')) {
+        carousel["plantspack_index"]++;
+        if (carousel["plantspack_index"] >= carousel["plantspack_images"].length) carousel["plantspack_index"] = 0;
+        for (let i = 0; i < carousel["plantspack_images"].length; i++) {
+          carousel["plantspack_images"][i].classList.add('hidden');
+          carousel["plantspack_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["plantspack_images"][carousel["plantspack_index"]].classList.remove('hidden')
+        carousel["plantspack_bullets"][carousel["plantspack_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
           
         </div>
       </div>

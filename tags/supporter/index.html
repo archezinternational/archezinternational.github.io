@@ -166,15 +166,40 @@
     
     <article class="card">
         
-        <a href="https://archezinternational.com/shop/archezmagazine2021supporter/">
-            <img src="https://archezinternational.com/images/coup/magazine_back.jpeg" class="card-img-top" alt="ARCHEZ MAGAZINE 2021 | SUPPORTER">
-        </a>
+        <section class="carousel" id='archezmagazine2021supporter'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/archezmagazine2021supporter/">
+              
+              <img src="https://archezinternational.com/images/packages/magazine_1.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/magazine_2.jpeg" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            <div id="archezmagazine2021supporter_prev-button" class='prev-button'></div>
+            <div id="archezmagazine2021supporter_next-button" class='next-button'></div>
+          </div>
+        </section>
         
-        
-        <a href="https://archezinternational.com/shop/archezmagazine2021supporter/" class='over-image-container'>
-            <img src="https://archezinternational.com/images/coup/magazine.png" class="card-img-top" alt="ARCHEZ MAGAZINE 2021 | SUPPORTER">
-        </a>
-        
+        <div id="archezmagazine2021supporter_single-image-container">
+          
+          <img src="https://archezinternational.com/images/packages/magazine_1.png" class="img-fluid w-100 mb-4" alt="ARCHEZ MAGAZINE 2021 | SUPPORTER">
+          
+        </div>
 
         <div class="card-body px-0">
             
@@ -191,6 +216,50 @@
         </div>
     </article>
 </div>
+
+<script>
+    carousel["archezmagazine2021supporter_index"] = 0;
+    carousel["archezmagazine2021supporter_bullets"] = document.querySelectorAll("#archezmagazine2021supporter .carousel__navigation-button")
+    carousel["archezmagazine2021supporter_images"] = document.querySelectorAll("#archezmagazine2021supporter .carousel-image-item")
+    if (carousel["archezmagazine2021supporter_images"].length > 0) document.querySelector("#archezmagazine2021supporter_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["archezmagazine2021supporter_images"].length; i++) {
+      let image = carousel["archezmagazine2021supporter_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["archezmagazine2021supporter_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#archezmagazine2021supporter_prev-button')) {
+        carousel["archezmagazine2021supporter_index"]--;
+        if (carousel["archezmagazine2021supporter_index"] < 0) carousel["archezmagazine2021supporter_index"] = carousel["archezmagazine2021supporter_images"].length - 1;
+        for (let i = 0; i < carousel["archezmagazine2021supporter_images"].length; i++) {
+          carousel["archezmagazine2021supporter_images"][i].classList.add('hidden');
+          carousel["archezmagazine2021supporter_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["archezmagazine2021supporter_images"][carousel["archezmagazine2021supporter_index"]].classList.remove('hidden')
+        carousel["archezmagazine2021supporter_bullets"][carousel["archezmagazine2021supporter_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#archezmagazine2021supporter_next-button')) {
+        carousel["archezmagazine2021supporter_index"]++;
+        if (carousel["archezmagazine2021supporter_index"] >= carousel["archezmagazine2021supporter_images"].length) carousel["archezmagazine2021supporter_index"] = 0;
+        for (let i = 0; i < carousel["archezmagazine2021supporter_images"].length; i++) {
+          carousel["archezmagazine2021supporter_images"][i].classList.add('hidden');
+          carousel["archezmagazine2021supporter_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["archezmagazine2021supporter_images"][carousel["archezmagazine2021supporter_index"]].classList.remove('hidden')
+        carousel["archezmagazine2021supporter_bullets"][carousel["archezmagazine2021supporter_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
           
           <div class="col-md-4 mb-4">
     
@@ -200,15 +269,40 @@
     
     <article class="card">
         
-        <a href="https://archezinternational.com/shop/supersupportercoupon/">
-            <img src="https://archezinternational.com/images/coup/SUPER%20SUPPORTER%202.png" class="card-img-top" alt="SUPER SUPPORTER COUPON">
-        </a>
+        <section class="carousel" id='supersupportercoupon'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/supersupportercoupon/">
+              
+              <img src="https://archezinternational.com/images/coup/supersupporter_1.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/coup/supersupporter_2.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            <div id="supersupportercoupon_prev-button" class='prev-button'></div>
+            <div id="supersupportercoupon_next-button" class='next-button'></div>
+          </div>
+        </section>
         
-        
-        <a href="https://archezinternational.com/shop/supersupportercoupon/" class='over-image-container'>
-            <img src="https://archezinternational.com/images/coup/super_supporter_1.png" class="card-img-top" alt="SUPER SUPPORTER COUPON">
-        </a>
-        
+        <div id="supersupportercoupon_single-image-container">
+          
+          <img src="https://archezinternational.com/images/coup/supersupporter_1.png" class="img-fluid w-100 mb-4" alt="SUPER SUPPORTER COUPON">
+          
+        </div>
 
         <div class="card-body px-0">
             
@@ -228,6 +322,50 @@
         </div>
     </article>
 </div>
+
+<script>
+    carousel["supersupportercoupon_index"] = 0;
+    carousel["supersupportercoupon_bullets"] = document.querySelectorAll("#supersupportercoupon .carousel__navigation-button")
+    carousel["supersupportercoupon_images"] = document.querySelectorAll("#supersupportercoupon .carousel-image-item")
+    if (carousel["supersupportercoupon_images"].length > 0) document.querySelector("#supersupportercoupon_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["supersupportercoupon_images"].length; i++) {
+      let image = carousel["supersupportercoupon_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["supersupportercoupon_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#supersupportercoupon_prev-button')) {
+        carousel["supersupportercoupon_index"]--;
+        if (carousel["supersupportercoupon_index"] < 0) carousel["supersupportercoupon_index"] = carousel["supersupportercoupon_images"].length - 1;
+        for (let i = 0; i < carousel["supersupportercoupon_images"].length; i++) {
+          carousel["supersupportercoupon_images"][i].classList.add('hidden');
+          carousel["supersupportercoupon_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["supersupportercoupon_images"][carousel["supersupportercoupon_index"]].classList.remove('hidden')
+        carousel["supersupportercoupon_bullets"][carousel["supersupportercoupon_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#supersupportercoupon_next-button')) {
+        carousel["supersupportercoupon_index"]++;
+        if (carousel["supersupportercoupon_index"] >= carousel["supersupportercoupon_images"].length) carousel["supersupportercoupon_index"] = 0;
+        for (let i = 0; i < carousel["supersupportercoupon_images"].length; i++) {
+          carousel["supersupportercoupon_images"][i].classList.add('hidden');
+          carousel["supersupportercoupon_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["supersupportercoupon_images"][carousel["supersupportercoupon_index"]].classList.remove('hidden')
+        carousel["supersupportercoupon_bullets"][carousel["supersupportercoupon_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
           
           <div class="col-md-4 mb-4">
     
@@ -237,15 +375,40 @@
     
     <article class="card">
         
-        <a href="https://archezinternational.com/shop/supportercoupon/">
-            <img src="https://archezinternational.com/images/coup/SUPPORTER%202.png" class="card-img-top" alt="SUPPORTER COUPON">
-        </a>
+        <section class="carousel" id='supportercoupon'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/supportercoupon/">
+              
+              <img src="https://archezinternational.com/images/coup/supporter_1.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/coup/supporter_2.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            <div id="supportercoupon_prev-button" class='prev-button'></div>
+            <div id="supportercoupon_next-button" class='next-button'></div>
+          </div>
+        </section>
         
-        
-        <a href="https://archezinternational.com/shop/supportercoupon/" class='over-image-container'>
-            <img src="https://archezinternational.com/images/coup/supporter_1.png" class="card-img-top" alt="SUPPORTER COUPON">
-        </a>
-        
+        <div id="supportercoupon_single-image-container">
+          
+          <img src="https://archezinternational.com/images/coup/supporter_1.png" class="img-fluid w-100 mb-4" alt="SUPPORTER COUPON">
+          
+        </div>
 
         <div class="card-body px-0">
             
@@ -265,6 +428,50 @@
         </div>
     </article>
 </div>
+
+<script>
+    carousel["supportercoupon_index"] = 0;
+    carousel["supportercoupon_bullets"] = document.querySelectorAll("#supportercoupon .carousel__navigation-button")
+    carousel["supportercoupon_images"] = document.querySelectorAll("#supportercoupon .carousel-image-item")
+    if (carousel["supportercoupon_images"].length > 0) document.querySelector("#supportercoupon_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["supportercoupon_images"].length; i++) {
+      let image = carousel["supportercoupon_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["supportercoupon_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#supportercoupon_prev-button')) {
+        carousel["supportercoupon_index"]--;
+        if (carousel["supportercoupon_index"] < 0) carousel["supportercoupon_index"] = carousel["supportercoupon_images"].length - 1;
+        for (let i = 0; i < carousel["supportercoupon_images"].length; i++) {
+          carousel["supportercoupon_images"][i].classList.add('hidden');
+          carousel["supportercoupon_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["supportercoupon_images"][carousel["supportercoupon_index"]].classList.remove('hidden')
+        carousel["supportercoupon_bullets"][carousel["supportercoupon_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#supportercoupon_next-button')) {
+        carousel["supportercoupon_index"]++;
+        if (carousel["supportercoupon_index"] >= carousel["supportercoupon_images"].length) carousel["supportercoupon_index"] = 0;
+        for (let i = 0; i < carousel["supportercoupon_images"].length; i++) {
+          carousel["supportercoupon_images"][i].classList.add('hidden');
+          carousel["supportercoupon_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["supportercoupon_images"][carousel["supportercoupon_index"]].classList.remove('hidden')
+        carousel["supportercoupon_bullets"][carousel["supportercoupon_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
           
         </div>
       </div>

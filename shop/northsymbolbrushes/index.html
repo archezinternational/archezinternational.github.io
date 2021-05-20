@@ -157,12 +157,12 @@
     <div class="row">
       <div class="col-lg-8 mx-auto">
         <div class="row">
-          <div class="col-6 flex-v">
+          <div class="col-lg-6 flex-v">
             <div>
 				    
-					    <a href="/categories/north-symbol-brushes" class="text-primary">NORTH SYMBOL BRUSHES |</a>
+					  <a href="/categories/abr" class="text-primary">ABR |</a>
 			      
-					    <a href="/categories/brushes" class="text-primary">BRUSHES |</a>
+					  <a href="/categories/brushes" class="text-primary">BRUSHES |</a>
 			      
 			      </div>
             <h2>NORTH SYMBOL BRUSHES</h2>
@@ -172,7 +172,7 @@
             
             <div>
               <div class="col-12 row mb-4">
-                <div class='col-sm-6 '>
+                <div class='col-sm-6'>
                     <div class='row align-items-center price'>
                         <p class='text-center w-100'>
                             $ 1.99
@@ -183,30 +183,62 @@
               </div>
             </div>
             
-			<p class='purchase-disclaimer'>All purchases will be made through our <a href="https://gumroad.com/archezinternational" target="_blank">gumroad</a> account. For direct payment methods (US or Colombian Banks, personal Paypal account) <a href="mailto:payments@archezinternational.com?subject=Direct payment request">contact us</a></p>
+			    <p class='purchase-disclaimer'>All purchases will be made through our <a href="https://gumroad.com/archezinternational" target="_blank">gumroad</a> account. For direct payment methods (US or Colombian Banks, personal Paypal account) <a href="mailto:payments@archezinternational.com?subject=Direct payment request">contact us</a></p>
           </div>
-          <div class="col-6">
+          <div class="col-lg-6">
             
-            <img src="https://archezinternational.com/images/packages/north_main.png" class="img-fluid w-100 mb-4" alt="NORTH SYMBOL BRUSHES">
+            <section class="carousel">
+              <div class="carousel-images-container">
+                
+                <img src="https://archezinternational.com/images/packages/north_1.png" class='carousel-image-item'/>
+                
+                <img src="https://archezinternational.com/images/packages/north_2.png" class='carousel-image-item'/>
+                
+              </div>
+                <aside class="carousel__navigation">
+                  <ol class="carousel__navigation-list">
+                      
+                        <li class="carousel__navigation-item"></li>
+                          <div class="carousel__navigation-button"></div>
+                        </li>
+                      
+                        <li class="carousel__navigation-item"></li>
+                          <div class="carousel__navigation-button"></div>
+                        </li>
+                      
+                  </ol>
+                </aside>
+              <div class="carousel-action-buttons">
+                <div class="prev-button"></div>
+                <div class="next-button"></div>
+              </div>
+            </section>
             
+            
+            <div id="single-image-container">
+              
+              <img src="https://archezinternational.com/images/packages/north_1.png" class="img-fluid w-100 mb-4" alt="NORTH SYMBOL BRUSHES">
+              
+            </div>
           </div>
         </div>
-        <div class="content mb-5">
+        <div class="content">
           <hr>
 <p>Hi archifriend! Below I leave you all the specifications of this product:</p>
-<p><strong>Category</strong>: BRUSHES</p>
 <p><strong>File size</strong>: 359 KB</p>
 <p><strong>Format</strong>: ABR</p>
 <p><strong>Software compatibility</strong>: Adobe Photoshop</p>
 <p><strong>Content</strong>: 20 brushes each with a different kind of north symbol, that you can edit and use on your post-productions and illustrations</p>
 <hr>
 <p>¡Hola archifriend! A continuación te dejo todas las especificaciones de este producto:</p>
-<p><strong>Categoría</strong>: PINCELES</p>
 <p><strong>Tamaño de archivo</strong>: 359 KB</p>
 <p><strong>Formato</strong>: ABR</p>
 <p><strong>Compatibilidad de software</strong>: Adobe Photoshop</p>
 <p><strong>Contenido</strong>: 20 pinceles cada uno con un tipo de símbolo de norte diferente, que puedes editar y utilizar en tus postproducciones e ilustraciones</p>
 
+        </div>
+        <div class="flex-h w-100 mt-5">
+          <a href="https://gumroad.com/archezinternational?sort=page_layout#rmGyc" target="_blank" class="btn btn-outline-primary w-40">BUY</a>
         </div>
         
         
@@ -214,6 +246,55 @@
     </div>
   </div>
 </section>
+
+<style>
+  .section-sm {
+    padding-bottom: 0px !important;
+  }
+</style>
+<script>
+  
+  let carouselIndex = 0;
+  
+	let images = document.getElementsByClassName("carousel-image-item")
+  if (images.length > 0) document.getElementById("single-image-container").classList.add('hidden')
+  let bullets = document.getElementsByClassName("carousel__navigation-button")
+  
+  for (let i = 0; i < images.length; i++) {
+    let image = images[i];
+    if (i > 0) image.classList.add('hidden');
+    bullets[0].classList.add('active');
+    let url = image.dataset.img;
+    image.style.setProperty("background-color", "url("+ url +")");
+  };
+	
+document.addEventListener('click', function (event) {
+	
+	if (event.target.matches('.prev-button')) {
+      carouselIndex--;
+      if (carouselIndex < 0) carouselIndex = images.length - 1;
+      for (let i = 0; i < images.length; i++) {
+        images[i].classList.add('hidden');
+        bullets[i].classList.remove('active');
+      };
+
+      images[carouselIndex].classList.remove('hidden')
+      bullets[carouselIndex].classList.add('active');
+	}
+
+	if (event.target.matches('.next-button')) {
+      carouselIndex++;
+      if (carouselIndex >= images.length) carouselIndex = 0;
+      for (let i = 0; i < images.length; i++) {
+        images[i].classList.add('hidden');
+        bullets[i].classList.remove('active');
+      };
+
+      images[carouselIndex].classList.remove('hidden')
+      bullets[carouselIndex].classList.add('active');
+	}
+}, false);
+</script>
 
 
 

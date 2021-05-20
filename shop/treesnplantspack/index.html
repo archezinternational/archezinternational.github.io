@@ -157,12 +157,12 @@
     <div class="row">
       <div class="col-lg-8 mx-auto">
         <div class="row">
-          <div class="col-6 flex-v">
+          <div class="col-lg-6 flex-v">
             <div>
 				    
-					    <a href="/categories/cad-blocks" class="text-primary">CAD BLOCKS |</a>
+					  <a href="/categories/cad-blocks" class="text-primary">CAD BLOCKS |</a>
 			      
-					    <a href="/categories/best-seller" class="text-primary">BEST SELLER |</a>
+					  <a href="/categories/best-seller" class="text-primary">BEST SELLER |</a>
 			      
 			      </div>
             <h2>TREES N' PLANTS PACK</h2>
@@ -172,7 +172,7 @@
             
             <div>
               <div class="col-12 row mb-4">
-                <div class='col-sm-6 '>
+                <div class='col-sm-6'>
                     <div class='row align-items-center price'>
                         <p class='text-center w-100'>
                             $ 7.99
@@ -183,15 +183,52 @@
               </div>
             </div>
             
-			<p class='purchase-disclaimer'>All purchases will be made through our <a href="https://gumroad.com/archezinternational" target="_blank">gumroad</a> account. For direct payment methods (US or Colombian Banks, personal Paypal account) <a href="mailto:payments@archezinternational.com?subject=Direct payment request">contact us</a></p>
+			    <p class='purchase-disclaimer'>All purchases will be made through our <a href="https://gumroad.com/archezinternational" target="_blank">gumroad</a> account. For direct payment methods (US or Colombian Banks, personal Paypal account) <a href="mailto:payments@archezinternational.com?subject=Direct payment request">contact us</a></p>
           </div>
-          <div class="col-6">
+          <div class="col-lg-6">
             
-            <img src="https://archezinternational.com/images/packages/trees_n_plants.png" class="img-fluid w-100 mb-4" alt="TREES N&#39; PLANTS PACK">
+            <section class="carousel">
+              <div class="carousel-images-container">
+                
+                <img src="https://archezinternational.com/images/packages/treesnplantspack_1.png" class='carousel-image-item'/>
+                
+                <img src="https://archezinternational.com/images/packages/treesnplantspack_2.png" class='carousel-image-item'/>
+                
+                <img src="https://archezinternational.com/images/packages/treesnplantspack_3.png" class='carousel-image-item'/>
+                
+              </div>
+                <aside class="carousel__navigation">
+                  <ol class="carousel__navigation-list">
+                      
+                        <li class="carousel__navigation-item"></li>
+                          <div class="carousel__navigation-button"></div>
+                        </li>
+                      
+                        <li class="carousel__navigation-item"></li>
+                          <div class="carousel__navigation-button"></div>
+                        </li>
+                      
+                        <li class="carousel__navigation-item"></li>
+                          <div class="carousel__navigation-button"></div>
+                        </li>
+                      
+                  </ol>
+                </aside>
+              <div class="carousel-action-buttons">
+                <div class="prev-button"></div>
+                <div class="next-button"></div>
+              </div>
+            </section>
             
+            
+            <div id="single-image-container">
+              
+              <img src="https://archezinternational.com/images/packages/trees_n_plants.png" class="img-fluid w-100 mb-4" alt="TREES N&#39; PLANTS PACK">
+              
+            </div>
           </div>
         </div>
-        <div class="content mb-5">
+        <div class="content">
           <hr>
 <p>Hi archifriend! Below I leave you all the specifications of this product:</p>
 <p><strong>File size:</strong> Top view 6.1 MB | Elevation 17.1 MB</p>
@@ -208,12 +245,64 @@
 <p><em>Puedes comprarlos juntos o por separado</em></p>
 
         </div>
+        <div class="flex-h w-100 mt-5">
+          <a href="https://gumroad.com/archezinternational?sort=page_layout#SQOYI" target="_blank" class="btn btn-outline-primary w-40">BUY</a>
+        </div>
         
         
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .section-sm {
+    padding-bottom: 0px !important;
+  }
+</style>
+<script>
+  
+  let carouselIndex = 0;
+  
+	let images = document.getElementsByClassName("carousel-image-item")
+  if (images.length > 0) document.getElementById("single-image-container").classList.add('hidden')
+  let bullets = document.getElementsByClassName("carousel__navigation-button")
+  
+  for (let i = 0; i < images.length; i++) {
+    let image = images[i];
+    if (i > 0) image.classList.add('hidden');
+    bullets[0].classList.add('active');
+    let url = image.dataset.img;
+    image.style.setProperty("background-color", "url("+ url +")");
+  };
+	
+document.addEventListener('click', function (event) {
+	
+	if (event.target.matches('.prev-button')) {
+      carouselIndex--;
+      if (carouselIndex < 0) carouselIndex = images.length - 1;
+      for (let i = 0; i < images.length; i++) {
+        images[i].classList.add('hidden');
+        bullets[i].classList.remove('active');
+      };
+
+      images[carouselIndex].classList.remove('hidden')
+      bullets[carouselIndex].classList.add('active');
+	}
+
+	if (event.target.matches('.next-button')) {
+      carouselIndex++;
+      if (carouselIndex >= images.length) carouselIndex = 0;
+      for (let i = 0; i < images.length; i++) {
+        images[i].classList.add('hidden');
+        bullets[i].classList.remove('active');
+      };
+
+      images[carouselIndex].classList.remove('hidden')
+      bullets[carouselIndex].classList.add('active');
+	}
+}, false);
+</script>
 
 
 
