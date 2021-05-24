@@ -17,15 +17,6 @@
     </item>
     
     <item>
-      <title>ARCHEZ MAGAZINE</title>
-      <link>https://archezinternational.com/categories/archez-magazine/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      
-      <guid>https://archezinternational.com/categories/archez-magazine/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>BEST SELLER</title>
       <link>https://archezinternational.com/categories/best-seller/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
@@ -94,6 +85,15 @@
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
       <guid>https://archezinternational.com/categories/jpg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MAGAZINE</title>
+      <link>https://archezinternational.com/categories/magazine/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://archezinternational.com/categories/magazine/</guid>
       <description></description>
     </item>
     
