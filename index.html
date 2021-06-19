@@ -307,7 +307,52 @@
     </div>
   </div>
 </section>
+<section class="section-sm">
+    <h4 class="w-100 widget-title"><i class="ti-instagram mr-3 text-primary"></i> CHECK OUT OUR INSTAGRAM: <br><span class="username"><a href="https://www.instagram.com/archezinternational" target="_blank">@archezinternational</a></span></h4>
+  <div class="container">
+      <div class="row justify-content-center">
+          <div id="instafeed"></div>
+      </div>
+  </div>
+</section>
 
+  <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+  <script type="text/javascript">
+      var feed = new Instafeed({
+        accessToken: 'IGQVJVX0h0dUdFZA29UUzlTQTJ4b3NhRWtOanBGYnBKM182RThaSUJzaWx3ODJsX0U5cjZAsNGhDNDF3dG9FS04zbW5jdUlCaUdKQ1llT1luLVphQXdMWFJ2a2RES0UyMzhLNThHZAlU5eFVyMlpVTmxuNwZDZD',
+        resolution: 'standard_resolution',
+        target: 'instafeed',
+        limit: 6
+      });
+      feed.run();
+
+      window.onload = function(){
+        var anchors = document.getElementById('instafeed').getElementsByTagName('a');
+        for (var i=0; i<anchors.length; i++){
+          anchors[i].setAttribute('target', '_blank');
+        }
+      }
+  </script>
+
+  <style>
+    .widget-title {
+      text-align: center;
+    }
+
+    .widget-title a {
+      color: #f0c05a;
+    }
+
+    h4 > .username {
+      font-size: 16px;
+      font-weight: 300;
+      color: rgba(0,0,0,0.5);
+    }
+
+    .content * {
+      text-align: center !important;
+    }
+  </style>
 
 
 
@@ -355,6 +400,8 @@
           <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/magazine">Magazine</a></li>
           
           <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/shop">Shop</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/featured">Featured</a></li>
           
           <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/about">About</a></li>
           
