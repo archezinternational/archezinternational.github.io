@@ -12,6 +12,7 @@ img[alt="Archez International"] {
 }
 .tags-container {
   margin-bottom: 28px;
+  flex-wrap: wrap;
 }
 
 #instafeed > a > img {
