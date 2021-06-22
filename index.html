@@ -102,13 +102,13 @@
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://archezinternational.com/magazine">Magazine</a>
+            <a class="nav-link" href="https://archezinternational.com/shop">Shop</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://archezinternational.com/shop">Shop</a>
+            <a class="nav-link" href="https://archezinternational.com/magazine">Magazine</a>
           </li>
           
           
@@ -152,9 +152,33 @@
 </header>
 <!-- /navigation -->
 
+<section class="section-sm">
+  <div class="container">
+    <div class="content mb-4">
+      
+    </div>
+    <div class='row justify-content-center'>
+      <div class='col-lg-8 text-center'>
+        <div class="row">
+          <div class="col-lg-6 small-post-border" id='letter-a-container'>
+            <img src="images/capital_a.png" alt="#">            
+          </div>
+          <div class="col-lg-6 description-container">
+            Hi archifriends! <br><br>
+Welcome to Archez International, we are an architectonic space created with 3 goals in mind: to be a <b>digital magazine</b> + <b>inspiration</b> + digital assets <b>shop</b>.<br><br>And we are just working with augmented reality to create all kinds of custom filters for both Instagram and Facebook.<br><br>If you want to work with us just write us! <br><br>
+Enjoy!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section class="section-sm">
   <div class="container">
+    <hr>
+    <h4 class="home-title w-100"><a href="/shop/" target="_blank">Shop</a></h4>
     <div class="row justify-content-center">
       <div class="col-10 featured-post-slider">
         
@@ -307,9 +331,34 @@
     </div>
   </div>
 </section>
+
+
+
 <section class="section-sm">
-    <h4 class="w-100 widget-title"><i class="ti-instagram mr-3 text-primary"></i> CHECK OUT OUR INSTAGRAM: <br><span class="username"><a href="https://www.instagram.com/archezinternational" target="_blank">@archezinternational</a></span></h4>
   <div class="container">
+    <hr>
+    <h4 class="home-title w-100"><a href="/magazine/" target="_blank">Magazine</a></h4>
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+          <div class='d-block mx-auto mt-5'>
+            <img src="https://archezinternational.com/images/magazine.png" alt="" class="img-fluid col-sm-4">
+            <div class='mb-4 mt-4'>
+                <p class='magazine-title'> ARCHEZ MAGAZINE 2020 </p>
+                <p class='magazine-sub-title'> 1st edition </p>
+            </div>
+            <a href="/magazine_viewer" class="btn btn-outline-primary">OPEN</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-sm">
+  <div class="container">
+    <hr>
+    <h4 class="home-title w-100"><a href="/featured/" target="_blank">Featured</a></h4>
+    <h4 class="w-100 widget-title"><i class="ti-instagram mr-3 text-primary"></i> CHECK OUT OUR INSTAGRAM: <br><span class="username"><a href="https://www.instagram.com/archezinternational" target="_blank">@archezinternational</a></span></h4>
       <div class="row justify-content-center">
           <div id="instafeed"></div>
       </div>
@@ -349,8 +398,49 @@
       color: rgba(0,0,0,0.5);
     }
 
+    .description-container {
+      margin: auto 0;
+    }
+
+    hr {
+      box-sizing: content-box;
+      height: 0;
+      margin-top: 50px;
+      border: 0;
+      border-top: 1px solid rgba(0,0,0,.1);
+    }
+
+    .small-post-border:not(:last-child) {
+      border-right: 1px solid rgba(0,0,0,.1);
+    }
+
     .content * {
       text-align: center !important;
+    }
+
+    .home-title {
+      text-transform: uppercase;
+      margin: 35px 0px 30px
+    }
+
+    .home-title > * {
+      color: black;
+    }
+
+    .content img:not(.img-fluid) {
+      height: 320px;
+    }
+
+    section {
+      padding-bottom: 0px !important;
+    }
+  
+     @media screen and (max-width: 990px){
+      #letter-a-container  {
+        width: 35%;
+        margin: 0 auto;
+        border: transparent;
+      }
     }
   </style>
 
@@ -358,13 +448,13 @@
 
 <footer>
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row space-around">
       <div class="col-12 text-center border-top mb-5 mt-5">
 
       </div>
                
       <div class="col-lg-3 col-sm-6 mb-5">
-        <h6 class="mb-4">Contact me</h6>
+        <h6 class="mb-4">CONTACT ME</h6>
         <ul class="list-unstyled">
           
                      
@@ -382,7 +472,7 @@
       </div>
       
       <div class="col-lg-3 col-sm-6 mb-5">
-        <h6 class="mb-4">Social</h6>
+        <h6 class="mb-4">SOCIAL</h6>
         <ul class="list-unstyled">
           
           <li class="mb-3"><i class="ti-instagram mr-3 text-primary"></i><a class="text-dark" href="https://www.instagram.com/archezinternational">Instagram</a></li>
@@ -394,12 +484,12 @@
         </ul>
       </div>
       <div class="col-lg-3 col-sm-6 mb-5">
-        <h6 class="mb-4">Quick links</h6>
+        <h6 class="mb-4">QUICK LINKS</h6>
         <ul class="list-unstyled">
           
-          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/magazine">Magazine</a></li>
-          
           <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/shop">Shop</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/magazine">Magazine</a></li>
           
           <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/featured">Featured</a></li>
           

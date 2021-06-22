@@ -257,6 +257,10 @@ ol, li {
     margin-top: -60%;
     padding: 0 20px;
   }
+
+  .space-around {
+    justify-content: space-around;
+  }
   
   .next-button {
     background-image: url(../../images/ui/next.png);
