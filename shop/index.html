@@ -745,13 +745,13 @@
     
     <article class="card">
         
-        <section class="carousel" id='supersupportercoupon'>
+        <section class="carousel" id='realistictreesbrushes'>
           <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/supersupportercoupon/">
+            <a href="https://archezinternational.com/shop/realistictreesbrushes/">
               
-              <img src="https://archezinternational.com/images/coup/supersupporter_1.png" class='carousel-image-item'/>
+              <img src="https://archezinternational.com/images/packages/realistictreesbrushes_1.png" class='carousel-image-item'/>
               
-              <img src="https://archezinternational.com/images/coup/supersupporter_2.png" class='carousel-image-item'/>
+              <img src="https://archezinternational.com/images/packages/realistictreesbrushes_2.png" class='carousel-image-item'/>
               
             </a>
           </div>
@@ -769,74 +769,74 @@
               </ol>
             </aside>
           <div class="carousel-action-buttons">
-            <div id="supersupportercoupon_prev-button" class='prev-button'></div>
-            <div id="supersupportercoupon_next-button" class='next-button'></div>
+            <div id="realistictreesbrushes_prev-button" class='prev-button'></div>
+            <div id="realistictreesbrushes_next-button" class='next-button'></div>
           </div>
         </section>
         
-        <div id="supersupportercoupon_single-image-container">
+        <div id="realistictreesbrushes_single-image-container">
           
-          <img src="https://archezinternational.com/images/coup/supersupporter_1.png" class="img-fluid w-100 mb-4" alt="SUPER SUPPORTER COUPON">
+          <img src="https://archezinternational.com/images/packages/realistictreesbrushes_1.png" class="img-fluid w-100 mb-4" alt="REALISTIC TREES BRUSHES">
           
         </div>
 
         <div class="card-body px-0">
             
-            <a href="/categories/grow-with-archez"
-                class="text-primary">GROW WITH ARCHEZ |</a>
+            <a href="/categories/abr"
+                class="text-primary">ABR |</a>
             
-            <a href="/categories/coupon"
-                class="text-primary">COUPON |</a>
+            <a href="/categories/brushes"
+                class="text-primary">BRUSHES |</a>
             
-            <a href="https://archezinternational.com/shop/supersupportercoupon/" class="h5 d-block my-3">SUPER SUPPORTER COUPON</a>
+            <a href="https://archezinternational.com/shop/realistictreesbrushes/" class="h5 d-block my-3">REALISTIC TREES BRUSHES</a>
             <div class="mb-3 post-meta">
             </div>
             <div>
-                <div><p class='font-weight-bold'>$ 5.99</p></div>
-                <a href="https://archezinternational.com/shop/supersupportercoupon/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+                <div><p class='font-weight-bold'>$ 0.99</p></div>
+                <a href="https://archezinternational.com/shop/realistictreesbrushes/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
             </div>
         </div>
     </article>
 </div>
 
 <script>
-    carousel["supersupportercoupon_index"] = 0;
-    carousel["supersupportercoupon_bullets"] = document.querySelectorAll("#supersupportercoupon .carousel__navigation-button")
-    carousel["supersupportercoupon_images"] = document.querySelectorAll("#supersupportercoupon .carousel-image-item")
-    if (carousel["supersupportercoupon_images"].length > 0) document.querySelector("#supersupportercoupon_single-image-container").style = "{vissibility: hidden;}";
+    carousel["realistictreesbrushes_index"] = 0;
+    carousel["realistictreesbrushes_bullets"] = document.querySelectorAll("#realistictreesbrushes .carousel__navigation-button")
+    carousel["realistictreesbrushes_images"] = document.querySelectorAll("#realistictreesbrushes .carousel-image-item")
+    if (carousel["realistictreesbrushes_images"].length > 0) document.querySelector("#realistictreesbrushes_single-image-container").style = "{vissibility: hidden;}";
     
-    for (let i = 0; i < carousel["supersupportercoupon_images"].length; i++) {
-      let image = carousel["supersupportercoupon_images"][i];
+    for (let i = 0; i < carousel["realistictreesbrushes_images"].length; i++) {
+      let image = carousel["realistictreesbrushes_images"][i];
       if (i > 0) image.classList.add('hidden');
-      carousel["supersupportercoupon_bullets"][0].classList.add('active');
+      carousel["realistictreesbrushes_bullets"][0].classList.add('active');
       let url = image.dataset.img;
       image.style.setProperty("background-color", "url("+ url +")");
     };
       
     document.addEventListener('click', function (event) {
       
-      if (event.target.matches('#supersupportercoupon_prev-button')) {
-        carousel["supersupportercoupon_index"]--;
-        if (carousel["supersupportercoupon_index"] < 0) carousel["supersupportercoupon_index"] = carousel["supersupportercoupon_images"].length - 1;
-        for (let i = 0; i < carousel["supersupportercoupon_images"].length; i++) {
-          carousel["supersupportercoupon_images"][i].classList.add('hidden');
-          carousel["supersupportercoupon_bullets"][i].classList.remove('active');
+      if (event.target.matches('#realistictreesbrushes_prev-button')) {
+        carousel["realistictreesbrushes_index"]--;
+        if (carousel["realistictreesbrushes_index"] < 0) carousel["realistictreesbrushes_index"] = carousel["realistictreesbrushes_images"].length - 1;
+        for (let i = 0; i < carousel["realistictreesbrushes_images"].length; i++) {
+          carousel["realistictreesbrushes_images"][i].classList.add('hidden');
+          carousel["realistictreesbrushes_bullets"][i].classList.remove('active');
         };
         
-        carousel["supersupportercoupon_images"][carousel["supersupportercoupon_index"]].classList.remove('hidden')
-        carousel["supersupportercoupon_bullets"][carousel["supersupportercoupon_index"]].classList.add('active');
+        carousel["realistictreesbrushes_images"][carousel["realistictreesbrushes_index"]].classList.remove('hidden')
+        carousel["realistictreesbrushes_bullets"][carousel["realistictreesbrushes_index"]].classList.add('active');
       }
   
-      if (event.target.matches('#supersupportercoupon_next-button')) {
-        carousel["supersupportercoupon_index"]++;
-        if (carousel["supersupportercoupon_index"] >= carousel["supersupportercoupon_images"].length) carousel["supersupportercoupon_index"] = 0;
-        for (let i = 0; i < carousel["supersupportercoupon_images"].length; i++) {
-          carousel["supersupportercoupon_images"][i].classList.add('hidden');
-          carousel["supersupportercoupon_bullets"][i].classList.remove('active');
+      if (event.target.matches('#realistictreesbrushes_next-button')) {
+        carousel["realistictreesbrushes_index"]++;
+        if (carousel["realistictreesbrushes_index"] >= carousel["realistictreesbrushes_images"].length) carousel["realistictreesbrushes_index"] = 0;
+        for (let i = 0; i < carousel["realistictreesbrushes_images"].length; i++) {
+          carousel["realistictreesbrushes_images"][i].classList.add('hidden');
+          carousel["realistictreesbrushes_bullets"][i].classList.remove('active');
         };
   
-        carousel["supersupportercoupon_images"][carousel["supersupportercoupon_index"]].classList.remove('hidden')
-        carousel["supersupportercoupon_bullets"][carousel["supersupportercoupon_index"]].classList.add('active');
+        carousel["realistictreesbrushes_images"][carousel["realistictreesbrushes_index"]].classList.remove('hidden')
+        carousel["realistictreesbrushes_bullets"][carousel["realistictreesbrushes_index"]].classList.add('active');
       }
   
         }, false);
