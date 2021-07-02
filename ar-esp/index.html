@@ -151,165 +151,81 @@
   </div>
 </header>
 <!-- /navigation -->
-<script>
-  let carousel = {}
-</script>
 
-  <section class="section-sm">
-    <div class="col-lg-8 mx-auto text-center">
-      <h4 class="widget-title">Tiles</h4>
-    </div>
-    <div class="container">
-      <div class="row">
-
-        <div class="tags-container flex-h w-100">
-          <a href=https://archezinternational.com/categories/free/ class="text-primary">free</a>
-          <a href=https://archezinternational.com/categories/coupon/ class="text-primary">coupon</a>
-          <a href=https://archezinternational.com/categories/brushes/ class="text-primary">brushes</a>
-          <a href=https://archezinternational.com/categories/textures/ class="text-primary">textures</a>
-          <a href=https://archezinternational.com/categories/cutouts/ class="text-primary">cutouts</a>
-          <a href=https://archezinternational.com/categories/cad-blocks/ class="text-primary">cad blocks</a>
-        </div>
-
-        <div class="col-lg-12 mb-5 mb-lg-0">
-          <div class="row">
-            
-            
-            <div class="col-md-4 mb-4">
-    
-        
-    
-        
-    
-    <article class="card">
-        
-        <section class="carousel" id='tilespack'>
-          <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/tilespack/">
-              
-              <img src="https://archezinternational.com/images/packages/tilespack_1.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/tilespack_2.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/tilespack_3.png" class='carousel-image-item'/>
-              
-            </a>
-          </div>
-            <aside class="carousel__navigation">
-              <ol class="carousel__navigation-list">
-                  
-                    <li class="carousel__navigation-item"></li>
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item"></li>
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item"></li>
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-              </ol>
-            </aside>
-          <div class="carousel-action-buttons">
-            <div id="tilespack_prev-button" class='prev-button'></div>
-            <div id="tilespack_next-button" class='next-button'></div>
-          </div>
-        </section>
-        
-        <div id="tilespack_single-image-container">
-          
-          <img src="https://archezinternational.com/images/packages/tilespack_1.png" class="img-fluid w-100 mb-4" alt="TILES PACK">
-          
-        </div>
-
-        <div class="card-body px-0">
-            
-            <a href="/categories/jpg"
-                class="text-primary">JPG |</a>
-            
-            <a href="/categories/textures"
-                class="text-primary">TEXTURES |</a>
-            
-            <a href="https://archezinternational.com/shop/tilespack/" class="h5 d-block my-3">TILES PACK</a>
-            <div class="mb-3 post-meta">
-            </div>
-            <div>
-                <div><p class='font-weight-bold'>$ 9.99</p></div>
-                <a href="https://archezinternational.com/shop/tilespack/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
-            </div>
-        </div>
-    </article>
-</div>
-
-<script>
-    carousel["tilespack_index"] = 0;
-    carousel["tilespack_bullets"] = document.querySelectorAll("#tilespack .carousel__navigation-button")
-    carousel["tilespack_images"] = document.querySelectorAll("#tilespack .carousel-image-item")
-    if (carousel["tilespack_images"].length > 0) document.querySelector("#tilespack_single-image-container").style = "{vissibility: hidden;}";
-    
-    for (let i = 0; i < carousel["tilespack_images"].length; i++) {
-      let image = carousel["tilespack_images"][i];
-      if (i > 0) image.classList.add('hidden');
-      carousel["tilespack_bullets"][0].classList.add('active');
-      let url = image.dataset.img;
-      image.style.setProperty("background-color", "url("+ url +")");
-    };
-      
-    document.addEventListener('click', function (event) {
-      
-      if (event.target.matches('#tilespack_prev-button')) {
-        carousel["tilespack_index"]--;
-        if (carousel["tilespack_index"] < 0) carousel["tilespack_index"] = carousel["tilespack_images"].length - 1;
-        for (let i = 0; i < carousel["tilespack_images"].length; i++) {
-          carousel["tilespack_images"][i].classList.add('hidden');
-          carousel["tilespack_bullets"][i].classList.remove('active');
-        };
-        
-        carousel["tilespack_images"][carousel["tilespack_index"]].classList.remove('hidden')
-        carousel["tilespack_bullets"][carousel["tilespack_index"]].classList.add('active');
-      }
-  
-      if (event.target.matches('#tilespack_next-button')) {
-        carousel["tilespack_index"]++;
-        if (carousel["tilespack_index"] >= carousel["tilespack_images"].length) carousel["tilespack_index"] = 0;
-        for (let i = 0; i < carousel["tilespack_images"].length; i++) {
-          carousel["tilespack_images"][i].classList.add('hidden');
-          carousel["tilespack_bullets"][i].classList.remove('active');
-        };
-  
-        carousel["tilespack_images"][carousel["tilespack_index"]].classList.remove('hidden')
-        carousel["tilespack_bullets"][carousel["tilespack_index"]].classList.add('active');
-      }
-  
-        }, false);
-</script>
-
-            
-          </div>
-        </div>
-
-        
-        <div class="col-12 mt-5">
-          
-
+<section class="section-sm">
+  <div class='flex-v text-center'>
+    <h4 class="widget-title">AUGMENTED REALITY</h4>
+    <a class="magazine-version" href="/ar">CHECK ENGLISH VERSION</a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <div class="content">
+          <br/>
+<h6 id="creadora-de-filtros-para-instagram-certificada">CREADORA DE FILTROS PARA INSTAGRAM CERTIFICADA</h6>
+<p>¡Hola archifriends! Mi nombre es Daniela, soy arquitecto y creadora en Spark AR certificada.
+Estoy acá para ayudarte a crear el filtro perfecto para ti y así potenciar tu cuenta personal o marca.</p>
+<p>Tengo más de 1 año de experiencia en realidad aumentada, he creado más de 50 filtros para marcas internacionales como Johnson &amp; Johnson.</p>
+<p>Mi principal objetivo es crear y entregarte el filtro de mejor calidad pensando siempre en la satisfacción tuya como cliente.</p>
+<p>¡Siéntete libre de hacerme todas tus preguntas y contar todas tus ideas para comenzar a materializarlas!<br>
+<a href="mailto:info@archezinternational.com">Contáctame</a>
+<br/><br/></p>
+<h6 id="tipos-de-filtros">TIPOS DE FILTROS:</h6>
+<p>Preset personalizado · Suavizado de rostro · Maquillaje básico (Rubor, labial) · Maquillaje (Pestañas, iluminación) · Pintura facial (Stickers en el rostro) · Texturas (Grano, polvo) · Marcos · Paleta de color · Fecha y hora · Lineas de contorno · KiraKira (Destellos y brillo) · Cambio de color de ojos / cabello · Glitch · Segmentación de persona · Sistema de particulas
+<br/><br/></p>
+<h6 id="por-qué-es-importante-tener-un-filtro-en-instagram--facebook">¿POR QUÉ ES IMPORTANTE TENER UN FILTRO EN INSTAGRAM / FACEBOOK?</h6>
+<p>Los filtros hoy en día son la mejor manera de incrementar tu alcance de manera masiva. A través de los filtros puedes dar a conocer tu cuenta personal, tu tienda o marca e incluso dar a conocer tus campañas.</p>
+<p>Podemos crear infinidad de filtros, todo depende de qué es lo que desees promocionar, aquí estaré para asesorarte en cuanto a los términos y condiciones actuales de Instagram / Facebook con el propósito de que acepten tu filtro y cumplas con todo lo requerido por las plataformas.
+<br/><br/></p>
+<h6 id="me-enviarás">ME ENVIARÁS:</h6>
+<p>· Recursos (Imagenes, presets, marcos&hellip;)<br>
+· Descripcion o boceto del filtro
+<br/><br/></p>
+<h6 id="te-entregaré">TE ENTREGARÉ:</h6>
+<p>· El archivo .arexport<br>
+· Guia paso a paso de como publicar tu filtro
+<br/><br/></p>
+<h6 id="métodos-de-pago">MÉTODOS DE PAGO</h6>
+<p>Si estás en Estados Unidos o Colombia aceptamos transferencias bancarias.<br>
+Si te encuentras en el resto del mundo aceptamos Paypal.</p>
+<p>Para comenzar a trabajar solo debes cancelar el 50% del filtro, y el 50% restante antes de enviarte los archivos definitivos del mismo.
+<br/><br/></p>
+<h6 id="modo-de-trabajo">MODO DE TRABAJO</h6>
+<p>Para comenzar envíanos tus ideas, sketchs o referentes para asesorarte en cuanto a los términos y condiciones de Instagam / Facebook, recuerda que estos cambian continuamente y lo que deseamos es que tu filtro sea aceptado rápidamente para que puedas subirlo, compartirlo y viralizarlo.</p>
+<p>Posteriormente si tu filtro requiere de algún arte (2D o 3D) te recomendamos enviároslo para trabajar de manera más rápida y eficiente, si de lo contrario no cuentas con el arte ¡no te preocupes!
+con gusto te cotizaremos y te haremos lo que desees usar en tu filtro.</p>
+<p>Estare muy feliz de trabajar contigo. ¡Solo <a href="mailto:info@archezinternational.com">enviame un email</a> y podremos empezar a crear juntos!</p>
 
         </div>
+        <hr class='mb-5 mt-5'>
+        <h4 class="w-100 widget-title"><i class="ti-facebook mr-3 text-primary"></i> CONOCE NUESTRO PORTAFOLIO DE FILTROS: </h4>
+        <a href="https://www.facebook.com/sparkarhub/portfolios/fb/archezinternational/" target="_blank" class="btn btn-outline-primary col-sm-6">PORTAFOLIO</a>
       </div>
     </div>
-  </section>
-
+  </div>
+</section>
 
 <style>
-  .carousel__navigation {
-    margin-bottom: -90% !important;
-  }
+.content ul li::before {
+  position: absolute;
+  content: "";
+  font-family: themify;
+  font-size: 0px;
+  left: 0;
+  padding: 0px;
+  top: 1px;
+  color: #f0c05a;
+  transition: .3s ease;
+}
 
-  .carousel-action-buttons {
-    margin-top: 50% !important;
-  }
+.content ul li {
+position: relative;
+padding-left: 0px;
+margin-bottom: 15px;
+list-style-type: none;
+}
 </style>
+
 
 
 <footer>
