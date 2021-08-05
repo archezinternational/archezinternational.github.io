@@ -628,6 +628,119 @@
 
 
             
+            <div class="col-md-4 mb-4">
+    
+        
+    
+        
+    
+        
+    
+    <article class="card">
+        
+        <section class="carousel" id='texturespack5'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/texturespack5/">
+              
+              <img src="https://archezinternational.com/images/packages/textures_55.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/textures_5.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            <div id="texturespack5_prev-button" class='prev-button'></div>
+            <div id="texturespack5_next-button" class='next-button'></div>
+          </div>
+        </section>
+        
+        <div id="texturespack5_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/textures_55.png" class="card-img" alt="TEXTURES PACK #5">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/jpg"
+                class="text-primary">JPG |</a>
+            
+            <a href="/categories/textures"
+                class="text-primary">TEXTURES |</a>
+            
+            <a href="/categories/free"
+                class="text-primary">FREE |</a>
+            
+            <a href="https://archezinternational.com/shop/texturespack5/" class="h5 d-block my-3">TEXTURES PACK #5</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$ 0&#43;</p></div>
+                <a href="https://archezinternational.com/shop/texturespack5/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["texturespack5_index"] = 0;
+    carousel["texturespack5_bullets"] = document.querySelectorAll("#texturespack5 .carousel__navigation-button")
+    carousel["texturespack5_images"] = document.querySelectorAll("#texturespack5 .carousel-image-item")
+    if (carousel["texturespack5_images"].length > 0) document.querySelector("#texturespack5_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["texturespack5_images"].length; i++) {
+      let image = carousel["texturespack5_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["texturespack5_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#texturespack5_prev-button')) {
+        carousel["texturespack5_index"]--;
+        if (carousel["texturespack5_index"] < 0) carousel["texturespack5_index"] = carousel["texturespack5_images"].length - 1;
+        for (let i = 0; i < carousel["texturespack5_images"].length; i++) {
+          carousel["texturespack5_images"][i].classList.add('hidden');
+          carousel["texturespack5_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["texturespack5_images"][carousel["texturespack5_index"]].classList.remove('hidden')
+        carousel["texturespack5_bullets"][carousel["texturespack5_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#texturespack5_next-button')) {
+        carousel["texturespack5_index"]++;
+        if (carousel["texturespack5_index"] >= carousel["texturespack5_images"].length) carousel["texturespack5_index"] = 0;
+        for (let i = 0; i < carousel["texturespack5_images"].length; i++) {
+          carousel["texturespack5_images"][i].classList.add('hidden');
+          carousel["texturespack5_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["texturespack5_images"][carousel["texturespack5_index"]].classList.remove('hidden')
+        carousel["texturespack5_bullets"][carousel["texturespack5_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
           </div>
         </div>
 
