@@ -152,7 +152,9 @@
   </div>
 </header>
 <!-- /navigation -->
-
+<script>
+  let carousel = {}
+</script>
 <section class="section-sm">
   <div class='flex-v text-center'>
     <h4 class="widget-title">AUGMENTED REALITY</h4>
@@ -172,7 +174,7 @@ I am here to help you create the perfect filter for you and thus enhance your pe
 <a href="mailto:info@archezinternational.com">Contact me</a>
 <br/><br/></p>
 <h6 id="types-of-filters">TYPES OF FILTERS:</h6>
-<p>Custom preset · Face retouch · Basic makeup (Blush, lipstick) · Makeup (Eyelash, highlights) · Face paint (Stickers on face) · Textures (Grain, dust) · Frames · Color palette · Date and time · Outline · KiraKira (Sparkles) · Eye / Hair color change · Glitch · Person segmentation · Particle system
+<p>Custom preset · Face retouch · Basic makeup (Blush, lipstick) · Makeup (Eyelash, highlights) · Face deformation (Big lips, small nose) · Face paint (Stickers on face) · Textures (Grain, dust) · Frames · Color palette · Date and time · Outline · KiraKira (Sparkles) · Eye / Hair color change · Glitch · Person segmentation · Particle system
 <br/><br/></p>
 <h6 id="why-is-it-important-to-have-a-filter-on-instagram--facebook">WHY IS IT IMPORTANT TO HAVE A FILTER ON INSTAGRAM / FACEBOOK?</h6>
 <p>Filters today are the best way to massively increase your reach. Through the filters you can promote your personal account, your store or brand and even promote your campaigns.</p>
@@ -202,27 +204,181 @@ I am here to help you create the perfect filter for you and thus enhance your pe
       </div>
     </div>
   </div>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <hr class='mb-5 mt-5'>
+      </div>
+      </div>
+    
+    <div class="col-lg-8 mx-auto text-center">
+      <h4 class="widget-title">CHECK OUT OUR FILTERS SHOP</h4>
+    </div>
+    <div class="container">
+      <div class="row">
+        
+        
+        <div class="col-lg-12">
+          <div class="flex-h">
+            
+            
+            <div class="col-md-4 mb-4">
+    
+        
+    
+    <article class="card">
+        
+        <section class="carousel" id='outline'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/ar/filter_1/">
+              
+              <img src="https://archezinternational.com/images/packages/outline-1.jpg" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/outline-2.jpg" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/outline-3.jpg" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/outline-4.jpg" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/outline-5.jpg" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            <div id="outline_prev-button" class='prev-button'></div>
+            <div id="outline_next-button" class='next-button'></div>
+          </div>
+        </section>
+        
+        <div id="outline_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/outline-1.jpg" class="card-img" alt="INSTAGRAM AR FILTER | OUTLINE">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/filter"
+                class="text-primary">FILTER |</a>
+            
+            <a href="https://archezinternational.com/ar/filter_1/" class="h5 d-block my-3">INSTAGRAM AR FILTER | OUTLINE</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$ 19.99</p></div>
+                <a href="https://archezinternational.com/ar/filter_1/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["outline_index"] = 0;
+    carousel["outline_bullets"] = document.querySelectorAll("#outline .carousel__navigation-button")
+    carousel["outline_images"] = document.querySelectorAll("#outline .carousel-image-item")
+    if (carousel["outline_images"].length > 0) document.querySelector("#outline_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["outline_images"].length; i++) {
+      let image = carousel["outline_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["outline_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#outline_prev-button')) {
+        carousel["outline_index"]--;
+        if (carousel["outline_index"] < 0) carousel["outline_index"] = carousel["outline_images"].length - 1;
+        for (let i = 0; i < carousel["outline_images"].length; i++) {
+          carousel["outline_images"][i].classList.add('hidden');
+          carousel["outline_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["outline_images"][carousel["outline_index"]].classList.remove('hidden')
+        carousel["outline_bullets"][carousel["outline_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#outline_next-button')) {
+        carousel["outline_index"]++;
+        if (carousel["outline_index"] >= carousel["outline_images"].length) carousel["outline_index"] = 0;
+        for (let i = 0; i < carousel["outline_images"].length; i++) {
+          carousel["outline_images"][i].classList.add('hidden');
+          carousel["outline_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["outline_images"][carousel["outline_index"]].classList.remove('hidden')
+        carousel["outline_bullets"][carousel["outline_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </section>
 
 <style>
+
 .content ul li::before {
-  position: absolute;
-  content: "";
-  font-family: themify;
-  font-size: 0px;
-  left: 0;
-  padding: 0px;
-  top: 1px;
-  color: #f0c05a;
-  transition: .3s ease;
-}
+position: absolute;
+content: "";
+font-family: themify;
+font-size: 0px;
+left: 0;
+padding: 0px;
+top: 1px;
+color: #f0c05a;
+transition: .3s ease; }
 
 .content ul li {
 position: relative;
 padding-left: 0px;
 margin-bottom: 15px;
-list-style-type: none;
-}
+list-style-type: none; }
+
+.carousel__navigation {
+margin-bottom: -90% !important; }
+
+.carousel-action-buttons {
+margin-top: 50% !important; }
+
+section {
+padding-bottom: 0px !important; }
 </style>
 
 
