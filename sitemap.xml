@@ -62,12 +62,6 @@
     <loc>https://archezinternational.com/tags/assets/</loc>
     <lastmod>2019-10-29T10:07:47+06:00</lastmod>
   </url><url>
-    <loc>https://archezinternational.com/ar-esp/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url><url>
-    <loc>https://archezinternational.com/ar/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url><url>
     <loc>https://archezinternational.com/tags/augmented-reality/</loc>
     <lastmod>2019-10-29T10:07:47+06:00</lastmod>
   </url><url>
@@ -123,12 +117,6 @@
     <lastmod>2019-10-29T10:07:47+06:00</lastmod>
   </url><url>
     <loc>https://archezinternational.com/categories/grow-with-archez/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url><url>
-    <loc>https://archezinternational.com/ar-esp/filter_1/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url><url>
-    <loc>https://archezinternational.com/ar/filter_1/</loc>
     <lastmod>2019-10-29T10:07:47+06:00</lastmod>
   </url><url>
     <loc>https://archezinternational.com/shop/outline/</loc>
@@ -241,5 +229,9 @@
   </url><url>
     <loc>https://archezinternational.com/magazine_viewer/</loc>
     <priority>0</priority>
+  </url><url>
+    <loc>https://archezinternational.com/ar-esp/</loc>
+  </url><url>
+    <loc>https://archezinternational.com/ar/</loc>
   </url>
 </urlset>
