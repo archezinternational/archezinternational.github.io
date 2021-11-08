@@ -185,6 +185,122 @@
         <div class="best-seller">BEST SELLER</div>
         
     
+    <article class="card">
+        
+        <section class="carousel" id='treesnplantspack'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/treesnplantspack/">
+              
+              <img src="https://archezinternational.com/images/packages/treesnplantspack_1.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/treesnplantspack_2.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/treesnplantspack_3.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            <div id="treesnplantspack_prev-button" class='prev-button'></div>
+            <div id="treesnplantspack_next-button" class='next-button'></div>
+          </div>
+        </section>
+        
+        <div id="treesnplantspack_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/treesnplantspack_1.png" class="card-img" alt="TREES N&#39; PLANTS PACK">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/cad-blocks"
+                class="text-primary">CAD BLOCKS |</a>
+            
+            <a href="/categories/best-seller"
+                class="text-primary">BEST SELLER |</a>
+            
+            <a href="https://archezinternational.com/shop/treesnplantspack/" class="h5 d-block my-3">TREES N' PLANTS PACK</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$ 7.99</p></div>
+                <a href="https://archezinternational.com/shop/treesnplantspack/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["treesnplantspack_index"] = 0;
+    carousel["treesnplantspack_bullets"] = document.querySelectorAll("#treesnplantspack .carousel__navigation-button")
+    carousel["treesnplantspack_images"] = document.querySelectorAll("#treesnplantspack .carousel-image-item")
+    if (carousel["treesnplantspack_images"].length > 0) document.querySelector("#treesnplantspack_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["treesnplantspack_images"].length; i++) {
+      let image = carousel["treesnplantspack_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["treesnplantspack_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#treesnplantspack_prev-button')) {
+        carousel["treesnplantspack_index"]--;
+        if (carousel["treesnplantspack_index"] < 0) carousel["treesnplantspack_index"] = carousel["treesnplantspack_images"].length - 1;
+        for (let i = 0; i < carousel["treesnplantspack_images"].length; i++) {
+          carousel["treesnplantspack_images"][i].classList.add('hidden');
+          carousel["treesnplantspack_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["treesnplantspack_images"][carousel["treesnplantspack_index"]].classList.remove('hidden')
+        carousel["treesnplantspack_bullets"][carousel["treesnplantspack_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#treesnplantspack_next-button')) {
+        carousel["treesnplantspack_index"]++;
+        if (carousel["treesnplantspack_index"] >= carousel["treesnplantspack_images"].length) carousel["treesnplantspack_index"] = 0;
+        for (let i = 0; i < carousel["treesnplantspack_images"].length; i++) {
+          carousel["treesnplantspack_images"][i].classList.add('hidden');
+          carousel["treesnplantspack_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["treesnplantspack_images"][carousel["treesnplantspack_index"]].classList.remove('hidden')
+        carousel["treesnplantspack_bullets"][carousel["treesnplantspack_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
+            <div class="col-md-4 mb-4">
+    
+        
+    
+        
+        <div class="best-seller">BEST SELLER</div>
+        
+    
         
     
     <article class="card">

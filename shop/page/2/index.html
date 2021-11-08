@@ -185,6 +185,114 @@
     
     <article class="card">
         
+        <section class="carousel" id='northsymbol'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/northsymbolbrushes/">
+              
+              <img src="https://archezinternational.com/images/packages/north_1.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/north_2.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item"></li>
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            <div id="northsymbol_prev-button" class='prev-button'></div>
+            <div id="northsymbol_next-button" class='next-button'></div>
+          </div>
+        </section>
+        
+        <div id="northsymbol_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/north_1.png" class="card-img" alt="NORTH SYMBOL BRUSHES">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/abr"
+                class="text-primary">ABR |</a>
+            
+            <a href="/categories/brushes"
+                class="text-primary">BRUSHES |</a>
+            
+            <a href="https://archezinternational.com/shop/northsymbolbrushes/" class="h5 d-block my-3">NORTH SYMBOL BRUSHES</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$ 1.99</p></div>
+                <a href="https://archezinternational.com/shop/northsymbolbrushes/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["northsymbol_index"] = 0;
+    carousel["northsymbol_bullets"] = document.querySelectorAll("#northsymbol .carousel__navigation-button")
+    carousel["northsymbol_images"] = document.querySelectorAll("#northsymbol .carousel-image-item")
+    if (carousel["northsymbol_images"].length > 0) document.querySelector("#northsymbol_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["northsymbol_images"].length; i++) {
+      let image = carousel["northsymbol_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["northsymbol_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#northsymbol_prev-button')) {
+        carousel["northsymbol_index"]--;
+        if (carousel["northsymbol_index"] < 0) carousel["northsymbol_index"] = carousel["northsymbol_images"].length - 1;
+        for (let i = 0; i < carousel["northsymbol_images"].length; i++) {
+          carousel["northsymbol_images"][i].classList.add('hidden');
+          carousel["northsymbol_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["northsymbol_images"][carousel["northsymbol_index"]].classList.remove('hidden')
+        carousel["northsymbol_bullets"][carousel["northsymbol_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#northsymbol_next-button')) {
+        carousel["northsymbol_index"]++;
+        if (carousel["northsymbol_index"] >= carousel["northsymbol_images"].length) carousel["northsymbol_index"] = 0;
+        for (let i = 0; i < carousel["northsymbol_images"].length; i++) {
+          carousel["northsymbol_images"][i].classList.add('hidden');
+          carousel["northsymbol_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["northsymbol_images"][carousel["northsymbol_index"]].classList.remove('hidden')
+        carousel["northsymbol_bullets"][carousel["northsymbol_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
+            <div class="col-md-4 mb-4">
+    
+        
+    
+        
+    
+    <article class="card">
+        
         <section class="carousel" id='plantspack'>
           <div class="carousel-images-container">
             <a href="https://archezinternational.com/shop/plantspack/">
@@ -720,119 +828,6 @@
   
         carousel["texturespack1_images"][carousel["texturespack1_index"]].classList.remove('hidden')
         carousel["texturespack1_bullets"][carousel["texturespack1_index"]].classList.add('active');
-      }
-  
-        }, false);
-</script>
-
-
-
-            
-            <div class="col-md-4 mb-4">
-    
-        
-    
-        
-    
-        
-    
-    <article class="card">
-        
-        <section class="carousel" id='texturespack2'>
-          <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/texturespack2/">
-              
-              <img src="https://archezinternational.com/images/packages/textures_2.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/textures_22.png" class='carousel-image-item'/>
-              
-            </a>
-          </div>
-            <aside class="carousel__navigation">
-              <ol class="carousel__navigation-list">
-                  
-                    <li class="carousel__navigation-item"></li>
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item"></li>
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-              </ol>
-            </aside>
-          <div class="carousel-action-buttons">
-            <div id="texturespack2_prev-button" class='prev-button'></div>
-            <div id="texturespack2_next-button" class='next-button'></div>
-          </div>
-        </section>
-        
-        <div id="texturespack2_single-image-container" class='single-image-container'>
-          
-            <img src="https://archezinternational.com/images/packages/textures_2.png" class="card-img" alt="TEXTURES PACK #2">
-          
-        </div>
-
-        <div class="card-body px-0">
-            
-            <a href="/categories/jpg"
-                class="text-primary">JPG |</a>
-            
-            <a href="/categories/textures"
-                class="text-primary">TEXTURES |</a>
-            
-            <a href="/categories/free"
-                class="text-primary">FREE |</a>
-            
-            <a href="https://archezinternational.com/shop/texturespack2/" class="h5 d-block my-3">TEXTURES PACK #2</a>
-            <div class="mb-3 post-meta">
-            </div>
-            <div>
-                <div><p class='font-weight-bold'>$ 0&#43;</p></div>
-                <a href="https://archezinternational.com/shop/texturespack2/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
-            </div>
-        </div>
-    </article>
-</div>
-
-<script>
-    carousel["texturespack2_index"] = 0;
-    carousel["texturespack2_bullets"] = document.querySelectorAll("#texturespack2 .carousel__navigation-button")
-    carousel["texturespack2_images"] = document.querySelectorAll("#texturespack2 .carousel-image-item")
-    if (carousel["texturespack2_images"].length > 0) document.querySelector("#texturespack2_single-image-container").style = "{vissibility: hidden;}";
-    
-    for (let i = 0; i < carousel["texturespack2_images"].length; i++) {
-      let image = carousel["texturespack2_images"][i];
-      if (i > 0) image.classList.add('hidden');
-      carousel["texturespack2_bullets"][0].classList.add('active');
-      let url = image.dataset.img;
-      image.style.setProperty("background-color", "url("+ url +")");
-    };
-      
-    document.addEventListener('click', function (event) {
-      
-      if (event.target.matches('#texturespack2_prev-button')) {
-        carousel["texturespack2_index"]--;
-        if (carousel["texturespack2_index"] < 0) carousel["texturespack2_index"] = carousel["texturespack2_images"].length - 1;
-        for (let i = 0; i < carousel["texturespack2_images"].length; i++) {
-          carousel["texturespack2_images"][i].classList.add('hidden');
-          carousel["texturespack2_bullets"][i].classList.remove('active');
-        };
-        
-        carousel["texturespack2_images"][carousel["texturespack2_index"]].classList.remove('hidden')
-        carousel["texturespack2_bullets"][carousel["texturespack2_index"]].classList.add('active');
-      }
-  
-      if (event.target.matches('#texturespack2_next-button')) {
-        carousel["texturespack2_index"]++;
-        if (carousel["texturespack2_index"] >= carousel["texturespack2_images"].length) carousel["texturespack2_index"] = 0;
-        for (let i = 0; i < carousel["texturespack2_images"].length; i++) {
-          carousel["texturespack2_images"][i].classList.add('hidden');
-          carousel["texturespack2_bullets"][i].classList.remove('active');
-        };
-  
-        carousel["texturespack2_images"][carousel["texturespack2_index"]].classList.remove('hidden')
-        carousel["texturespack2_bullets"][carousel["texturespack2_index"]].classList.add('active');
       }
   
         }, false);
