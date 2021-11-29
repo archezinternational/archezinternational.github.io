@@ -204,23 +204,23 @@
             <aside class="carousel__navigation">
               <ol class="carousel__navigation-list">
                   
-                    <li class="carousel__navigation-item"></li>
+                    <li class="carousel__navigation-item">
                       <div class="carousel__navigation-button"></div>
                     </li>
                   
-                    <li class="carousel__navigation-item"></li>
+                    <li class="carousel__navigation-item">
                       <div class="carousel__navigation-button"></div>
                     </li>
                   
-                    <li class="carousel__navigation-item"></li>
+                    <li class="carousel__navigation-item">
                       <div class="carousel__navigation-button"></div>
                     </li>
                   
-                    <li class="carousel__navigation-item"></li>
+                    <li class="carousel__navigation-item">
                       <div class="carousel__navigation-button"></div>
                     </li>
                   
-                    <li class="carousel__navigation-item"></li>
+                    <li class="carousel__navigation-item">
                       <div class="carousel__navigation-button"></div>
                     </li>
                   
@@ -284,6 +284,7 @@
   
       if (event.target.matches('#outline_next-button')) {
         carousel["outline_index"]++;
+
         if (carousel["outline_index"] >= carousel["outline_images"].length) carousel["outline_index"] = 0;
         for (let i = 0; i < carousel["outline_images"].length; i++) {
           carousel["outline_images"][i].classList.add('hidden');

@@ -202,15 +202,15 @@
             <aside class="carousel__navigation">
               <ol class="carousel__navigation-list">
                   
-                    <li class="carousel__navigation-item"></li>
+                    <li class="carousel__navigation-item">
                       <div class="carousel__navigation-button"></div>
                     </li>
                   
-                    <li class="carousel__navigation-item"></li>
+                    <li class="carousel__navigation-item">
                       <div class="carousel__navigation-button"></div>
                     </li>
                   
-                    <li class="carousel__navigation-item"></li>
+                    <li class="carousel__navigation-item">
                       <div class="carousel__navigation-button"></div>
                     </li>
                   
@@ -277,6 +277,7 @@
   
       if (event.target.matches('#plantspack_next-button')) {
         carousel["plantspack_index"]++;
+
         if (carousel["plantspack_index"] >= carousel["plantspack_images"].length) carousel["plantspack_index"] = 0;
         for (let i = 0; i < carousel["plantspack_images"].length; i++) {
           carousel["plantspack_images"][i].classList.add('hidden');

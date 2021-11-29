@@ -198,11 +198,11 @@
             <aside class="carousel__navigation">
               <ol class="carousel__navigation-list">
                   
-                    <li class="carousel__navigation-item"></li>
+                    <li class="carousel__navigation-item">
                       <div class="carousel__navigation-button"></div>
                     </li>
                   
-                    <li class="carousel__navigation-item"></li>
+                    <li class="carousel__navigation-item">
                       <div class="carousel__navigation-button"></div>
                     </li>
                   
@@ -266,6 +266,7 @@
   
       if (event.target.matches('#archezmagazine2021supporter_next-button')) {
         carousel["archezmagazine2021supporter_index"]++;
+
         if (carousel["archezmagazine2021supporter_index"] >= carousel["archezmagazine2021supporter_images"].length) carousel["archezmagazine2021supporter_index"] = 0;
         for (let i = 0; i < carousel["archezmagazine2021supporter_images"].length; i++) {
           carousel["archezmagazine2021supporter_images"][i].classList.add('hidden');

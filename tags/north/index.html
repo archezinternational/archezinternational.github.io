@@ -204,11 +204,11 @@
             <aside class="carousel__navigation">
               <ol class="carousel__navigation-list">
                   
-                    <li class="carousel__navigation-item"></li>
+                    <li class="carousel__navigation-item">
                       <div class="carousel__navigation-button"></div>
                     </li>
                   
-                    <li class="carousel__navigation-item"></li>
+                    <li class="carousel__navigation-item">
                       <div class="carousel__navigation-button"></div>
                     </li>
                   
@@ -278,6 +278,7 @@
   
       if (event.target.matches('#northsymbol_next-button')) {
         carousel["northsymbol_index"]++;
+
         if (carousel["northsymbol_index"] >= carousel["northsymbol_images"].length) carousel["northsymbol_index"] = 0;
         for (let i = 0; i < carousel["northsymbol_images"].length; i++) {
           carousel["northsymbol_images"][i].classList.add('hidden');

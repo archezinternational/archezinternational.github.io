@@ -198,7 +198,7 @@
             <aside class="carousel__navigation">
               <ol class="carousel__navigation-list">
                   
-                    <li class="carousel__navigation-item"></li>
+                    <li class="carousel__navigation-item">
                       <div class="carousel__navigation-button"></div>
                     </li>
                   
@@ -265,6 +265,7 @@
   
       if (event.target.matches('#basiccoupon_next-button')) {
         carousel["basiccoupon_index"]++;
+
         if (carousel["basiccoupon_index"] >= carousel["basiccoupon_images"].length) carousel["basiccoupon_index"] = 0;
         for (let i = 0; i < carousel["basiccoupon_images"].length; i++) {
           carousel["basiccoupon_images"][i].classList.add('hidden');
