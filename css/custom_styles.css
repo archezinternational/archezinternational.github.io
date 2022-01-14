@@ -305,6 +305,17 @@ ol, li {
     background-repeat: no-repeat;
     background-size: contain;
   }
+
+  .payment-methods > img {
+      width: 24px;
+      height: 24px;
+      margin: 10px 5px;
+  }
+
+  #mastercard {
+    width: 33px;
+    height: 24px;
+  }
   
   /* @media screen and (max-width: 990px){
     .carousel-images-container, .carousel {
