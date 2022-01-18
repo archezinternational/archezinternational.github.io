@@ -78,24 +78,7 @@
       </button>
 
       <div class="collapse navbar-collapse text-center" id="navigation">
-        <div class="desktop-view">
-          <ul class="navbar-nav mr-auto">
-            
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.instagram.com/archezinternational" target="_blank" ><i class="ti-instagram"></i></a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.facebook.com/archezinternational" target="_blank" ><i class="ti-facebook"></i></a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.pinterest.com/archezinternational" target="_blank" ><i class="ti-pinterest"></i></a>
-            </li>
-            
-          </ul>
-        </div>
-
+        
         <a class="navbar-brand mx-auto desktop-view" href="https://archezinternational.com"><img class="img-fluid"
             src="https://archezinternational.com/images/logo.png" alt="Archez International"></a>
 
@@ -159,15 +142,30 @@
       
     </div>
     <div class='row justify-content-center'>
-      <div class='col-lg-8 text-center'>
+      <div class='col-lg-12 text-center'>
         <div class="row">
-          <div class="col-lg-6 small-post-border" id='letter-a-container'>
-            <img src="images/capital_a.png" alt="#">            
+            <img class='centered-container' id='letter-a-container' src="images/capital_a.png" alt="#">
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-12 description-container">
+            <p class='f-size-17 sub-title'>We are an architectural space created with 3 goals in mind</p>
           </div>
-          <div class="col-lg-6 description-container">
-            Hi archifriends! <br><br>
-Welcome to <b>Archez International</b>, we are an architectural space created with 3 goals in mind: to be a <b>digital magazine</b> + <b>inspiration</b> + digital assets <b>shop</b>.<br><br>And we are just working with <b>augmented reality</b> to create all kinds of custom filters for both Instagram and Facebook.<br><br>If you want to work with us just <a href="mailto:info@archezinternational.com">write us</a>! <br><br>
-Enjoy!
+        </div>
+        <div class="row mt-4">
+          <div class='col-lg-4'>
+            <h4>Magazine</h4>
+            <p class='home-description'>That encourages architectural illustration, by exposing such a clean and artistic graphic representation through an annual competition where architects and students from all over the world can participate</p>
+            <a class='mb-4 btn btn-outline-primary' href='/magazine'>View more</a>
+          </div>
+          <div class='col-lg-4'>
+            <h4>Inspiration</h4>
+            <p class='home-description'>Medium that shares different illustrated projects through our instagram account, where architects and students from all over the world share with us their projects to be posted</p>
+            <a class='mb-4 btn btn-outline-primary' href='/featured'>View more</a>
+          </div>
+          <div class='col-lg-4'>
+            <h4>SHOP</h4>
+            <p class='home-description'>That provides you with cad blocks and all required assets to help you to present your projects to promotion coupons that will help you to grow your account and to announce your projects, workshops, and more</p>
+            <a class='mb-4 btn btn-outline-primary' href='/shop'>View more</a>
           </div>
         </div>
       </div>
@@ -396,7 +394,7 @@ Enjoy!
   <div class="container">
     <hr>
     <h4 class="home-title w-100"><a href="/featured/">Featured</a></h4>
-    <h4 class="w-100 widget-title"><i class="ti-instagram mr-3 text-primary"></i> CHECK OUT OUR INSTAGRAM: <br><span class="username"><a href="https://www.instagram.com/archezinternational" target="_blank">@archezinternational</a></span></h4>
+    <h4 class="w-100 widget-title"><i class="ti-instagram mr-3 text-primary"></i> CHECK OUT OUR INSTAGRAM: <br><span class="username"><br><a href="https://www.instagram.com/archezinternational" target="_blank">@archezinternational</a></span></h4>
       <div class="row justify-content-center">
           <div id="instafeed"></div>
       </div>
@@ -460,6 +458,11 @@ Enjoy!
     section {
       padding-bottom: 0px !important;
     }
+    
+    #letter-a-container {
+      max-width: 35%;
+      max-height: 30vh;
+    }
   
      @media screen and (max-width: 990px){
       #letter-a-container  {
@@ -479,23 +482,23 @@ Enjoy!
 
       </div>
                
-      <div class="col-lg-3 col-sm-6 mb-5">
+      <div class="col-lg-4 col-sm-6 mb-5">
         <h6 class="mb-4">CONTACT US</h6>
         <ul class="list-unstyled">
           
                      
           <li class="mb-3"><a class="text-dark" href="mailto:info@archezinternational.com"><i
-                class="ti-email mr-3 text-primary"></i>info@archezinternational.com | for info and collaborations</a>
+                class="ti-email mr-3 text-primary"></i>for info and collaborations</a>
           
           
                      
           <li class="mb-3"><a class="text-dark" href="mailto:featured@archezinternational.com"><i
-                class="ti-email mr-3 text-primary"></i>featured@archezinternational.com | for featured</a>
+                class="ti-email mr-3 text-primary"></i>for featured</a>
           
 
                      
           <li class="mb-3"><a class="text-dark" href="mailto:filter@archezinternational.com"><i
-                class="ti-email mr-3 text-primary"></i>filter@archezinternational.com | for augmented reality filters</a>
+                class="ti-email mr-3 text-primary"></i>for augmented reality filters</a>
           
 
                      
@@ -508,7 +511,7 @@ Enjoy!
         </ul>
       </div>
       
-      <div class="col-lg-3 col-sm-6 mb-5">
+      <div class="col-lg-4 col-sm-6 mb-5">
         <h6 class="mb-4">SOCIAL</h6>
         <ul class="list-unstyled">
           
@@ -520,7 +523,7 @@ Enjoy!
           
         </ul>
       </div>
-      <div class="col-lg-3 col-sm-6 mb-5">
+      <div class="col-lg-4 col-sm-6 mb-5">
         <h6 class="mb-4">QUICK LINKS</h6>
         <ul class="list-unstyled">
           
@@ -538,13 +541,13 @@ Enjoy!
       </div>
       <div class="col-12 border-top py-4 text-center">
         <div class="payment-methods flex-h">
-          <img src="images/payment_methods/discover.png" alt="">
-          <img src="images/payment_methods/visa.png" alt="">
-          <img id='mastercard' src="images/payment_methods/mastercard.png" alt="">
-          <img src="images/payment_methods/amex.png" alt="">
-          <img src="images/payment_methods/dinnersclub.png" alt="">
-          <img src="images/payment_methods/paypal.png" alt="">
-          <img src="images/payment_methods/applepay.png" alt="">
+          <img src="https://archezinternational.com/images/payment_methods/discover.png" alt="Discover" title="Discover">
+          <img src="https://archezinternational.com/images/payment_methods/visa.png" alt="Visa" title="Visa">
+          <img src="https://archezinternational.com/images/payment_methods/mastercard.png" alt="Mastercard" title="Mastercard" id='mastercard' >
+          <img src="https://archezinternational.com/images/payment_methods/amex.png" alt="Amex" title="Amex">
+          <img src="https://archezinternational.com/images/payment_methods/dinnersclub.png" alt="Dinners club" title="Dinners club">
+          <img src="https://archezinternational.com/images/payment_methods/paypal.png" alt="Paypal" title="Paypal">
+          <img src="https://archezinternational.com/images/payment_methods/applepay.png" alt="Apple pay" title="Apple pay">
         </div>
         © Archez International 2022
       </div>

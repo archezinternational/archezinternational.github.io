@@ -28,11 +28,16 @@ img[alt="Archez International"] {
 }
 
 h4 {
-    font-weight: 800 !important;
+  font-weight: 800 !important;
+}
+
+li, h4, a, h6 {
+  text-transform: uppercase !important;
+  letter-spacing: 2px;
 }
 
 *:not(i) {
-    font-family: "Montserrat" !important;
+  font-family: "Montserrat" !important;
 }
 
 .over-image-container {
@@ -58,6 +63,10 @@ a[aria-label="Previous"], a[aria-label="Previous"] > span,
 a[aria-label="First"], a[aria-label="First"] > span,
 a[aria-label="Last"], a[aria-label="Last"] > span {
     visibility: hidden;
+}
+
+.centered-container {
+  margin: 0 auto;
 }
 
 .price > p {
@@ -275,7 +284,8 @@ ol, li {
   }
 
   h4 > .username {
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 20px;
     font-weight: 300;
     color: rgba(0,0,0,0.5);
   }
@@ -315,6 +325,34 @@ ol, li {
   #mastercard {
     width: 33px;
     height: 24px;
+  }
+
+  .list-unstyled {
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+
+  .navbar-brand {
+    margin-left: 0px !important;
+  }
+
+  .f-size-17 {
+    font-size: 17px !important;
+  }
+
+  .sub-title {
+    letter-spacing: 2px;
+   text-transform: uppercase; 
+  }
+
+  .home-description {
+    min-height: 120px;
+  }
+
+ @media screen and (max-width: 990px){
+    .home-description {
+      min-height: auto;
+    }
   }
   
   /* @media screen and (max-width: 990px){
