@@ -342,11 +342,21 @@ ol, li {
 
   .sub-title {
     letter-spacing: 2px;
-   text-transform: uppercase; 
+    text-transform: uppercase; 
+    margin: 0px;
   }
 
   .home-description {
     min-height: 120px;
+  }
+  
+  .home-icon {
+    max-width: 40px;
+    margin: 2px
+  }
+
+  .uppercase {
+    text-transform: uppercase;
   }
 
  @media screen and (max-width: 990px){

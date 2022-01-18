@@ -187,10 +187,10 @@
 
 
 <section class="section-sm">
-  <div class="container">
-    <hr>
-    <h4 class="home-title w-100"><a href="/shop/">Shop</a></h4>
-    <div class="row justify-content-center">
+  	<div class="container">
+    	<hr>
+    	<h4 class="home-title w-100"><a href="/shop/">Shop</a></h4>
+    	<div class="row justify-content-center">
       <div class="col-10 featured-post-slider">
         
         
@@ -366,9 +366,28 @@
         </article>
         
       </div>
-    </div>
-  </div>
+    	</div>
+  	</div>
+	<div class="container text-center mt-5">
+		<p class="home-title w-100"><a href="/shop/">Our statistics</a></p>
+		<div class="row col-lg-8 centered-container">
+			<div class='col-lg-6 counter-container'>
+				<img src="/images/home/worldwide.png" alt="Countries" class='home-icon'>
+				<p class='sub-title'>Countries</p>
+				<h3	 class="counter" counter-value='12'></h3>
+			</div>
+			<div class='col-lg-6 counter-container'>
+				<img src="/images/home/sales.png" alt="Sales" class='home-icon'>
+				<p class='sub-title'>Sales</p>
+				<div class="flex-h">
+					<h3 class='counter-helper'>+</h3>
+					<h3 class="counter" counter-value='1100'></h3>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
+
 
 <section class="section-sm">
   <div class="container">
@@ -404,20 +423,55 @@
 
   <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
   <script type="text/javascript">
-      var feed = new Instafeed({
-        accessToken: 'IGQVJVem91d0k3Y3ZAINzNwS0s3RFRwbkhrMFNpbDQ3MU5sempHMnFvam5kQjhRS2pJdUdtR1ZAFU3U3bWVKbVFBYnpxTkpsUUVsQjY1VmpWeG5kcUR2VWdJcEpmMFp2Vl9uak55LUM4Y0dSUmJESVU5YgZDZD',
-        resolution: 'standard_resolution',
-        target: 'instafeed',
-        limit: 6
-      });
-      feed.run();
+      
+	  
+      
+      
+      
+      
+      
+      
 
-      window.onload = function(){
-        var anchors = document.getElementById('instafeed').getElementsByTagName('a');
-        for (var i=0; i<anchors.length; i++){
-          anchors[i].setAttribute('target', '_blank');
-        }
-      }
+      
+      
+      
+      
+      
+      
+
+	const observer = new IntersectionObserver((entries) => { 
+    	entries.forEach((entry) => {
+    	    startCounter();
+    	})
+	}); 
+
+	observer.observe(document.querySelector('.counter'));
+
+	function startCounter() {
+		const counters = document.querySelectorAll('.counter');
+		const speed = 50;
+
+		counters.forEach( counter => {
+			counter.innerText = "0";
+		});
+
+		counters.forEach( counter => {
+		const animate = () => {
+			const value = +counter.getAttribute('counter-value');
+			const data = +counter.innerText;
+			
+			const time = value / speed;
+			if (data < value) {
+				counter.innerText = Math.ceil(data + time);
+				setTimeout(animate, speed);
+			} else {
+				counter.innerText = value;
+			}			
+		}
+		
+		animate();
+		});
+	}
   </script>
 
   <style>
@@ -447,6 +501,11 @@
       margin: 35px 0px 30px
     }
 
+	.counter, .counter-helper {
+		color: rgb(98, 98, 98);
+		font-size: 45px;
+	}
+
     .home-title > * {
       color: black;
     }
@@ -465,11 +524,15 @@
     }
   
      @media screen and (max-width: 990px){
-      #letter-a-container  {
-        width: 35%;
-        margin: 0 auto;
-        border: transparent;
-      }
+		.counter-container {
+			margin-top: 20px;
+		}
+      	
+		#letter-a-container  {
+        	width: 35%;
+        	margin: 0 auto;
+        	border: transparent;
+      	}
     }
   </style>
 
