@@ -293,6 +293,10 @@ ol, li {
   .space-around {
     justify-content: space-around;
   }
+
+  .mt-10 {
+    margin-top: 4em !important;
+  }
   
   .next-button {
     background-image: url(../../images/ui/next.png);
@@ -352,7 +356,7 @@ ol, li {
   
   .home-icon {
     max-width: 40px;
-    margin: 2px
+    margin: 10px
   }
 
   .uppercase {
