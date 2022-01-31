@@ -423,20 +423,20 @@
   <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
   <script type="text/javascript">
       
-	  
-      
-      
-      
-      
-      
-      
+	  var feed = new Instafeed({
+        accessToken: 'IGQVJVVy1yeE9XMk9hdUNmTFdZAQ1VjZAlJWdElfYk1KNUo5dC11OWNhMXVONUQtOTBhSlh4VDdiOFJsWGRjTDU0eS1IcmNPUjFJZAnVXYU44MjdUTG41Vlo0bVJjVGl3ckV2SXg3eWgtcTg0UkM3dENLaAZDZD',
+        resolution: 'standard_resolution',
+        target: 'instafeed',
+        limit: 6
+      });
+      feed.run();
 
-      
-      
-      
-      
-      
-      
+      window.onload = function(){
+        var anchors = document.getElementById('instafeed').getElementsByTagName('a');
+        for (var i=0; i<anchors.length; i++){
+          anchors[i].setAttribute('target', '_blank');
+        }
+      }
 
 	const observer = new IntersectionObserver((entries) => { 
     	entries.forEach((entry) => {
