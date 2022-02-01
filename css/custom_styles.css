@@ -2,6 +2,10 @@ img[alt="Archez International"] {
     height: 25px !important;
 }
 
+.nav-link {
+  font-size: 13px !important;
+}
+
 .featured-post .card-title {
     margin-left: 0px !important;
 }
@@ -28,7 +32,7 @@ img[alt="Archez International"] {
 }
 
 h4 {
-  font-weight: 800 !important;
+  font-weight: 500 !important;
 }
 
 li, h4, a, h6 {
@@ -340,8 +344,8 @@ ol, li {
     margin-left: 0px !important;
   }
 
-  .f-size-17 {
-    font-size: 17px !important;
+  .f-size-15 {
+    font-size: 15px !important;
   }
 
   .sub-title {
