@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="this is meta description">
     <meta name="author" content="Archez International">
-    <meta name="generator" content="Hugo 0.91.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
   
     <!-- plugins -->
     
@@ -818,6 +818,123 @@
 
 
             
+            <div class="col-md-4 mb-4">
+    
+        
+    
+        
+    
+    <article class="card">
+        
+        <section class="carousel" id='neutraltilespack'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/neutraltilespack/">
+              
+              <img src="https://archezinternational.com/images/packages/neutral_1.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/neutral_2.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/neutral_3.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            
+              <div id="neutraltilespack_prev-button" class='prev-button'></div>
+              <div id="neutraltilespack_next-button" class='next-button'></div>
+            
+          </div>
+        </section>
+        
+        <div id="neutraltilespack_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/neutral_1.png" class="card-img" alt="NEUTRAL TILES PACK">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/jpg"
+                class="text-primary">JPG |</a>
+            
+            <a href="/categories/textures"
+                class="text-primary">TEXTURES |</a>
+            
+            <a href="https://archezinternational.com/shop/neutraltilespack/" class="h5 d-block my-3">NEUTRAL TILES PACK</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$2</p></div>
+                <a href="https://archezinternational.com/shop/neutraltilespack/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["neutraltilespack_index"] = 0;
+    carousel["neutraltilespack_bullets"] = document.querySelectorAll("#neutraltilespack .carousel__navigation-button")
+    carousel["neutraltilespack_images"] = document.querySelectorAll("#neutraltilespack .carousel-image-item")
+    if (carousel["neutraltilespack_images"].length > 0) document.querySelector("#neutraltilespack_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["neutraltilespack_images"].length; i++) {
+      let image = carousel["neutraltilespack_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["neutraltilespack_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#neutraltilespack_prev-button')) {
+        carousel["neutraltilespack_index"]--;
+        if (carousel["neutraltilespack_index"] < 0) carousel["neutraltilespack_index"] = carousel["neutraltilespack_images"].length - 1;
+        for (let i = 0; i < carousel["neutraltilespack_images"].length; i++) {
+          carousel["neutraltilespack_images"][i].classList.add('hidden');
+          carousel["neutraltilespack_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["neutraltilespack_images"][carousel["neutraltilespack_index"]].classList.remove('hidden')
+        carousel["neutraltilespack_bullets"][carousel["neutraltilespack_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#neutraltilespack_next-button')) {
+        carousel["neutraltilespack_index"]++;
+
+        if (carousel["neutraltilespack_index"] >= carousel["neutraltilespack_images"].length) carousel["neutraltilespack_index"] = 0;
+        for (let i = 0; i < carousel["neutraltilespack_images"].length; i++) {
+          carousel["neutraltilespack_images"][i].classList.add('hidden');
+          carousel["neutraltilespack_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["neutraltilespack_images"][carousel["neutraltilespack_index"]].classList.remove('hidden')
+        carousel["neutraltilespack_bullets"][carousel["neutraltilespack_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
           </div>
         </div>
 
@@ -826,13 +943,13 @@
           
     <ul class="pagination pagination-default">
       <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        <a href="#" aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
       </li>
       <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
+        <a href="#" aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
       </li>
       <li class="page-item active">
-        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
+        <a href="#" aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
       </li>
       <li class="page-item">
         <a href="/shop/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>

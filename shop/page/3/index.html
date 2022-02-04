@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="this is meta description">
     <meta name="author" content="Archez International">
-    <meta name="generator" content="Hugo 0.91.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
   
     <!-- plugins -->
     
@@ -858,6 +858,124 @@
 
 
             
+            <div class="col-md-4 mb-4">
+    
+        
+    
+        
+    
+        
+        <div class="best-seller">BEST SELLER</div>
+        
+    
+    <article class="card">
+        
+        <section class="carousel" id='treesbrushes'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/treesbrushes/">
+              
+              <img src="https://archezinternational.com/images/packages/treesbrushes_1.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/treesbrushes_2.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            
+              <div id="treesbrushes_prev-button" class='prev-button'></div>
+              <div id="treesbrushes_next-button" class='next-button'></div>
+            
+          </div>
+        </section>
+        
+        <div id="treesbrushes_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/treesbrushes_1.png" class="card-img" alt="TREES BRUSHES">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/abr"
+                class="text-primary">ABR |</a>
+            
+            <a href="/categories/brushes"
+                class="text-primary">BRUSHES |</a>
+            
+            <a href="/categories/best-seller"
+                class="text-primary">BEST SELLER |</a>
+            
+            <a href="https://archezinternational.com/shop/treesbrushes/" class="h5 d-block my-3">TREES BRUSHES</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$1</p></div>
+                <a href="https://archezinternational.com/shop/treesbrushes/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["treesbrushes_index"] = 0;
+    carousel["treesbrushes_bullets"] = document.querySelectorAll("#treesbrushes .carousel__navigation-button")
+    carousel["treesbrushes_images"] = document.querySelectorAll("#treesbrushes .carousel-image-item")
+    if (carousel["treesbrushes_images"].length > 0) document.querySelector("#treesbrushes_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["treesbrushes_images"].length; i++) {
+      let image = carousel["treesbrushes_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["treesbrushes_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#treesbrushes_prev-button')) {
+        carousel["treesbrushes_index"]--;
+        if (carousel["treesbrushes_index"] < 0) carousel["treesbrushes_index"] = carousel["treesbrushes_images"].length - 1;
+        for (let i = 0; i < carousel["treesbrushes_images"].length; i++) {
+          carousel["treesbrushes_images"][i].classList.add('hidden');
+          carousel["treesbrushes_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["treesbrushes_images"][carousel["treesbrushes_index"]].classList.remove('hidden')
+        carousel["treesbrushes_bullets"][carousel["treesbrushes_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#treesbrushes_next-button')) {
+        carousel["treesbrushes_index"]++;
+
+        if (carousel["treesbrushes_index"] >= carousel["treesbrushes_images"].length) carousel["treesbrushes_index"] = 0;
+        for (let i = 0; i < carousel["treesbrushes_images"].length; i++) {
+          carousel["treesbrushes_images"][i].classList.add('hidden');
+          carousel["treesbrushes_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["treesbrushes_images"][carousel["treesbrushes_index"]].classList.remove('hidden')
+        carousel["treesbrushes_bullets"][carousel["treesbrushes_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
           </div>
         </div>
 
@@ -878,7 +996,7 @@
         <a href="/shop/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
       </li>
       <li class="page-item active">
-        <a aria-current="page" aria-label="Page 3" class="page-link" role="button">3</a>
+        <a href="#" aria-current="page" aria-label="Page 3" class="page-link" role="button">3</a>
       </li>
       <li class="page-item">
         <a href="/shop/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
