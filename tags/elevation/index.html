@@ -166,6 +166,118 @@
     
         
     
+    <article class="card">
+        
+        <section class="carousel" id='aquariumpack'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/aquariumpack/">
+              
+              <img src="https://archezinternational.com/images/packages/aquarium_1.jpg" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/aquarium_2.jpg" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/aquarium_3.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            
+              <div id="aquariumpack_prev-button" class='prev-button'></div>
+              <div id="aquariumpack_next-button" class='next-button'></div>
+            
+          </div>
+        </section>
+        
+        <div id="aquariumpack_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/aquarium_1.jpg" class="card-img" alt="AQUARIUM PACK">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/cad-blocks"
+                class="text-primary">CAD BLOCKS |</a>
+            
+            <a href="https://archezinternational.com/shop/aquariumpack/" class="h5 d-block my-3">AQUARIUM PACK</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$8</p></div>
+                <a href="https://archezinternational.com/shop/aquariumpack/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["aquariumpack_index"] = 0;
+    carousel["aquariumpack_bullets"] = document.querySelectorAll("#aquariumpack .carousel__navigation-button")
+    carousel["aquariumpack_images"] = document.querySelectorAll("#aquariumpack .carousel-image-item")
+    if (carousel["aquariumpack_images"].length > 0) document.querySelector("#aquariumpack_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["aquariumpack_images"].length; i++) {
+      let image = carousel["aquariumpack_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["aquariumpack_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#aquariumpack_prev-button')) {
+        carousel["aquariumpack_index"]--;
+        if (carousel["aquariumpack_index"] < 0) carousel["aquariumpack_index"] = carousel["aquariumpack_images"].length - 1;
+        for (let i = 0; i < carousel["aquariumpack_images"].length; i++) {
+          carousel["aquariumpack_images"][i].classList.add('hidden');
+          carousel["aquariumpack_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["aquariumpack_images"][carousel["aquariumpack_index"]].classList.remove('hidden')
+        carousel["aquariumpack_bullets"][carousel["aquariumpack_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#aquariumpack_next-button')) {
+        carousel["aquariumpack_index"]++;
+
+        if (carousel["aquariumpack_index"] >= carousel["aquariumpack_images"].length) carousel["aquariumpack_index"] = 0;
+        for (let i = 0; i < carousel["aquariumpack_images"].length; i++) {
+          carousel["aquariumpack_images"][i].classList.add('hidden');
+          carousel["aquariumpack_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["aquariumpack_images"][carousel["aquariumpack_index"]].classList.remove('hidden')
+        carousel["aquariumpack_bullets"][carousel["aquariumpack_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
+            <div class="col-md-4 mb-4">
+    
+        
+    
         
         <div class="best-seller">BEST SELLER</div>
         
