@@ -39,11 +39,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500 !important;
 }
 
-p > strong, th > strong {
-  font-weight: 500 !important;
+th > strong {
+  font-weight: 700 !important;
 }
 
-li, h4, a, h6, p > strong, th > strong {
+li, h4, a, h6, th > strong {
   text-transform: uppercase !important;
   letter-spacing: 2px;
 }
