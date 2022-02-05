@@ -509,32 +509,123 @@
 
 
             
+            <div class="col-md-4 mb-4">
+    
+        
+    
+        
+    
+    <article class="card">
+        
+        <section class="carousel" id='vehiclebrushes'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/vehiclebrushes/">
+              
+              <img src="https://archezinternational.com/images/packages/vehiclebrushes1.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/vehiclebrushes2.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            
+              <div id="vehiclebrushes_prev-button" class='prev-button'></div>
+              <div id="vehiclebrushes_next-button" class='next-button'></div>
+            
+          </div>
+        </section>
+        
+        <div id="vehiclebrushes_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/vehiclebrushes1.png" class="card-img" alt="VEHICLE BRUSHES">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/abr"
+                class="text-primary">ABR |</a>
+            
+            <a href="/categories/brushes"
+                class="text-primary">BRUSHES |</a>
+            
+            <a href="https://archezinternational.com/shop/vehiclebrushes/" class="h5 d-block my-3">VEHICLE BRUSHES</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$1</p></div>
+                <a href="https://archezinternational.com/shop/vehiclebrushes/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["vehiclebrushes_index"] = 0;
+    carousel["vehiclebrushes_bullets"] = document.querySelectorAll("#vehiclebrushes .carousel__navigation-button")
+    carousel["vehiclebrushes_images"] = document.querySelectorAll("#vehiclebrushes .carousel-image-item")
+    if (carousel["vehiclebrushes_images"].length > 0) document.querySelector("#vehiclebrushes_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["vehiclebrushes_images"].length; i++) {
+      let image = carousel["vehiclebrushes_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["vehiclebrushes_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#vehiclebrushes_prev-button')) {
+        carousel["vehiclebrushes_index"]--;
+        if (carousel["vehiclebrushes_index"] < 0) carousel["vehiclebrushes_index"] = carousel["vehiclebrushes_images"].length - 1;
+        for (let i = 0; i < carousel["vehiclebrushes_images"].length; i++) {
+          carousel["vehiclebrushes_images"][i].classList.add('hidden');
+          carousel["vehiclebrushes_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["vehiclebrushes_images"][carousel["vehiclebrushes_index"]].classList.remove('hidden')
+        carousel["vehiclebrushes_bullets"][carousel["vehiclebrushes_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#vehiclebrushes_next-button')) {
+        carousel["vehiclebrushes_index"]++;
+
+        if (carousel["vehiclebrushes_index"] >= carousel["vehiclebrushes_images"].length) carousel["vehiclebrushes_index"] = 0;
+        for (let i = 0; i < carousel["vehiclebrushes_images"].length; i++) {
+          carousel["vehiclebrushes_images"][i].classList.add('hidden');
+          carousel["vehiclebrushes_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["vehiclebrushes_images"][carousel["vehiclebrushes_index"]].classList.remove('hidden')
+        carousel["vehiclebrushes_bullets"][carousel["vehiclebrushes_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
           </div>
         </div>
 
         
         <div class="col-12 mt-5">
           
-    <ul class="pagination pagination-default">
-      <li class="page-item disabled">
-        <a href="#" aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a href="#" aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item active">
-        <a href="#" aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/abr/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/abr/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/abr/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
         </div>
       </div>
     </div>
