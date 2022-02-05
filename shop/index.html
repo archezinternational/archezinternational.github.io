@@ -495,6 +495,443 @@
 
 
             
+            <div class="col-md-4 mb-4">
+    
+        
+    
+    <article class="card">
+        
+        <section class="carousel" id='archezmagazine2022supporter'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/archezmagazine2021supporter/">
+              
+              <img src="https://archezinternational.com/images/packages/magazine_1.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            
+          </div>
+        </section>
+        
+        <div id="archezmagazine2022supporter_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/magazine_1.png" class="card-img" alt="ARCHEZ MAGAZINE 2022 | SUPPORTER">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/magazine"
+                class="text-primary">MAGAZINE |</a>
+            
+            <a href="https://archezinternational.com/shop/archezmagazine2021supporter/" class="h5 d-block my-3">ARCHEZ MAGAZINE 2022 | SUPPORTER</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$0&#43;</p></div>
+                <a href="https://archezinternational.com/shop/archezmagazine2021supporter/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["archezmagazine2022supporter_index"] = 0;
+    carousel["archezmagazine2022supporter_bullets"] = document.querySelectorAll("#archezmagazine2022supporter .carousel__navigation-button")
+    carousel["archezmagazine2022supporter_images"] = document.querySelectorAll("#archezmagazine2022supporter .carousel-image-item")
+    if (carousel["archezmagazine2022supporter_images"].length > 0) document.querySelector("#archezmagazine2022supporter_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["archezmagazine2022supporter_images"].length; i++) {
+      let image = carousel["archezmagazine2022supporter_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["archezmagazine2022supporter_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#archezmagazine2022supporter_prev-button')) {
+        carousel["archezmagazine2022supporter_index"]--;
+        if (carousel["archezmagazine2022supporter_index"] < 0) carousel["archezmagazine2022supporter_index"] = carousel["archezmagazine2022supporter_images"].length - 1;
+        for (let i = 0; i < carousel["archezmagazine2022supporter_images"].length; i++) {
+          carousel["archezmagazine2022supporter_images"][i].classList.add('hidden');
+          carousel["archezmagazine2022supporter_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["archezmagazine2022supporter_images"][carousel["archezmagazine2022supporter_index"]].classList.remove('hidden')
+        carousel["archezmagazine2022supporter_bullets"][carousel["archezmagazine2022supporter_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#archezmagazine2022supporter_next-button')) {
+        carousel["archezmagazine2022supporter_index"]++;
+
+        if (carousel["archezmagazine2022supporter_index"] >= carousel["archezmagazine2022supporter_images"].length) carousel["archezmagazine2022supporter_index"] = 0;
+        for (let i = 0; i < carousel["archezmagazine2022supporter_images"].length; i++) {
+          carousel["archezmagazine2022supporter_images"][i].classList.add('hidden');
+          carousel["archezmagazine2022supporter_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["archezmagazine2022supporter_images"][carousel["archezmagazine2022supporter_index"]].classList.remove('hidden')
+        carousel["archezmagazine2022supporter_bullets"][carousel["archezmagazine2022supporter_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
+            <div class="col-md-4 mb-4">
+    
+        
+    
+        
+    
+    <article class="card">
+        
+        <section class="carousel" id='basiccoupon'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/architecturebooks/">
+              
+              <img src="https://archezinternational.com/images/books.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            
+          </div>
+        </section>
+        
+        <div id="basiccoupon_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/books.png" class="card-img" alt="ARCHITECTURE BOOKS">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/books"
+                class="text-primary">BOOKS |</a>
+            
+            <a href="/categories/free"
+                class="text-primary">FREE |</a>
+            
+            <a href="https://archezinternational.com/shop/architecturebooks/" class="h5 d-block my-3">ARCHITECTURE BOOKS</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$0&#43;</p></div>
+                <a href="https://archezinternational.com/shop/architecturebooks/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["basiccoupon_index"] = 0;
+    carousel["basiccoupon_bullets"] = document.querySelectorAll("#basiccoupon .carousel__navigation-button")
+    carousel["basiccoupon_images"] = document.querySelectorAll("#basiccoupon .carousel-image-item")
+    if (carousel["basiccoupon_images"].length > 0) document.querySelector("#basiccoupon_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["basiccoupon_images"].length; i++) {
+      let image = carousel["basiccoupon_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["basiccoupon_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#basiccoupon_prev-button')) {
+        carousel["basiccoupon_index"]--;
+        if (carousel["basiccoupon_index"] < 0) carousel["basiccoupon_index"] = carousel["basiccoupon_images"].length - 1;
+        for (let i = 0; i < carousel["basiccoupon_images"].length; i++) {
+          carousel["basiccoupon_images"][i].classList.add('hidden');
+          carousel["basiccoupon_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["basiccoupon_images"][carousel["basiccoupon_index"]].classList.remove('hidden')
+        carousel["basiccoupon_bullets"][carousel["basiccoupon_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#basiccoupon_next-button')) {
+        carousel["basiccoupon_index"]++;
+
+        if (carousel["basiccoupon_index"] >= carousel["basiccoupon_images"].length) carousel["basiccoupon_index"] = 0;
+        for (let i = 0; i < carousel["basiccoupon_images"].length; i++) {
+          carousel["basiccoupon_images"][i].classList.add('hidden');
+          carousel["basiccoupon_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["basiccoupon_images"][carousel["basiccoupon_index"]].classList.remove('hidden')
+        carousel["basiccoupon_bullets"][carousel["basiccoupon_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
+            <div class="col-md-4 mb-4">
+    
+        
+    
+    <article class="card">
+        
+        <section class="carousel" id='outline'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/outline/">
+              
+              <img src="https://archezinternational.com/images/packages/outline-1.jpg" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/outline-2.jpg" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/outline-3.jpg" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/outline-4.jpg" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/outline-5.jpg" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            
+              <div id="outline_prev-button" class='prev-button'></div>
+              <div id="outline_next-button" class='next-button'></div>
+            
+          </div>
+        </section>
+        
+        <div id="outline_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/outline-1.jpg" class="card-img" alt="INSTAGRAM AR FILTER | OUTLINE">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/filter"
+                class="text-primary">FILTER |</a>
+            
+            <a href="https://archezinternational.com/shop/outline/" class="h5 d-block my-3">INSTAGRAM AR FILTER | OUTLINE</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$20</p></div>
+                <a href="https://archezinternational.com/shop/outline/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["outline_index"] = 0;
+    carousel["outline_bullets"] = document.querySelectorAll("#outline .carousel__navigation-button")
+    carousel["outline_images"] = document.querySelectorAll("#outline .carousel-image-item")
+    if (carousel["outline_images"].length > 0) document.querySelector("#outline_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["outline_images"].length; i++) {
+      let image = carousel["outline_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["outline_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#outline_prev-button')) {
+        carousel["outline_index"]--;
+        if (carousel["outline_index"] < 0) carousel["outline_index"] = carousel["outline_images"].length - 1;
+        for (let i = 0; i < carousel["outline_images"].length; i++) {
+          carousel["outline_images"][i].classList.add('hidden');
+          carousel["outline_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["outline_images"][carousel["outline_index"]].classList.remove('hidden')
+        carousel["outline_bullets"][carousel["outline_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#outline_next-button')) {
+        carousel["outline_index"]++;
+
+        if (carousel["outline_index"] >= carousel["outline_images"].length) carousel["outline_index"] = 0;
+        for (let i = 0; i < carousel["outline_images"].length; i++) {
+          carousel["outline_images"][i].classList.add('hidden');
+          carousel["outline_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["outline_images"][carousel["outline_index"]].classList.remove('hidden')
+        carousel["outline_bullets"][carousel["outline_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
+            <div class="col-md-4 mb-4">
+    
+        
+    
+        
+    
+    <article class="card">
+        
+        <section class="carousel" id='neutraltilespack'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/neutraltilespack/">
+              
+              <img src="https://archezinternational.com/images/packages/neutral_1.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/neutral_2.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/neutral_3.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            
+              <div id="aquariumpack_prev-button" class='prev-button'></div>
+              <div id="aquariumpack_next-button" class='next-button'></div>
+            
+          </div>
+        </section>
+        
+        <div id="aquariumpack_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/aquarium_1.jpg" class="card-img" alt="AQUARIUM PACK">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/cad-blocks"
+                class="text-primary">CAD BLOCKS |</a>
+            
+            <a href="https://archezinternational.com/shop/aquariumpack/" class="h5 d-block my-3">AQUARIUM PACK</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$8</p></div>
+                <a href="https://archezinternational.com/shop/aquariumpack/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["aquariumpack_index"] = 0;
+    carousel["aquariumpack_bullets"] = document.querySelectorAll("#aquariumpack .carousel__navigation-button")
+    carousel["aquariumpack_images"] = document.querySelectorAll("#aquariumpack .carousel-image-item")
+    if (carousel["aquariumpack_images"].length > 0) document.querySelector("#aquariumpack_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["aquariumpack_images"].length; i++) {
+      let image = carousel["aquariumpack_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["aquariumpack_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#aquariumpack_prev-button')) {
+        carousel["aquariumpack_index"]--;
+        if (carousel["aquariumpack_index"] < 0) carousel["aquariumpack_index"] = carousel["aquariumpack_images"].length - 1;
+        for (let i = 0; i < carousel["aquariumpack_images"].length; i++) {
+          carousel["aquariumpack_images"][i].classList.add('hidden');
+          carousel["aquariumpack_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["aquariumpack_images"][carousel["aquariumpack_index"]].classList.remove('hidden')
+        carousel["aquariumpack_bullets"][carousel["aquariumpack_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#aquariumpack_next-button')) {
+        carousel["aquariumpack_index"]++;
+
+        if (carousel["aquariumpack_index"] >= carousel["aquariumpack_images"].length) carousel["aquariumpack_index"] = 0;
+        for (let i = 0; i < carousel["aquariumpack_images"].length; i++) {
+          carousel["aquariumpack_images"][i].classList.add('hidden');
+          carousel["aquariumpack_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["aquariumpack_images"][carousel["aquariumpack_index"]].classList.remove('hidden')
+        carousel["aquariumpack_bullets"][carousel["aquariumpack_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
           </div>
         </div>
 
