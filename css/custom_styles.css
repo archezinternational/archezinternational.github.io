@@ -1,3 +1,7 @@
+p, .paragraph, body {
+  color:#222 !important;
+}
+
 img[alt="Archez International"] {
     height: 25px !important;
 }
@@ -31,11 +35,15 @@ img[alt="Archez International"] {
     font-size: 14px;
 }
 
-h4 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 500 !important;
 }
 
-li, h4, a, h6 {
+p > strong, th > strong {
+  font-weight: 500 !important;
+}
+
+li, h4, a, h6, p > strong, th > strong {
   text-transform: uppercase !important;
   letter-spacing: 2px;
 }
@@ -82,10 +90,6 @@ a[aria-label="Last"], a[aria-label="Last"] > span {
     text-align: center !important;
 }
 
-th > strong {
-    font-weight: bold !important;
-}
-
 table, tbody, thead, tr, td, th {
     border: 0 !important;
     outline: 0 !important;
@@ -128,8 +132,9 @@ td {
 .magazine-title {
     color: #000;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 500;
     margin: 0px;
+    letter-spacing: 2px;
 }
 
 .magazine-sub-title {
@@ -138,8 +143,9 @@ td {
 }
 
 .widget-title {
-    border-top: transparent !important;
-    border-bottom: transparent !important;
+  font-weight: 600 !important; 
+  border-top: transparent !important;
+  border-bottom: transparent !important;
 }
 
 .w-100 {
@@ -288,8 +294,7 @@ ol, li {
   }
 
   h4 > .username {
-    font-size: 18px;
-    margin-top: 20px;
+    font-size: 15px;
     font-weight: 300;
     color: rgba(0,0,0,0.5);
   }
