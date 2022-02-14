@@ -28,6 +28,14 @@ img[alt="Archez International"] {
     padding: 5%;
 }
 
+a.gumroad-button:hover {
+  background: #f0c05a !important;
+}
+
+a.gumroad-button > .gumroad-button-logo{
+  background-color: #f0c05a !important;
+}
+
 .magazine-version {
     color: #f0c05a;
     margin-top: -22px;
