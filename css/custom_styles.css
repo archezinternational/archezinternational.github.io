@@ -25,7 +25,7 @@ img[alt="Archez International"] {
 
 #instafeed > a > img {
     width: 33%;
-    padding: 5%;
+    padding: 3%;
 }
 
 a.gumroad-button { /*overriding gumroad styles*/
