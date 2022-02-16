@@ -380,7 +380,7 @@
 				<p class='sub-title'>Sales</p>
 				<div class="flex-h">
 					<h3 class='counter-helper'>+</h3>
-					<h3 class="counter" counter-value='1100'></h3>
+					<h3 class="counter" counter-value='1200'></h3>
 				</div>
 			</div>
 		</div>
@@ -393,15 +393,28 @@
     <hr>
     <h4 class="home-title w-100"><a href="/magazine/">Magazine</a></h4>
     <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
+      <div class="row">
+        <div class="col-md-6 mx-auto text-center">
           <div class='d-block mx-auto mt-5'>
-            <img src="https://archezinternational.com/images/magazine.png" alt="" class="img-fluid col-sm-4">
+            <img src="/images/magazine2020.png" alt="" class="img-fluid">
             <div class='mb-4 mt-4'>
                 <p class='magazine-title'> ARCHEZ MAGAZINE 2020 </p>
                 <p class='magazine-sub-title'> 1st edition </p>
             </div>
-            <a href="/magazine_viewer" class="btn btn-outline-primary">OPEN</a>
+            <a href="/magazine_viewer_2020" class="btn btn-outline-primary">OPEN</a>
           </div>
+      </div>
+
+      <div class="col-md-6 mx-auto text-center">
+        <div class='d-block mx-auto mt-5'>
+          <img src="/images/magazine2021.png" alt="" class="img-fluid">
+          <div class='mb-4 mt-4'>
+              <p class='magazine-title'> ARCHEZ MAGAZINE 2021 </p>
+              <p class='magazine-sub-title'> 2nd edition </p>
+          </div>
+          <a href="/magazine_viewer_2021" class="btn btn-outline-primary">OPEN</a>
+        </div>
+    </div>
       </div>
     </div>
   </div>
@@ -417,8 +430,24 @@
       <span class="username"><a href="https://www.instagram.com/archezinternational" target="_blank">@archezinternational</a></span>
     </div>
       <div class="row justify-content-center">
-          <div id="instafeed"></div>
+          <div id="instafeed">
+            <a href="#"><img src="images/white.png" alt=""></a><a href="#"><img src="images/white.png" alt=""></a><a href="#"><img src="images/white.png" alt=""></a><a href="#"><img src="images/white.png" alt=""></a><a href="#"><img src="images/white.png" alt=""></a><a href="#"><img src="images/white.png" alt=""></a>
+          </div>
       </div>
+  </div>
+</section>
+
+
+<section>
+  <div id='newsletter' onclick="scrollTo('newsletter')" class="container">
+    <hr>
+    <h4 class="home-title w-100"><a href="/ar/">NEWS LETTER</a></h4>
+    <p class="half-screen-desktop news-letter-description"><i>Subscribe now to our newsletter to receive our <b>news</b>, <b>freebies</b> and <b>discounts</b>.  don't worry archifriend, we won't spam you, we promise!</i></p>
+    <form action="https://app.gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post">
+      <input name="seller_id" type="hidden" value="1030246233100">
+      <input name="email" placeholder="Your email address" type="email">
+      <button data-custom-highlight-color="" type="submit">Subscribe</button>
+    </form>
   </div>
 </section>
 
@@ -446,6 +475,10 @@
     	    startCounter();
     	})
 	}); 
+
+  function scrollTo(hash) {
+    location.hash = "#" + hash;
+  }
 
 	observer.observe(document.querySelector('.counter'));
 
