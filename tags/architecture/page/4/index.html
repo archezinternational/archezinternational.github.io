@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet"><head>
     <meta charset="utf-8">
     <meta name="p:domain_verify" content="de2c42f4d5b0e89fcb050a090e181e6a"/>
+    <meta name="facebook-domain-verification" content="yox3mu2yosdhymzduygehl571l79zk" />
     <title>Archez International</title>
   
     <!-- mobile responsive meta -->
@@ -65,6 +66,24 @@
       ga('create', '', 'auto');
       ga('send', 'pageview');
     </script>
+
+    
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1567371243648036');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1567371243648036&ev=PageView&noscript=1"
+  /></noscript>
+  
   
   </head><body><!-- navigation -->
 <header class="navigation">
@@ -166,17 +185,17 @@
     
         
     
-        
-    
     <article class="card">
         
-        <section class="carousel" id='supportercoupon'>
+        <section class="carousel" id='vehiclespack'>
           <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/supportercoupon/">
+            <a href="https://archezinternational.com/shop/vehiclespack/">
               
-              <img src="https://archezinternational.com/images/coup/supporter_1.png" class='carousel-image-item'/>
+              <img src="https://archezinternational.com/images/packages/vehicles_1.png" class='carousel-image-item'/>
               
-              <img src="https://archezinternational.com/images/coup/supporter_2.png" class='carousel-image-item'/>
+              <img src="https://archezinternational.com/images/packages/vehicles_2.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/vehicles_3.png" class='carousel-image-item'/>
               
             </a>
           </div>
@@ -191,115 +210,6 @@
                       <div class="carousel__navigation-button"></div>
                     </li>
                   
-              </ol>
-            </aside>
-          <div class="carousel-action-buttons">
-            
-              <div id="supportercoupon_prev-button" class='prev-button'></div>
-              <div id="supportercoupon_next-button" class='next-button'></div>
-            
-          </div>
-        </section>
-        
-        <div id="supportercoupon_single-image-container" class='single-image-container'>
-          
-            <img src="https://archezinternational.com/images/coup/supporter_1.png" class="card-img" alt="SUPPORTER COUPON">
-          
-        </div>
-
-        <div class="card-body px-0">
-            
-            <a href="/categories/grow-with-archez"
-                class="text-primary">GROW WITH ARCHEZ |</a>
-            
-            <a href="/categories/coupon"
-                class="text-primary">COUPON |</a>
-            
-            <a href="https://archezinternational.com/shop/supportercoupon/" class="h5 d-block my-3">SUPPORTER COUPON</a>
-            <div class="mb-3 post-meta">
-            </div>
-            <div>
-                <div><p class='font-weight-bold'>$3&#43;</p></div>
-                <a href="https://archezinternational.com/shop/supportercoupon/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
-            </div>
-        </div>
-    </article>
-</div>
-
-<script>
-    carousel["supportercoupon_index"] = 0;
-    carousel["supportercoupon_bullets"] = document.querySelectorAll("#supportercoupon .carousel__navigation-button")
-    carousel["supportercoupon_images"] = document.querySelectorAll("#supportercoupon .carousel-image-item")
-    if (carousel["supportercoupon_images"].length > 0) document.querySelector("#supportercoupon_single-image-container").style = "{vissibility: hidden;}";
-    
-    for (let i = 0; i < carousel["supportercoupon_images"].length; i++) {
-      let image = carousel["supportercoupon_images"][i];
-      if (i > 0) image.classList.add('hidden');
-      carousel["supportercoupon_bullets"][0].classList.add('active');
-      let url = image.dataset.img;
-      image.style.setProperty("background-color", "url("+ url +")");
-    };
-      
-    document.addEventListener('click', function (event) {
-      
-      if (event.target.matches('#supportercoupon_prev-button')) {
-        carousel["supportercoupon_index"]--;
-        if (carousel["supportercoupon_index"] < 0) carousel["supportercoupon_index"] = carousel["supportercoupon_images"].length - 1;
-        for (let i = 0; i < carousel["supportercoupon_images"].length; i++) {
-          carousel["supportercoupon_images"][i].classList.add('hidden');
-          carousel["supportercoupon_bullets"][i].classList.remove('active');
-        };
-        
-        carousel["supportercoupon_images"][carousel["supportercoupon_index"]].classList.remove('hidden')
-        carousel["supportercoupon_bullets"][carousel["supportercoupon_index"]].classList.add('active');
-      }
-  
-      if (event.target.matches('#supportercoupon_next-button')) {
-        carousel["supportercoupon_index"]++;
-
-        if (carousel["supportercoupon_index"] >= carousel["supportercoupon_images"].length) carousel["supportercoupon_index"] = 0;
-        for (let i = 0; i < carousel["supportercoupon_images"].length; i++) {
-          carousel["supportercoupon_images"][i].classList.add('hidden');
-          carousel["supportercoupon_bullets"][i].classList.remove('active');
-        };
-  
-        carousel["supportercoupon_images"][carousel["supportercoupon_index"]].classList.remove('hidden')
-        carousel["supportercoupon_bullets"][carousel["supportercoupon_index"]].classList.add('active');
-      }
-  
-        }, false);
-</script>
-
-
-
-            
-            <div class="col-md-4 mb-4">
-    
-        
-    
-        
-    
-        
-    
-    <article class="card">
-        
-        <section class="carousel" id='texturespack1'>
-          <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/texturespack1/">
-              
-              <img src="https://archezinternational.com/images/packages/textures_1.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/textures_11.png" class='carousel-image-item'/>
-              
-            </a>
-          </div>
-            <aside class="carousel__navigation">
-              <ol class="carousel__navigation-list">
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
                     <li class="carousel__navigation-item">
                       <div class="carousel__navigation-button"></div>
                     </li>
@@ -308,195 +218,73 @@
             </aside>
           <div class="carousel-action-buttons">
             
-              <div id="texturespack1_prev-button" class='prev-button'></div>
-              <div id="texturespack1_next-button" class='next-button'></div>
+              <div id="vehiclespack_prev-button" class='prev-button'></div>
+              <div id="vehiclespack_next-button" class='next-button'></div>
             
           </div>
         </section>
         
-        <div id="texturespack1_single-image-container" class='single-image-container'>
+        <div id="vehiclespack_single-image-container" class='single-image-container'>
           
-            <img src="https://archezinternational.com/images/packages/textures_1.png" class="card-img" alt="TEXTURES PACK #1">
+            <img src="https://archezinternational.com/images/packages/vehicles_1.png" class="card-img" alt="VEHICLES PACK">
           
         </div>
 
         <div class="card-body px-0">
             
-            <a href="/categories/jpg"
-                class="text-primary">JPG |</a>
+            <a href="/categories/cad-blocks"
+                class="text-primary">CAD BLOCKS |</a>
             
-            <a href="/categories/textures"
-                class="text-primary">TEXTURES |</a>
-            
-            <a href="/categories/free"
-                class="text-primary">FREE |</a>
-            
-            <a href="https://archezinternational.com/shop/texturespack1/" class="h5 d-block my-3">TEXTURES PACK #1</a>
+            <a href="https://archezinternational.com/shop/vehiclespack/" class="h5 d-block my-3">VEHICLES PACK</a>
             <div class="mb-3 post-meta">
             </div>
             <div>
-                <div><p class='font-weight-bold'>$0&#43;</p></div>
-                <a href="https://archezinternational.com/shop/texturespack1/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+                <div><p class='font-weight-bold'>$8</p></div>
+                <a href="https://archezinternational.com/shop/vehiclespack/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
             </div>
         </div>
     </article>
 </div>
 
 <script>
-    carousel["texturespack1_index"] = 0;
-    carousel["texturespack1_bullets"] = document.querySelectorAll("#texturespack1 .carousel__navigation-button")
-    carousel["texturespack1_images"] = document.querySelectorAll("#texturespack1 .carousel-image-item")
-    if (carousel["texturespack1_images"].length > 0) document.querySelector("#texturespack1_single-image-container").style = "{vissibility: hidden;}";
+    carousel["vehiclespack_index"] = 0;
+    carousel["vehiclespack_bullets"] = document.querySelectorAll("#vehiclespack .carousel__navigation-button")
+    carousel["vehiclespack_images"] = document.querySelectorAll("#vehiclespack .carousel-image-item")
+    if (carousel["vehiclespack_images"].length > 0) document.querySelector("#vehiclespack_single-image-container").style = "{vissibility: hidden;}";
     
-    for (let i = 0; i < carousel["texturespack1_images"].length; i++) {
-      let image = carousel["texturespack1_images"][i];
+    for (let i = 0; i < carousel["vehiclespack_images"].length; i++) {
+      let image = carousel["vehiclespack_images"][i];
       if (i > 0) image.classList.add('hidden');
-      carousel["texturespack1_bullets"][0].classList.add('active');
+      carousel["vehiclespack_bullets"][0].classList.add('active');
       let url = image.dataset.img;
       image.style.setProperty("background-color", "url("+ url +")");
     };
       
     document.addEventListener('click', function (event) {
       
-      if (event.target.matches('#texturespack1_prev-button')) {
-        carousel["texturespack1_index"]--;
-        if (carousel["texturespack1_index"] < 0) carousel["texturespack1_index"] = carousel["texturespack1_images"].length - 1;
-        for (let i = 0; i < carousel["texturespack1_images"].length; i++) {
-          carousel["texturespack1_images"][i].classList.add('hidden');
-          carousel["texturespack1_bullets"][i].classList.remove('active');
+      if (event.target.matches('#vehiclespack_prev-button')) {
+        carousel["vehiclespack_index"]--;
+        if (carousel["vehiclespack_index"] < 0) carousel["vehiclespack_index"] = carousel["vehiclespack_images"].length - 1;
+        for (let i = 0; i < carousel["vehiclespack_images"].length; i++) {
+          carousel["vehiclespack_images"][i].classList.add('hidden');
+          carousel["vehiclespack_bullets"][i].classList.remove('active');
         };
         
-        carousel["texturespack1_images"][carousel["texturespack1_index"]].classList.remove('hidden')
-        carousel["texturespack1_bullets"][carousel["texturespack1_index"]].classList.add('active');
+        carousel["vehiclespack_images"][carousel["vehiclespack_index"]].classList.remove('hidden')
+        carousel["vehiclespack_bullets"][carousel["vehiclespack_index"]].classList.add('active');
       }
   
-      if (event.target.matches('#texturespack1_next-button')) {
-        carousel["texturespack1_index"]++;
+      if (event.target.matches('#vehiclespack_next-button')) {
+        carousel["vehiclespack_index"]++;
 
-        if (carousel["texturespack1_index"] >= carousel["texturespack1_images"].length) carousel["texturespack1_index"] = 0;
-        for (let i = 0; i < carousel["texturespack1_images"].length; i++) {
-          carousel["texturespack1_images"][i].classList.add('hidden');
-          carousel["texturespack1_bullets"][i].classList.remove('active');
+        if (carousel["vehiclespack_index"] >= carousel["vehiclespack_images"].length) carousel["vehiclespack_index"] = 0;
+        for (let i = 0; i < carousel["vehiclespack_images"].length; i++) {
+          carousel["vehiclespack_images"][i].classList.add('hidden');
+          carousel["vehiclespack_bullets"][i].classList.remove('active');
         };
   
-        carousel["texturespack1_images"][carousel["texturespack1_index"]].classList.remove('hidden')
-        carousel["texturespack1_bullets"][carousel["texturespack1_index"]].classList.add('active');
-      }
-  
-        }, false);
-</script>
-
-
-
-            
-            <div class="col-md-4 mb-4">
-    
-        
-    
-        
-    
-        
-    
-    <article class="card">
-        
-        <section class="carousel" id='texturespack2'>
-          <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/texturespack2/">
-              
-              <img src="https://archezinternational.com/images/packages/textures_2.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/textures_22.png" class='carousel-image-item'/>
-              
-            </a>
-          </div>
-            <aside class="carousel__navigation">
-              <ol class="carousel__navigation-list">
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-              </ol>
-            </aside>
-          <div class="carousel-action-buttons">
-            
-              <div id="texturespack2_prev-button" class='prev-button'></div>
-              <div id="texturespack2_next-button" class='next-button'></div>
-            
-          </div>
-        </section>
-        
-        <div id="texturespack2_single-image-container" class='single-image-container'>
-          
-            <img src="https://archezinternational.com/images/packages/textures_2.png" class="card-img" alt="TEXTURES PACK #2">
-          
-        </div>
-
-        <div class="card-body px-0">
-            
-            <a href="/categories/jpg"
-                class="text-primary">JPG |</a>
-            
-            <a href="/categories/textures"
-                class="text-primary">TEXTURES |</a>
-            
-            <a href="/categories/free"
-                class="text-primary">FREE |</a>
-            
-            <a href="https://archezinternational.com/shop/texturespack2/" class="h5 d-block my-3">TEXTURES PACK #2</a>
-            <div class="mb-3 post-meta">
-            </div>
-            <div>
-                <div><p class='font-weight-bold'>$0&#43;</p></div>
-                <a href="https://archezinternational.com/shop/texturespack2/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
-            </div>
-        </div>
-    </article>
-</div>
-
-<script>
-    carousel["texturespack2_index"] = 0;
-    carousel["texturespack2_bullets"] = document.querySelectorAll("#texturespack2 .carousel__navigation-button")
-    carousel["texturespack2_images"] = document.querySelectorAll("#texturespack2 .carousel-image-item")
-    if (carousel["texturespack2_images"].length > 0) document.querySelector("#texturespack2_single-image-container").style = "{vissibility: hidden;}";
-    
-    for (let i = 0; i < carousel["texturespack2_images"].length; i++) {
-      let image = carousel["texturespack2_images"][i];
-      if (i > 0) image.classList.add('hidden');
-      carousel["texturespack2_bullets"][0].classList.add('active');
-      let url = image.dataset.img;
-      image.style.setProperty("background-color", "url("+ url +")");
-    };
-      
-    document.addEventListener('click', function (event) {
-      
-      if (event.target.matches('#texturespack2_prev-button')) {
-        carousel["texturespack2_index"]--;
-        if (carousel["texturespack2_index"] < 0) carousel["texturespack2_index"] = carousel["texturespack2_images"].length - 1;
-        for (let i = 0; i < carousel["texturespack2_images"].length; i++) {
-          carousel["texturespack2_images"][i].classList.add('hidden');
-          carousel["texturespack2_bullets"][i].classList.remove('active');
-        };
-        
-        carousel["texturespack2_images"][carousel["texturespack2_index"]].classList.remove('hidden')
-        carousel["texturespack2_bullets"][carousel["texturespack2_index"]].classList.add('active');
-      }
-  
-      if (event.target.matches('#texturespack2_next-button')) {
-        carousel["texturespack2_index"]++;
-
-        if (carousel["texturespack2_index"] >= carousel["texturespack2_images"].length) carousel["texturespack2_index"] = 0;
-        for (let i = 0; i < carousel["texturespack2_images"].length; i++) {
-          carousel["texturespack2_images"][i].classList.add('hidden');
-          carousel["texturespack2_bullets"][i].classList.remove('active');
-        };
-  
-        carousel["texturespack2_images"][carousel["texturespack2_index"]].classList.remove('hidden')
-        carousel["texturespack2_bullets"][carousel["texturespack2_index"]].classList.add('active');
+        carousel["vehiclespack_images"][carousel["vehiclespack_index"]].classList.remove('hidden')
+        carousel["vehiclespack_bullets"][carousel["vehiclespack_index"]].classList.add('active');
       }
   
         }, false);
@@ -519,6 +307,9 @@
         <a href="/tags/architecture/page/3/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
       </li>
       <li class="page-item">
+        <a href="/tags/architecture/" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
         <a href="/tags/architecture/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
       </li>
       <li class="page-item">
@@ -527,17 +318,11 @@
       <li class="page-item active">
         <a href="#" aria-current="page" aria-label="Page 4" class="page-link" role="button">4</a>
       </li>
-      <li class="page-item">
-        <a href="/tags/architecture/page/5/" aria-label="Page 5" class="page-link" role="button">5</a>
+      <li class="page-item disabled">
+        <a href="#" aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
       </li>
-      <li class="page-item">
-        <a href="/tags/architecture/page/6/" aria-label="Page 6" class="page-link" role="button">6</a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/architecture/page/5/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/architecture/page/6/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      <li class="page-item disabled">
+        <a href="#" aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
         </div>
