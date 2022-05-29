@@ -89,14 +89,17 @@
     window.addEventListener('load', function () {
       var newsLetter = document.querySelector(".pop-up-news-letter.hide.disp-none")
       var formButton = document.querySelector(".pop-up-news-letter button")
+      var body = document.querySelector("body")
       
       if(localStorage.didShowNewsLetterPopUp == undefined) {
         newsLetter.classList.remove("hide");
         newsLetter.classList.remove("disp-none");
+        body.classList.add("no-scroll")
       }
 
       let hideAction = () => {
         newsLetter.classList.add("hide");
+        body.classList.remove("no-scroll")
         localStorage.didShowNewsLetterPopUp = true;
 
         setTimeout(() => {
@@ -258,7 +261,8 @@
   .disp-none {
     display: none !important;
   }
-  body {
+
+  .no-scroll {
     overflow: hidden; 
   }
 </style>
