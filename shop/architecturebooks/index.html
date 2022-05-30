@@ -408,8 +408,8 @@
   };
 	
 document.addEventListener('click', function (event) {
-	event.preventDefault()
 	if (event.target.matches('.prev-button')) {
+      event.preventDefault()
       carouselIndex--;
       if (carouselIndex < 0) carouselIndex = images.length - 1;
       for (let i = 0; i < images.length; i++) {
@@ -422,6 +422,7 @@ document.addEventListener('click', function (event) {
 	}
 
 	if (event.target.matches('.next-button')) {
+      event.preventDefault()  
       carouselIndex++;
       if (carouselIndex >= images.length) carouselIndex = 0;
       for (let i = 0; i < images.length; i++) {
