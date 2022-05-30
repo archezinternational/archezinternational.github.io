@@ -432,6 +432,12 @@ ol, li {
     background-color: #ffffff;
     color: #000; 
   }
+
+  #single-image-container {
+    display: none;
+    position: absolute;
+    top: 0;
+  }
   
   .gumroad-follow-form-embed button {
     text-transform: uppercase;

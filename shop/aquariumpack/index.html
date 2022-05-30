@@ -295,21 +295,22 @@
               </div>
             </div>
             
-			    
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" id='single-container-parent'>
             
-            <a href="https://archezinternational.gumroad.com/l/ihrnm" target="_blank">
+            
               <section class="carousel">
-                <div class="carousel-images-container">
+                <a href="https://archezinternational.gumroad.com/l/ihrnm" target="_blank">
+                  <div class="carousel-images-container">
                   
-                  <img src="https://archezinternational.com/images/packages/aquarium_1.jpg" class='carousel-image-item'/>
+                    <img src="https://archezinternational.com/images/packages/aquarium_1.jpg" class='carousel-image-item'/>
                   
-                  <img src="https://archezinternational.com/images/packages/aquarium_2.jpg" class='carousel-image-item'/>
+                    <img src="https://archezinternational.com/images/packages/aquarium_2.jpg" class='carousel-image-item'/>
                   
-                  <img src="https://archezinternational.com/images/packages/aquarium_3.png" class='carousel-image-item'/>
+                    <img src="https://archezinternational.com/images/packages/aquarium_3.png" class='carousel-image-item'/>
                   
-                </div>
+                  </div>
+                </a>
                   <aside class="carousel__navigation">
                     <ol class="carousel__navigation-list">
                         
@@ -334,7 +335,7 @@
                   
                 </div>
               </section>
-            </a>
+            
             
             
             <div id="single-image-container">
@@ -346,7 +347,7 @@
         <div class="content">
           <hr>
 <p>Hi archifriend! Below we leave you this product specification:</p>
-<p>You will receive in content: <strong>More than 140 marine animals AutoCAD blocks</strong> that you can edit and use in your projects</p>
+<p>You will receive: <strong>More than 140 marine animals AutoCAD blocks</strong> that you can edit and use in your projects</p>
 <p>· <strong>You will receive more than 140 varied blocks</strong> between jellyfish, fish, crabs, octopus, stingray and lobsters</p>
 <p>· <strong>You will receive all the exploded blocks</strong>, so you can edit them to your needs and create the blocks as and when you want</p>
 <p>· <strong>You will receive all the blocks in layer 0</strong>, so you won&rsquo;t waste your time with millions of layers</p>
@@ -412,6 +413,10 @@
 	let images = document.getElementsByClassName("carousel-image-item")
   if (images.length > 0) document.getElementById("single-image-container").classList.add('hidden')
   let bullets = document.getElementsByClassName("carousel__navigation-button")
+
+  let imageHeight = document.querySelector("#single-image-container").clientHeight
+  let imageContainer = document.querySelector("#single-container-parent")
+  imageContainer.style.height = imageHeight + "px"
   
   for (let i = 0; i < images.length; i++) {
     let image = images[i];
@@ -422,7 +427,7 @@
   };
 	
 document.addEventListener('click', function (event) {
-	
+	event.preventDefault()
 	if (event.target.matches('.prev-button')) {
       carouselIndex--;
       if (carouselIndex < 0) carouselIndex = images.length - 1;

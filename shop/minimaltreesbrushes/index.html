@@ -297,21 +297,22 @@
               </div>
             </div>
             
-			    
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" id='single-container-parent'>
             
-            <a href="https://archezinternational.gumroad.com/l/lnrvl" target="_blank">
+            
               <section class="carousel">
-                <div class="carousel-images-container">
+                <a href="https://archezinternational.gumroad.com/l/lnrvl" target="_blank">
+                  <div class="carousel-images-container">
                   
-                  <img src="https://archezinternational.com/images/packages/minimaltreesbrushes_1.png" class='carousel-image-item'/>
+                    <img src="https://archezinternational.com/images/packages/minimaltreesbrushes_1.png" class='carousel-image-item'/>
                   
-                  <img src="https://archezinternational.com/images/packages/minimaltreesbrushes_2.png" class='carousel-image-item'/>
+                    <img src="https://archezinternational.com/images/packages/minimaltreesbrushes_2.png" class='carousel-image-item'/>
                   
-                  <img src="https://archezinternational.com/images/packages/minimaltreesbrushes_3.jpg" class='carousel-image-item'/>
+                    <img src="https://archezinternational.com/images/packages/minimaltreesbrushes_3.jpg" class='carousel-image-item'/>
                   
-                </div>
+                  </div>
+                </a>
                   <aside class="carousel__navigation">
                     <ol class="carousel__navigation-list">
                         
@@ -336,7 +337,7 @@
                   
                 </div>
               </section>
-            </a>
+            
             
             
             <div id="single-image-container">
@@ -418,6 +419,10 @@
 	let images = document.getElementsByClassName("carousel-image-item")
   if (images.length > 0) document.getElementById("single-image-container").classList.add('hidden')
   let bullets = document.getElementsByClassName("carousel__navigation-button")
+
+  let imageHeight = document.querySelector("#single-image-container").clientHeight
+  let imageContainer = document.querySelector("#single-container-parent")
+  imageContainer.style.height = imageHeight + "px"
   
   for (let i = 0; i < images.length; i++) {
     let image = images[i];
@@ -428,7 +433,7 @@
   };
 	
 document.addEventListener('click', function (event) {
-	
+	event.preventDefault()
 	if (event.target.matches('.prev-button')) {
       carouselIndex--;
       if (carouselIndex < 0) carouselIndex = images.length - 1;

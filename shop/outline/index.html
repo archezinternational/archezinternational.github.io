@@ -295,25 +295,26 @@
               </div>
             </div>
             
-			    
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" id='single-container-parent'>
             
-            <a href="https://archezinternational.gumroad.com/l/nNAnu" target="_blank">
+            
               <section class="carousel">
-                <div class="carousel-images-container">
+                <a href="https://archezinternational.gumroad.com/l/nNAnu" target="_blank">
+                  <div class="carousel-images-container">
                   
-                  <img src="https://archezinternational.com/images/packages/outline-1.jpg" class='carousel-image-item'/>
+                    <img src="https://archezinternational.com/images/packages/outline-1.jpg" class='carousel-image-item'/>
                   
-                  <img src="https://archezinternational.com/images/packages/outline-2.jpg" class='carousel-image-item'/>
+                    <img src="https://archezinternational.com/images/packages/outline-2.jpg" class='carousel-image-item'/>
                   
-                  <img src="https://archezinternational.com/images/packages/outline-3.jpg" class='carousel-image-item'/>
+                    <img src="https://archezinternational.com/images/packages/outline-3.jpg" class='carousel-image-item'/>
                   
-                  <img src="https://archezinternational.com/images/packages/outline-4.jpg" class='carousel-image-item'/>
+                    <img src="https://archezinternational.com/images/packages/outline-4.jpg" class='carousel-image-item'/>
                   
-                  <img src="https://archezinternational.com/images/packages/outline-5.jpg" class='carousel-image-item'/>
+                    <img src="https://archezinternational.com/images/packages/outline-5.jpg" class='carousel-image-item'/>
                   
-                </div>
+                  </div>
+                </a>
                   <aside class="carousel__navigation">
                     <ol class="carousel__navigation-list">
                         
@@ -346,7 +347,7 @@
                   
                 </div>
               </section>
-            </a>
+            
             
             
             <div id="single-image-container">
@@ -362,7 +363,7 @@
 <p>· <strong>You will receive the final .arexport file</strong></p>
 <p>· <strong>You will receive a step-by-step guide</strong> (English and Spanish) so you can upload your filter immediately and on your own</p>
 <p>· <strong>Remember that: Filters today are the best way to massively increase your reach</strong>. Through the filters, you can promote your personal account, your store or brand and even promote your campaigns by viralizing your content on both Instagram and Facebook</p>
-<p>· <strong>Before buying try the filter</strong>: OUTLINE</p>
+<p>· <strong>Before buying try the filter</strong>: <a href="https://www.instagram.com/ar/3523956021051979/">OUTLINE</a></p>
 <p><strong>File size</strong>: 1.14 MB</p>
 <p><strong>Format</strong>: AREXPORT</p>
 <p><strong>Software compatibility</strong>: Instagram and Facebook</p>
@@ -372,7 +373,7 @@
 <p>· <strong>Recibirás el archivo .arexport</strong> final</p>
 <p>· <strong>Recibirás una guía paso a paso</strong> (Inglés y español) para que puedas subir tu filtro inmediatamente y por tu propia cuenta</p>
 <p>· <strong>Recuerda que: los filtros hoy en día son la mejor manera de incrementar tu alcance de manera masiva</strong>. A través de los filtros puedes dar a conocer tu cuenta personal, tu tienda o marca e incluso dar a conocer tus campañas viralizando tu contenido tanto en Instagram como en Facebook</p>
-<p>· <strong>Antes de comprar prueba el filtro</strong>: OUTLINE</p>
+<p>· <strong>Antes de comprar prueba el filtro</strong>: <a href="https://www.instagram.com/ar/3523956021051979/">OUTLINE</a></p>
 <p><strong>Tamaño de archivo</strong>: 1.14 MB</p>
 <p><strong>Formato</strong>: AREXPORT</p>
 <p><strong>Compatibilidad de software</strong>: Instagram y Facebook</p>
@@ -426,6 +427,10 @@
 	let images = document.getElementsByClassName("carousel-image-item")
   if (images.length > 0) document.getElementById("single-image-container").classList.add('hidden')
   let bullets = document.getElementsByClassName("carousel__navigation-button")
+
+  let imageHeight = document.querySelector("#single-image-container").clientHeight
+  let imageContainer = document.querySelector("#single-container-parent")
+  imageContainer.style.height = imageHeight + "px"
   
   for (let i = 0; i < images.length; i++) {
     let image = images[i];
@@ -436,7 +441,7 @@
   };
 	
 document.addEventListener('click', function (event) {
-	
+	event.preventDefault()
 	if (event.target.matches('.prev-button')) {
       carouselIndex--;
       if (carouselIndex < 0) carouselIndex = images.length - 1;
