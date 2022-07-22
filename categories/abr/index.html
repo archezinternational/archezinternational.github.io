@@ -554,6 +554,123 @@
     
     <article class="card">
         
+        <section class="carousel noselect" id='pencilpeoplebrushes'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/pencilpeoplebrushes/">
+              
+              <img src="https://archezinternational.com/images/packages/pencilpeoplebrushes_1.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/pencilpeoplebrushes_2.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/pencilpeoplebrushes_3.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            
+              <div id="pencilpeoplebrushes_prev-button" class='prev-button'></div>
+              <div id="pencilpeoplebrushes_next-button" class='next-button'></div>
+            
+          </div>
+        </section>
+        
+        <div id="pencilpeoplebrushes_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/pencilpeoplebrushes_1.png" class="card-img" alt="PENCIL PEOPLE BRUSHES">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/abr"
+                class="text-primary">ABR |</a>
+            
+            <a href="/categories/brushes"
+                class="text-primary">BRUSHES |</a>
+            
+            <a href="https://archezinternational.com/shop/pencilpeoplebrushes/" class="h5 d-block my-3">PENCIL PEOPLE BRUSHES</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$5</p></div>
+                <a href="https://archezinternational.com/shop/pencilpeoplebrushes/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["pencilpeoplebrushes_index"] = 0;
+    carousel["pencilpeoplebrushes_bullets"] = document.querySelectorAll("#pencilpeoplebrushes .carousel__navigation-button")
+    carousel["pencilpeoplebrushes_images"] = document.querySelectorAll("#pencilpeoplebrushes .carousel-image-item")
+    if (carousel["pencilpeoplebrushes_images"].length > 0) document.querySelector("#pencilpeoplebrushes_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["pencilpeoplebrushes_images"].length; i++) {
+      let image = carousel["pencilpeoplebrushes_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["pencilpeoplebrushes_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#pencilpeoplebrushes_prev-button')) {
+        carousel["pencilpeoplebrushes_index"]--;
+        if (carousel["pencilpeoplebrushes_index"] < 0) carousel["pencilpeoplebrushes_index"] = carousel["pencilpeoplebrushes_images"].length - 1;
+        for (let i = 0; i < carousel["pencilpeoplebrushes_images"].length; i++) {
+          carousel["pencilpeoplebrushes_images"][i].classList.add('hidden');
+          carousel["pencilpeoplebrushes_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["pencilpeoplebrushes_images"][carousel["pencilpeoplebrushes_index"]].classList.remove('hidden')
+        carousel["pencilpeoplebrushes_bullets"][carousel["pencilpeoplebrushes_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#pencilpeoplebrushes_next-button')) {
+        carousel["pencilpeoplebrushes_index"]++;
+
+        if (carousel["pencilpeoplebrushes_index"] >= carousel["pencilpeoplebrushes_images"].length) carousel["pencilpeoplebrushes_index"] = 0;
+        for (let i = 0; i < carousel["pencilpeoplebrushes_images"].length; i++) {
+          carousel["pencilpeoplebrushes_images"][i].classList.add('hidden');
+          carousel["pencilpeoplebrushes_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["pencilpeoplebrushes_images"][carousel["pencilpeoplebrushes_index"]].classList.remove('hidden')
+        carousel["pencilpeoplebrushes_bullets"][carousel["pencilpeoplebrushes_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
+            <div class="col-md-4 mb-4">
+    
+        
+    
+        
+    
+    <article class="card">
+        
         <section class="carousel noselect" id='realistictreesbrushes'>
           <div class="carousel-images-container">
             <a href="https://archezinternational.com/shop/realistictreesbrushes/">
