@@ -554,6 +554,117 @@
     
     <article class="card">
         
+        <section class="carousel noselect" id='palmtreesbrushes'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/palmtreesbrushes/">
+              
+              <img src="https://archezinternational.com/images/packages/palmtreesbrushes_1.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/palmtreesbrushes_2.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            
+              <div id="palmtreesbrushes_prev-button" class='prev-button'></div>
+              <div id="palmtreesbrushes_next-button" class='next-button'></div>
+            
+          </div>
+        </section>
+        
+        <div id="palmtreesbrushes_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/palmtreesbrushes_1.png" class="card-img" alt="PALM TREES BRUSHES">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/abr"
+                class="text-primary">ABR |</a>
+            
+            <a href="/categories/brushes"
+                class="text-primary">BRUSHES |</a>
+            
+            <a href="https://archezinternational.com/shop/palmtreesbrushes/" class="h5 d-block my-3">PALM TREES BRUSHES</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$5</p></div>
+                <a href="https://archezinternational.com/shop/palmtreesbrushes/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["palmtreesbrushes_index"] = 0;
+    carousel["palmtreesbrushes_bullets"] = document.querySelectorAll("#palmtreesbrushes .carousel__navigation-button")
+    carousel["palmtreesbrushes_images"] = document.querySelectorAll("#palmtreesbrushes .carousel-image-item")
+    if (carousel["palmtreesbrushes_images"].length > 0) document.querySelector("#palmtreesbrushes_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["palmtreesbrushes_images"].length; i++) {
+      let image = carousel["palmtreesbrushes_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["palmtreesbrushes_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#palmtreesbrushes_prev-button')) {
+        carousel["palmtreesbrushes_index"]--;
+        if (carousel["palmtreesbrushes_index"] < 0) carousel["palmtreesbrushes_index"] = carousel["palmtreesbrushes_images"].length - 1;
+        for (let i = 0; i < carousel["palmtreesbrushes_images"].length; i++) {
+          carousel["palmtreesbrushes_images"][i].classList.add('hidden');
+          carousel["palmtreesbrushes_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["palmtreesbrushes_images"][carousel["palmtreesbrushes_index"]].classList.remove('hidden')
+        carousel["palmtreesbrushes_bullets"][carousel["palmtreesbrushes_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#palmtreesbrushes_next-button')) {
+        carousel["palmtreesbrushes_index"]++;
+
+        if (carousel["palmtreesbrushes_index"] >= carousel["palmtreesbrushes_images"].length) carousel["palmtreesbrushes_index"] = 0;
+        for (let i = 0; i < carousel["palmtreesbrushes_images"].length; i++) {
+          carousel["palmtreesbrushes_images"][i].classList.add('hidden');
+          carousel["palmtreesbrushes_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["palmtreesbrushes_images"][carousel["palmtreesbrushes_index"]].classList.remove('hidden')
+        carousel["palmtreesbrushes_bullets"][carousel["palmtreesbrushes_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
+            <div class="col-md-4 mb-4">
+    
+        
+    
+        
+    
+    <article class="card">
+        
         <section class="carousel noselect" id='pencilpeoplebrushes'>
           <div class="carousel-images-container">
             <a href="https://archezinternational.com/shop/pencilpeoplebrushes/">
