@@ -475,6 +475,10 @@ ol, li {
     .home-description {
       min-height: auto;
     }
+
+    .medium-hr {
+      max-width: 90% !important;
+    }
   }
 
   @media (min-width:990px)  {
