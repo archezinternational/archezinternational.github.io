@@ -149,6 +149,12 @@
           
           
           <li class="nav-item">
+            <a class="nav-link" href="https://archezinternational.com/ebook">e-Book</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
             <a class="nav-link" href="https://archezinternational.com/shop">Shop</a>
           </li>
           
@@ -291,6 +297,130 @@
         <div class="col-lg-12 mb-5 mb-lg-0">
           <div class="row">
             
+            
+            <div class="col-md-4 mb-4">
+    
+        
+    
+    <article class="card">
+        
+        <section class="carousel noselect" id='outline'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/outline/">
+              
+              <img src="https://archezinternational.com/images/packages/outline-1.jpg" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/outline-2.jpg" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/outline-3.jpg" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/outline-4.jpg" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/outline-5.jpg" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            
+              <div id="outline_prev-button" class='prev-button'></div>
+              <div id="outline_next-button" class='next-button'></div>
+            
+          </div>
+        </section>
+        
+        <div id="outline_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/outline-1.jpg" class="card-img" alt="INSTAGRAM AR FILTER | OUTLINE">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/filter"
+                class="text-primary">FILTER |</a>
+            
+            <a href="https://archezinternational.com/shop/outline/" class="h5 d-block my-3">INSTAGRAM AR FILTER | OUTLINE</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$25</p></div>
+                
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["outline_index"] = 0;
+    carousel["outline_bullets"] = document.querySelectorAll("#outline .carousel__navigation-button")
+    carousel["outline_images"] = document.querySelectorAll("#outline .carousel-image-item")
+    if (carousel["outline_images"].length > 0) document.querySelector("#outline_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["outline_images"].length; i++) {
+      let image = carousel["outline_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["outline_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#outline_prev-button')) {
+        carousel["outline_index"]--;
+        if (carousel["outline_index"] < 0) carousel["outline_index"] = carousel["outline_images"].length - 1;
+        for (let i = 0; i < carousel["outline_images"].length; i++) {
+          carousel["outline_images"][i].classList.add('hidden');
+          carousel["outline_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["outline_images"][carousel["outline_index"]].classList.remove('hidden')
+        carousel["outline_bullets"][carousel["outline_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#outline_next-button')) {
+        carousel["outline_index"]++;
+
+        if (carousel["outline_index"] >= carousel["outline_images"].length) carousel["outline_index"] = 0;
+        for (let i = 0; i < carousel["outline_images"].length; i++) {
+          carousel["outline_images"][i].classList.add('hidden');
+          carousel["outline_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["outline_images"][carousel["outline_index"]].classList.remove('hidden')
+        carousel["outline_bullets"][carousel["outline_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
             
             <div class="col-md-4 mb-4">
     
@@ -896,123 +1026,6 @@
 
 
             
-            <div class="col-md-4 mb-4">
-    
-        
-    
-        
-    
-    <article class="card">
-        
-        <section class="carousel noselect" id='plantspack'>
-          <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/plantspack/">
-              
-              <img src="https://archezinternational.com/images/packages/plantspack_1.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/plantspack_3.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/plantspack_4.png" class='carousel-image-item'/>
-              
-            </a>
-          </div>
-            <aside class="carousel__navigation">
-              <ol class="carousel__navigation-list">
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-              </ol>
-            </aside>
-          <div class="carousel-action-buttons">
-            
-              <div id="plantspack_prev-button" class='prev-button'></div>
-              <div id="plantspack_next-button" class='next-button'></div>
-            
-          </div>
-        </section>
-        
-        <div id="plantspack_single-image-container" class='single-image-container'>
-          
-            <img src="https://archezinternational.com/images/packages/plantspack_1.png" class="card-img" alt="PLANTS PACK">
-          
-        </div>
-
-        <div class="card-body px-0">
-            
-            <a href="/categories/png"
-                class="text-primary">PNG |</a>
-            
-            <a href="/categories/cutouts"
-                class="text-primary">CUTOUTS |</a>
-            
-            <a href="https://archezinternational.com/shop/plantspack/" class="h5 d-block my-3">PLANTS PACK</a>
-            <div class="mb-3 post-meta">
-            </div>
-            <div>
-                <div><p class='font-weight-bold'>$8</p></div>
-                
-            </div>
-        </div>
-    </article>
-</div>
-
-<script>
-    carousel["plantspack_index"] = 0;
-    carousel["plantspack_bullets"] = document.querySelectorAll("#plantspack .carousel__navigation-button")
-    carousel["plantspack_images"] = document.querySelectorAll("#plantspack .carousel-image-item")
-    if (carousel["plantspack_images"].length > 0) document.querySelector("#plantspack_single-image-container").style = "{vissibility: hidden;}";
-    
-    for (let i = 0; i < carousel["plantspack_images"].length; i++) {
-      let image = carousel["plantspack_images"][i];
-      if (i > 0) image.classList.add('hidden');
-      carousel["plantspack_bullets"][0].classList.add('active');
-      let url = image.dataset.img;
-      image.style.setProperty("background-color", "url("+ url +")");
-    };
-      
-    document.addEventListener('click', function (event) {
-      
-      if (event.target.matches('#plantspack_prev-button')) {
-        carousel["plantspack_index"]--;
-        if (carousel["plantspack_index"] < 0) carousel["plantspack_index"] = carousel["plantspack_images"].length - 1;
-        for (let i = 0; i < carousel["plantspack_images"].length; i++) {
-          carousel["plantspack_images"][i].classList.add('hidden');
-          carousel["plantspack_bullets"][i].classList.remove('active');
-        };
-        
-        carousel["plantspack_images"][carousel["plantspack_index"]].classList.remove('hidden')
-        carousel["plantspack_bullets"][carousel["plantspack_index"]].classList.add('active');
-      }
-  
-      if (event.target.matches('#plantspack_next-button')) {
-        carousel["plantspack_index"]++;
-
-        if (carousel["plantspack_index"] >= carousel["plantspack_images"].length) carousel["plantspack_index"] = 0;
-        for (let i = 0; i < carousel["plantspack_images"].length; i++) {
-          carousel["plantspack_images"][i].classList.add('hidden');
-          carousel["plantspack_bullets"][i].classList.remove('active');
-        };
-  
-        carousel["plantspack_images"][carousel["plantspack_index"]].classList.remove('hidden')
-        carousel["plantspack_bullets"][carousel["plantspack_index"]].classList.add('active');
-      }
-  
-        }, false);
-</script>
-
-
-
-            
           </div>
         </div>
 
@@ -1116,6 +1129,8 @@
       <div class="col-lg-4 col-sm-6 mb-5">
         <h6 class="mb-4">QUICK LINKS</h6>
         <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/ebook">e-Book</a></li>
           
           <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/shop">Shop</a></li>
           

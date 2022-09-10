@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet"><head>
+    <meta charset="utf-8">
+    <meta name="p:domain_verify" content="de2c42f4d5b0e89fcb050a090e181e6a"/>
+    <meta name="facebook-domain-verification" content="yox3mu2yosdhymzduygehl571l79zk" />
+    <title>Archez International</title>
+  
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="this is meta description">
+    <meta name="author" content="Archez International">
+    <meta name="generator" content="Hugo 0.86.0" />
+  
+    <!-- plugins -->
+    
+    <link rel="stylesheet" href="https://archezinternational.com/plugins/bootstrap/bootstrap.min.css ">
+    
+    <link rel="stylesheet" href="https://archezinternational.com/plugins/slick/slick.css ">
+    
+    <link rel="stylesheet" href="https://archezinternational.com/plugins/themify-icons/themify-icons.css ">
+    
+    <link rel="stylesheet" href="https://archezinternational.com/plugins/venobox/venobox.css ">
+    
+  
+    <!-- Main Stylesheet -->
+    
+    <link rel="stylesheet" href="https://archezinternational.com/scss/style.min.css" media="screen">
+  
+    <!--Favicon-->
+    <link rel="shortcut icon" href="https://archezinternational.com/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="https://archezinternational.com/images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://archezinternational.com/images/touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://archezinternational.com/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://archezinternational.com/images/favicon-16x16.png">
+
+    
+        <meta property="og:site_name" content="Archez International"/>
+    
+        <meta property="og:title" content="Archez International"/>
+    
+        <meta property="og:url" content="https://www.archezinternational.com"/>
+    
+        <meta property="og:description" content="Architecture and Augmented reality. Magazine &#43; Inspiration &#43; Shop"/>
+    
+        <meta property="og:image" content="https://github.com/archezinternational/archezinternational.github.io/raw/main/images/open_graph_logo.jpg"/>
+    
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+    
+    <!-- google analitycs -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', '', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1567371243648036');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1567371243648036&ev=PageView&noscript=1"
+  /></noscript>
+  
+  <script>
+
+    window.addEventListener('load', function () {
+      var newsLetter = document.querySelector(".pop-up-news-letter.hide.disp-none")
+      var formButton = document.querySelector(".pop-up-news-letter button")
+      var body = document.querySelector("body")
+      
+      if(localStorage.didShowNewsLetterPopUp == undefined) {
+        newsLetter.classList.remove("hide");
+        newsLetter.classList.remove("disp-none");
+        body.classList.add("no-scroll")
+      }
+
+      let hideAction = () => {
+        newsLetter.classList.add("hide");
+        body.classList.remove("no-scroll")
+        localStorage.didShowNewsLetterPopUp = true;
+
+        setTimeout(() => {
+          newsLetter.classList.add("disp-none");
+        }, 500);
+      }
+
+      let validateEmail = () => {
+        let value = document.getElementById('pop-up-news-letter-input').value
+        let form = document.getElementById("pop-news-letter-form");
+        
+        if(value == "") {
+          form.action = "";
+          return;
+        } else {
+          form.action = "https://app.gumroad.com/follow_from_embed_form";
+          hideAction();
+        }
+      }
+      newsLetter.addEventListener('click', hideAction)   
+      formButton.addEventListener('click', validateEmail)   
+      
+      var newsLetterContainer = document.querySelector(".pop-up-news-letter-form-container")
+      newsLetterContainer.addEventListener('click', function(e) {
+        e.stopPropagation();
+      })   
+    }, false);
+
+  </script>
+  </head><body><!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://archezinternational.com"><img class="img-fluid"
+          src="https://archezinternational.com/images/logo.png" alt="Archez International"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        
+        <a class="navbar-brand mx-auto desktop-view" href="https://archezinternational.com"><img class="img-fluid"
+            src="https://archezinternational.com/images/logo.png" alt="Archez International"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://archezinternational.com/ebook">e-Book</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://archezinternational.com/shop">Shop</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://archezinternational.com/featured">Featured</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://archezinternational.com/magazine">Magazine</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://archezinternational.com/ar">Augmented Reality</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://archezinternational.com/about">About</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://archezinternational.com/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<div class="pop-up-news-letter hide disp-none">
+  <div class="flex-v">
+    <div class="pop-up-news-letter-form-container">
+        <div id='newsletter-popup' class="container">
+          <h4 class="home-title w-100">NEWS LETTER</h4>
+          <p class="half-screen-desktop news-letter-description"><i>Subscribe now to our newsletter to receive our <b>special discounts</b>, <b>freebies</b> and <b>news</b>.  Don't worry archifriend, we won't spam you, we promise!</i></p>
+          <form id='pop-news-letter-form' action="" class="form gumroad-follow-form-embed" method="post">
+            <input name="seller_id" type="hidden" value="1030246233100">
+            <input id="pop-up-news-letter-input" name="email" placeholder="Your email address" type="email">
+            <button data-custom-highlight-color="" type="submit">Subscribe</button>
+          </form>
+        </div>
+    </div>
+  </div>
+</div>
+<style>
+
+  .pop-up-news-letter-form-container {
+    margin: 0 auto;
+    width: 660px;
+    max-width: 90%;
+    padding: 22px 22px 60px 22px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .pop-up-news-letter {
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    position: absolute;
+    background-color: rgb(0,0,0,.75);
+    width: 100%;
+    height: 100%;
+  }
+
+  .pop-up-news-letter > div {
+    height: 100%;
+  }
+  .pop-up-news-letter.hide {
+    opacity: 0;
+    transition-property: all;
+    transition: 0.25s ease-in-out;
+  }
+
+  .pop-up-news-letter .half-screen-desktop,
+  .pop-up-news-letter .gumroad-follow-form-embed {
+    max-width: 90% !important;
+  }
+
+  .pop-up-news-letter .news-letter-description {
+    margin: 20px auto!important;
+  }
+  
+  .pop-up-news-letter  .home-title {
+    text-align: center;
+  }
+
+  .disp-none {
+    display: none !important;
+  }
+
+  .no-scroll {
+    overflow: hidden; 
+  }
+</style>
+
+<div class="section-sm">
+    <div class="col-lg-8 mx-auto text-center">
+        <div class='flex-v text-center'>
+            <h4 class="widget-title">COMO ILUSTRAR EN 10 PASOS</h4>
+            <a class="lang-version" href="/ebook">ENGLISH VERSION</a>
+          </div>
+      <p>Aprende de manera <b>express</b> nuestro paso a paso para <b>ilustrar de manera estética y sencilla</b>, sin necesidad de usar más que Photoshop.</p>
+      <a class='btn btn-outline-primary' href='https://gumroad.com/l/wuqio?wanted=true'>COMPRA NUESTRO E-BOOK 10 STEPS AHORA</a>
+      <p>¡Disponible para ti las 24 horas del día, los 7 días a la semana!</p>
+      <div class='mx-auto mt-4 row'>
+        <div class="col-md-6">
+            <img class='main-preview-photos' src="/images/ebook/cover_1.png" alt="">
+        </div>
+        <div class='col-md-6 flex-v'>
+          <img class='main-preview-photos' src="/images/ebook/cover_2.jpg" alt="">
+        </div>
+      </div>
+      <p class='justify'>Te daremos nuestra formula paso a paso de cómo ilustramos en menos de 1 hora y cómo logramos conseguir resultados estéticos con pocos elementos. Sin tener conocimientos previos de ilustración, sin emplear métodos lentos, aburridos ni confusos.</p>
+      <hr>
+      <p><b>LO QUE DICEN NUESTROS CLIENTES DE NUESTROS PRODUCTOS</b></p>
+      <div class="reviews-container">
+        <div id='one' class="review col-lg-4"></div>
+        <div id='two' class="review col-lg-4"></div>
+        <div id='tree' class="review col-lg-4"></div>
+
+        <div id='four' class="review col-lg-4"></div>
+        <div id='five' class="review col-lg-4"></div>
+        <div id='six' class="review col-lg-4"></div>
+    
+        <div id='seven' class="review col-lg-4"></div>
+        <div id='eight' class="review col-lg-4"></div>
+        <div id='nine' class="review col-lg-4"></div>
+      </div>
+
+      <hr>
+      
+      <div class="row">
+        <div class="col-md-12">
+            <p><b>PLAN DE ESTUDIOS DE NUESTRO E-BOOK 10 STEPS</b></p>
+        </div>
+        <div class="col-md-6 step-container">
+            <p><b>· PASO 1</b></p>
+            <p class='justify'>Aprenderás acerca del formato adecuado para desarrollar tus ilustraciones sin que se te pixelen al importar, exportar e imprimir.</p>
+            </div>
+            <div class="col-md-6 step-container">
+            <p><b>· PASO 2</b></p>
+            <p class='justify'>Vamos a enseñarte cómo debes ajustar tu archivo en Photoshop de manera rápida y efectiva.</p>
+          </div>
+            <div class="col-md-6 step-container">
+            <p><b>· PASO 3</b></p>
+            <p class='justify'>Te daremos una visión general de las herramientas que nos brinda Photoshop y además una visión específica de las herramientas que nos acompañarán en nuestra
+              creación de ilustraciones.</p>
+          </div>
+            <div class="col-md-6 step-container">
+              <p><b>· PASO 4</b></p>
+            <p class='justify'>Verás una amplia explicación acerca del color y como aplicarlo de manera inteligente. Aprenderás a encontrar el propósito de cada paleta de color y así transmitir
+              sentimientos y sensaciones con cada una de tus ilustraciones.</p>
+          </div>
+            <div class="col-md-6 step-container">
+              <p><b>· PASO 5</b></p>
+            <p class='justify'>Aprenderás cómo crear capas, sus usos y su importancia.</p>
+          </div>
+            <div class="col-md-6 step-container">
+            <p><b>· PASO 6</b></p>
+            <p class='justify'>Comenzarás a poner en práctica todos los pasos anteriores llevando a cabo tu primera ilustración. Verás cómo crear diferentes estilos de ilustración y cómo usar las
+              diferentes opciones que te ofrece Photoshop para que cada capa pueda tener una particularidad distinta.</p>
+          </div>
+            <div class="col-md-6 step-container">
+              <p><b>· PASO 7</b></p>
+            <p class='justify'>Verás los diferentes filtros que nos proporciona Photoshop y a su vez conocerás cómo utilizar la herramienta de opacidad para cada una de tus capas.</p>
+          </div>
+            <div class="col-md-6 step-container">
+            <p><b>· PASO 8</b></p>
+            <p class='justify'>Te compartiremos nuestros tips y elementos diferenciadores para que puedas obtener acabados únicos que te ayuden a diferenciarte de los demás ilustradores.</p>
+          </div>
+            <div class="col-md-6 step-container">
+            <p><b>· PASO 9</b></p>
+            <p class='justify'>Crearás tu propio GIF enseñando tu proceso de ilustración para que puedas enviar y compartir tus procesos de creación en tus redes sociales y demás medios
+              digitales.</p>
+          </div>
+            <div class="col-md-6 step-container">
+              <p><b>· PASO 10</b></p>
+            <p class='justify'>Verás cómo exportar de manera correcta tus archivos para usar tus ilustraciones en tu portafolio, posters, plataformas digitales y para imprimir en máxima calidad.</p>
+          </div>
+      </div>
+      <a class='btn btn-outline-primary' href='https://gumroad.com/l/wuqio?wanted=true'>COMPRA TU E-BOOK 10 STEPS Y COMIENZA A ILUSTRAR</a>
+      <hr>
+      <p><b>¿POR QUÉ TE RECOMENDAMOS NUESTRO EBOOK 10 STEPS?</b></p>
+      <div class='mx-auto row'>
+        <div class="col-md-4">
+            <p class='justify'>· Aprenderás a ilustrar en menos de 3 horas, y con el paso de los días ilustrarás en menos de 30 minutos como nosotros.</p>
+        </div>
+        <div class='col-md-4'>
+            <p class='justify'>· Define tu estilo de ilustración y desarrolla tu criterio de diseño con las herramientas que te enseñaremos.</p>
+        </div>
+        <div class='col-md-4'>
+            <p class='justify'>· Distingue tus ilustraciones entre miles de ilustradores con herramientas rápidas y fáciles de utilizar.</p>
+        </div>
+      </div>
+      <div class="frame" id='one'></div>
+      <hr>
+      <div>
+        <p><b>¿PARA QUIÉN ES ESTE EBOOK?</b></p>
+        <p>Si quieres aprender a usar Photoshop para comenzar a expresarte a través de la ilustración, este ebook es para ti.</p>
+        <br>
+        <p>En estos tiempos ya definitivamente todo lo expresamos de manera digital y para no quedarte en ese mundo de la arquitectura aburrido en blanco y negro, es importante que aprendas a darte a entender con todos tus proyectos de una forma eficaz tanto con tus colegas como con tus clientes y lo puedes lograr ilustrando.</p>
+        <br>
+        <p>En solo horas este ebook express te brindará un camino claro, un paso a paso a seguir para conseguir una ilustración increíble y, además aprenderás a definir tu estilo y tu criterio para lograr diferenciarte de los demás.</p>
+        <br>
+        <p>Aprenderás el paso a paso que nosotros aplicamos cada vez que creamos nuestras ilustraciones y las compartimos a través de nuestras redes sociales y demás canales.</p>
+        <div class="frame" id='two'></div>
+      </div>
+      <hr>
+      <div>
+        <p><b>¿QUÉ PUEDES ESPERAR DE NUESTRO E-BOOK 10 STEPS?</b></p>
+        <p>Un e-Book express disponible en formato PDF que podrás descargar inmediatamente lo compres y tenerlo disponible 24/7.</p>
+        <div class="frame" id='tree'></div>
+      </div>
+      <hr>
+      <p><b>¿CÚANTO CUESTA Y QUÉ INCLUYE?</b></p>
+      <p>Por solo 38 USD: Obtendrás nuestro e-Book con 28 páginas de teoría y en total 68 páginas entre teoría e imágenes explicativas. 10 pasos con todo lo que debes aprender para comenzar a ilustrar como un profesional. El formato e-Book es totalmente compacto y fácil de consumir. Además viene en PDF que es un archivo compatible con todos los dispositivos móviles para que puedas leerlo desde tu teléfono, iPad, laptop o PC.</p>
+      <a class='btn btn-outline-primary' href='https://gumroad.com/l/wuqio?wanted=true'>COMPRA TU E-BOOK AQUÍ</a>
+      <hr>
+      <p><b>HACE UNOS AÑOS ESTÁBAMOS DONDE TÚ ESTÁS HOY...</b></p>
+      <p>· Sentíamos confusión al momento de tratar de expresar nuestras piezas arquitectónicas.</p>
+
+      <p>· Sentíamos que pasábamos horas y horas tratando de conseguir resultados estéticos para enseñar nuestros proyectos pero nada nos convencia.</p>
+      
+      <p>· Gastamos cientos de USD en cursos con otros softwares y no nos sentimos identificados con la forma de expresión.</p>
+      
+      <p>· No encontrábamos la manera de crear nuestras propias paletas de colores.</p>
+      
+      <p>· Pasábamos horas comparándonos con otros arquitectos, viendo como ellos lograban manejar un estilo coherente y estético en sus proyectos.</p>
+      
+      <p>Y podemos seguir con esta interminable lista de frustración, que seguramente tu también te sentiste identificado con al menos 2 de estas…</p>
+      
+      <p>Tú también podrías pasar un largo tiempo tratando de aprender el cómo, cuándo y por qué de la ilustración tu solo, o puedes hacer una pequeña inversión en ti y
+        aprender a ilustrar paso a paso de manera eficaz y rápida.</p>
+      <a class='btn btn-outline-primary' href='https://gumroad.com/l/wuqio?wanted=true'>¡DEFINITIVAMENTE, QUIERO MI E-BOOK 10 STEPS!</a>  
+      <div class="frame" id='four'></div>
+    </div>
+</div>
+
+<style>
+    .frame {
+        width: 100%;
+        height: 180px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .frame#one {
+        background-image: url(/images/ebook/peq1.jpg);
+    }
+    .frame#two {
+        background-image: url(/images/ebook/peq2.png);
+    }
+    .frame#tree {
+        background-image: url(/images/ebook/peq3.png);
+    }
+    .frame#four {
+        background-image: url(/images/ebook/peq4.png);
+    }
+    
+    .btn-outline-primary {
+        margin: 20px;
+    }
+    
+    hr {
+        margin: 40px;
+    }
+    .main-preview-photos {
+      margin-bottom: 20px;   
+      border-radius: 10px;
+    }
+
+    .step-container {
+        padding: 20px;
+    }
+
+    .reviews-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .review {
+        min-width: 300px;
+        width: 33%;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 auto;
+    }
+
+    .review#one {
+        background-image: url(/images/ebook/reviews/1.jpg);
+    }
+    .review#two {
+        background-image: url(/images/ebook/reviews/2.jpeg);
+    }
+    .review#tree {
+        background-image: url(/images/ebook/reviews/3.jpg);
+    }
+    .review#four {
+        background-image: url(/images/ebook/reviews/4.jpg);
+    }
+    .review#five {
+        background-image: url(/images/ebook/reviews/5.jpg);
+    }
+    .review#six {
+        background-image: url(/images/ebook/reviews/6.jpg);
+    }
+    .review#seven {
+        background-image: url(/images/ebook/reviews/7.jpg);
+    }
+    .review#eight {
+        background-image: url(/images/ebook/reviews/8.jpg);
+    }
+    .review#nine {
+        background-image: url(/images/ebook/reviews/9.jpg);
+    }
+    .btn {
+        white-space: initial;
+    }
+    p.justify {
+      text-align: justify;
+    }
+</style>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row space-around">
+      <div class="col-12 text-center border-top mb-5 mt-5">
+
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">CONTACT US</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:info@archezinternational.com"><i
+                class="ti-email mr-3 text-primary"></i>for info and collaborations</a>
+          
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:featured@archezinternational.com"><i
+                class="ti-email mr-3 text-primary"></i>for featured</a>
+          
+
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:filter@archezinternational.com"><i
+                class="ti-email mr-3 text-primary"></i>for augmented reality filters</a>
+          
+
+                     
+          <li class="mb-3"><a a class="text-dark" href="https://www.google.com/maps?client=safari&rls=en&q=medellin&oe=UTF-8&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjUoZa6tOPvAhXFdN8KHbC0BDUQ_AUoA3oECAEQBQ" target="_blank">
+              <i class="ti-pin mr-3 text-primary"></i>Medellín, Colombia</a>
+          </li>
+          
+         
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">FOLLOW US</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><i class="ti-instagram mr-3 text-primary"></i><a class="text-dark" href="https://www.instagram.com/archezinternational">Instagram</a></li>
+          
+          <li class="mb-3"><i class="ti-facebook mr-3 text-primary"></i><a class="text-dark" href="https://www.facebook.com/archezinternational">Facebook</a></li>
+          
+          <li class="mb-3"><i class="ti-pinterest mr-3 text-primary"></i><a class="text-dark" href="https://www.pinterest.com/archezinternational">Pinterest</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">QUICK LINKS</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/ebook">e-Book</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/shop">Shop</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/featured">Featured</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/magazine">Magazine</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/ar">Augmented Reality</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/about">About</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        <div class="payment-methods flex-h">
+          <img src="https://archezinternational.com/images/payment_methods/discover.png" alt="Discover" title="Discover">
+          <img src="https://archezinternational.com/images/payment_methods/visa.png" alt="Visa" title="Visa">
+          <img src="https://archezinternational.com/images/payment_methods/mastercard.png" alt="Mastercard" title="Mastercard" id='mastercard' >
+          <img src="https://archezinternational.com/images/payment_methods/amex.png" alt="Amex" title="Amex">
+          <img src="https://archezinternational.com/images/payment_methods/dinnersclub.png" alt="Dinners club" title="Dinners club">
+          <img src="https://archezinternational.com/images/payment_methods/paypal.png" alt="Paypal" title="Paypal">
+          <img src="https://archezinternational.com/images/payment_methods/applepay.png" alt="Apple pay" title="Apple pay">
+        </div>
+        © Archez International 2022
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://archezinternational.com/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://archezinternational.com/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://archezinternational.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://archezinternational.com/plugins/slick/slick.min.js"></script>
+
+<script src="https://archezinternational.com/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://archezinternational.com/plugins/search/fuse.min.js"></script>
+
+<script src="https://archezinternational.com/plugins/search/mark.js"></script>
+
+<script src="https://archezinternational.com/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://archezinternational.com/js/script.min.js"></script>
+
+
+
+</body>
+<link rel="stylesheet" href="https://archezinternational.com/css/custom_styles.css ">
+
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+<script>
+  
+  
+  var firebaseConfig = {
+    apiKey: "AIzaSyBB4Cye1vu6LERiunhsE7rTLg9yhW1gkXg",
+    authDomain: "archez-international.firebaseapp.com",
+    projectId: "archez-international",
+    storageBucket: "archez-international.appspot.com",
+    messagingSenderId: "1060933021753",
+    appId: "1:1060933021753:web:b54dc9bc534849b58c9de8",
+    measurementId: "G-J41D3RYCX4"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</html>

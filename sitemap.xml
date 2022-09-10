@@ -2,10 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://archezinternational.com/about/</loc>
-    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
-  </url><url>
     <loc>https://archezinternational.com/</loc>
+    <lastmod>2021-10-29T13:49:23+06:00</lastmod>
+  </url><url>
+    <loc>https://archezinternational.com/ebook-esp/</loc>
+    <lastmod>2021-10-29T13:49:23+06:00</lastmod>
+  </url><url>
+    <loc>https://archezinternational.com/about/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
     <loc>https://archezinternational.com/magazine-esp/</loc>
@@ -21,6 +24,9 @@
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
     <loc>https://archezinternational.com/contact/</loc>
+    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
+  </url><url>
+    <loc>https://archezinternational.com/ebook/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
     <loc>https://archezinternational.com/search/</loc>
@@ -48,6 +54,9 @@
     <lastmod>2019-10-29T10:07:47+06:00</lastmod>
   </url><url>
     <loc>https://archezinternational.com/tags/ar/</loc>
+    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
+  </url><url>
+    <loc>https://archezinternational.com/tags/arch/</loc>
     <lastmod>2019-10-29T10:07:47+06:00</lastmod>
   </url><url>
     <loc>https://archezinternational.com/shop/archezmagazine2021supporter/</loc>
@@ -107,6 +116,9 @@
     <loc>https://archezinternational.com/tags/cutouts/</loc>
     <lastmod>2019-10-29T10:07:47+06:00</lastmod>
   </url><url>
+    <loc>https://archezinternational.com/tags/e-book/</loc>
+    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
+  </url><url>
     <loc>https://archezinternational.com/tags/elevation/</loc>
     <lastmod>2019-10-29T10:07:47+06:00</lastmod>
   </url><url>
@@ -131,7 +143,13 @@
     <loc>https://archezinternational.com/categories/grow-with-archez/</loc>
     <lastmod>2019-10-29T10:07:47+06:00</lastmod>
   </url><url>
+    <loc>https://archezinternational.com/shop/ebook/</loc>
+    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
+  </url><url>
     <loc>https://archezinternational.com/tags/human/</loc>
+    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
+  </url><url>
+    <loc>https://archezinternational.com/tags/illustration/</loc>
     <lastmod>2019-10-29T10:07:47+06:00</lastmod>
   </url><url>
     <loc>https://archezinternational.com/shop/outline/</loc>
@@ -153,6 +171,9 @@
     <lastmod>2019-10-29T10:07:47+06:00</lastmod>
   </url><url>
     <loc>https://archezinternational.com/shop/minimaltreesbrushes/</loc>
+    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
+  </url><url>
+    <loc>https://archezinternational.com/tags/minimalistic/</loc>
     <lastmod>2019-10-29T10:07:47+06:00</lastmod>
   </url><url>
     <loc>https://archezinternational.com/shop/neutraltilespack/</loc>

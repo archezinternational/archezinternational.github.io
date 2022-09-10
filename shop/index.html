@@ -149,6 +149,12 @@
           
           
           <li class="nav-item">
+            <a class="nav-link" href="https://archezinternational.com/ebook">e-Book</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
             <a class="nav-link" href="https://archezinternational.com/shop">Shop</a>
           </li>
           
@@ -834,19 +840,13 @@
     
     <article class="card">
         
-        <section class="carousel noselect" id='outline'>
+        <section class="carousel noselect" id='illustration_ebook'>
           <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/outline/">
+            <a href="https://archezinternational.com/shop/ebook/">
               
-              <img src="https://archezinternational.com/images/packages/outline-1.jpg" class='carousel-image-item'/>
+              <img src="https://archezinternational.com/images/ebook/cover_1.png" class='carousel-image-item'/>
               
-              <img src="https://archezinternational.com/images/packages/outline-2.jpg" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/outline-3.jpg" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/outline-4.jpg" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/outline-5.jpg" class='carousel-image-item'/>
+              <img src="https://archezinternational.com/images/ebook/cover_2.jpg" class='carousel-image-item'/>
               
             </a>
           </div>
@@ -861,44 +861,32 @@
                       <div class="carousel__navigation-button"></div>
                     </li>
                   
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
               </ol>
             </aside>
           <div class="carousel-action-buttons">
             
-              <div id="outline_prev-button" class='prev-button'></div>
-              <div id="outline_next-button" class='next-button'></div>
+              <div id="illustration_ebook_prev-button" class='prev-button'></div>
+              <div id="illustration_ebook_next-button" class='next-button'></div>
             
           </div>
         </section>
         
-        <div id="outline_single-image-container" class='single-image-container'>
+        <div id="illustration_ebook_single-image-container" class='single-image-container'>
           
-            <img src="https://archezinternational.com/images/packages/outline-1.jpg" class="card-img" alt="INSTAGRAM AR FILTER | OUTLINE">
+            <img src="https://archezinternational.com/images/ebook/cover_1.png" class="card-img" alt="HOW TO ILLUSTRATE IN 10 STEPS">
           
         </div>
 
         <div class="card-body px-0">
             
-            <a href="/categories/filter"
-                class="text-primary">FILTER |</a>
+            <a href="/categories/books"
+                class="text-primary">BOOKS |</a>
             
-            <a href="https://archezinternational.com/shop/outline/" class="h5 d-block my-3">INSTAGRAM AR FILTER | OUTLINE</a>
+            <a href="https://archezinternational.com/shop/ebook/" class="h5 d-block my-3">HOW TO ILLUSTRATE IN 10 STEPS</a>
             <div class="mb-3 post-meta">
             </div>
             <div>
-                <div><p class='font-weight-bold'>$25</p></div>
+                <div><p class='font-weight-bold'>$38</p></div>
                 
             </div>
         </div>
@@ -906,44 +894,44 @@
 </div>
 
 <script>
-    carousel["outline_index"] = 0;
-    carousel["outline_bullets"] = document.querySelectorAll("#outline .carousel__navigation-button")
-    carousel["outline_images"] = document.querySelectorAll("#outline .carousel-image-item")
-    if (carousel["outline_images"].length > 0) document.querySelector("#outline_single-image-container").style = "{vissibility: hidden;}";
+    carousel["illustration_ebook_index"] = 0;
+    carousel["illustration_ebook_bullets"] = document.querySelectorAll("#illustration_ebook .carousel__navigation-button")
+    carousel["illustration_ebook_images"] = document.querySelectorAll("#illustration_ebook .carousel-image-item")
+    if (carousel["illustration_ebook_images"].length > 0) document.querySelector("#illustration_ebook_single-image-container").style = "{vissibility: hidden;}";
     
-    for (let i = 0; i < carousel["outline_images"].length; i++) {
-      let image = carousel["outline_images"][i];
+    for (let i = 0; i < carousel["illustration_ebook_images"].length; i++) {
+      let image = carousel["illustration_ebook_images"][i];
       if (i > 0) image.classList.add('hidden');
-      carousel["outline_bullets"][0].classList.add('active');
+      carousel["illustration_ebook_bullets"][0].classList.add('active');
       let url = image.dataset.img;
       image.style.setProperty("background-color", "url("+ url +")");
     };
       
     document.addEventListener('click', function (event) {
       
-      if (event.target.matches('#outline_prev-button')) {
-        carousel["outline_index"]--;
-        if (carousel["outline_index"] < 0) carousel["outline_index"] = carousel["outline_images"].length - 1;
-        for (let i = 0; i < carousel["outline_images"].length; i++) {
-          carousel["outline_images"][i].classList.add('hidden');
-          carousel["outline_bullets"][i].classList.remove('active');
+      if (event.target.matches('#illustration_ebook_prev-button')) {
+        carousel["illustration_ebook_index"]--;
+        if (carousel["illustration_ebook_index"] < 0) carousel["illustration_ebook_index"] = carousel["illustration_ebook_images"].length - 1;
+        for (let i = 0; i < carousel["illustration_ebook_images"].length; i++) {
+          carousel["illustration_ebook_images"][i].classList.add('hidden');
+          carousel["illustration_ebook_bullets"][i].classList.remove('active');
         };
         
-        carousel["outline_images"][carousel["outline_index"]].classList.remove('hidden')
-        carousel["outline_bullets"][carousel["outline_index"]].classList.add('active');
+        carousel["illustration_ebook_images"][carousel["illustration_ebook_index"]].classList.remove('hidden')
+        carousel["illustration_ebook_bullets"][carousel["illustration_ebook_index"]].classList.add('active');
       }
   
-      if (event.target.matches('#outline_next-button')) {
-        carousel["outline_index"]++;
+      if (event.target.matches('#illustration_ebook_next-button')) {
+        carousel["illustration_ebook_index"]++;
 
-        if (carousel["outline_index"] >= carousel["outline_images"].length) carousel["outline_index"] = 0;
-        for (let i = 0; i < carousel["outline_images"].length; i++) {
-          carousel["outline_images"][i].classList.add('hidden');
-          carousel["outline_bullets"][i].classList.remove('active');
+        if (carousel["illustration_ebook_index"] >= carousel["illustration_ebook_images"].length) carousel["illustration_ebook_index"] = 0;
+        for (let i = 0; i < carousel["illustration_ebook_images"].length; i++) {
+          carousel["illustration_ebook_images"][i].classList.add('hidden');
+          carousel["illustration_ebook_bullets"][i].classList.remove('active');
         };
   
-        carousel["outline_images"][carousel["outline_index"]].classList.remove('hidden')
-        carousel["outline_bullets"][carousel["outline_index"]].classList.add('active');
+        carousel["illustration_ebook_images"][carousel["illustration_ebook_index"]].classList.remove('hidden')
+        carousel["illustration_ebook_bullets"][carousel["illustration_ebook_index"]].classList.add('active');
       }
   
         }, false);
@@ -1055,6 +1043,8 @@
       <div class="col-lg-4 col-sm-6 mb-5">
         <h6 class="mb-4">QUICK LINKS</h6>
         <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/ebook">e-Book</a></li>
           
           <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/shop">Shop</a></li>
           
