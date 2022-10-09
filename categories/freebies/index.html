@@ -279,7 +279,7 @@
 
   <section class="section-sm">
     <div class="col-lg-8 mx-auto text-center">
-      <h4 class="widget-title">Assets</h4>
+      <h4 class="widget-title">FREEBIES</h4>
     </div>
     <div class="container">
       <div class="row">
@@ -298,6 +298,469 @@
         <div class="col-lg-12 mb-5 mb-lg-0">
           <div class="row">
             
+            
+            <div class="col-md-4 mb-4">
+    
+        
+    
+        
+    
+    <article class="card">
+        
+        <section class="carousel noselect" id='basiccoupon'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/architecturebooks/">
+              
+              <img src="https://archezinternational.com/images/books.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            
+          </div>
+        </section>
+        
+        <div id="basiccoupon_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/books.png" class="card-img" alt="ARCHITECTURE BOOKS">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/books"
+                class="text-primary">BOOKS |</a>
+            
+            <a href="/categories/freebies"
+                class="text-primary">FREEBIES |</a>
+            
+            <a href="https://archezinternational.com/shop/architecturebooks/" class="h5 d-block my-3">ARCHITECTURE BOOKS</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$0&#43;</p></div>
+                
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["basiccoupon_index"] = 0;
+    carousel["basiccoupon_bullets"] = document.querySelectorAll("#basiccoupon .carousel__navigation-button")
+    carousel["basiccoupon_images"] = document.querySelectorAll("#basiccoupon .carousel-image-item")
+    if (carousel["basiccoupon_images"].length > 0) document.querySelector("#basiccoupon_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["basiccoupon_images"].length; i++) {
+      let image = carousel["basiccoupon_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["basiccoupon_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#basiccoupon_prev-button')) {
+        carousel["basiccoupon_index"]--;
+        if (carousel["basiccoupon_index"] < 0) carousel["basiccoupon_index"] = carousel["basiccoupon_images"].length - 1;
+        for (let i = 0; i < carousel["basiccoupon_images"].length; i++) {
+          carousel["basiccoupon_images"][i].classList.add('hidden');
+          carousel["basiccoupon_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["basiccoupon_images"][carousel["basiccoupon_index"]].classList.remove('hidden')
+        carousel["basiccoupon_bullets"][carousel["basiccoupon_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#basiccoupon_next-button')) {
+        carousel["basiccoupon_index"]++;
+
+        if (carousel["basiccoupon_index"] >= carousel["basiccoupon_images"].length) carousel["basiccoupon_index"] = 0;
+        for (let i = 0; i < carousel["basiccoupon_images"].length; i++) {
+          carousel["basiccoupon_images"][i].classList.add('hidden');
+          carousel["basiccoupon_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["basiccoupon_images"][carousel["basiccoupon_index"]].classList.remove('hidden')
+        carousel["basiccoupon_bullets"][carousel["basiccoupon_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
+            <div class="col-md-4 mb-4">
+    
+        
+    
+        
+    
+        
+        <div class="best-seller">BEST SELLER</div>
+        
+    
+        
+    
+    <article class="card">
+        
+        <section class="carousel noselect" id='minimaltreesbrushes'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/minimaltreesbrushes/">
+              
+              <img src="https://archezinternational.com/images/packages/minimaltreesbrushes_1.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/minimaltreesbrushes_2.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/minimaltreesbrushes_3.jpg" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            
+              <div id="minimaltreesbrushes_prev-button" class='prev-button'></div>
+              <div id="minimaltreesbrushes_next-button" class='next-button'></div>
+            
+          </div>
+        </section>
+        
+        <div id="minimaltreesbrushes_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/minimaltreesbrushes_1.png" class="card-img" alt="MINIMAL TREES BRUSHES">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/abr"
+                class="text-primary">ABR |</a>
+            
+            <a href="/categories/brushes"
+                class="text-primary">BRUSHES |</a>
+            
+            <a href="/categories/best-seller"
+                class="text-primary">BEST SELLER |</a>
+            
+            <a href="/categories/freebies"
+                class="text-primary">FREEBIES |</a>
+            
+            <a href="https://archezinternational.com/shop/minimaltreesbrushes/" class="h5 d-block my-3">MINIMAL TREES BRUSHES</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$0&#43;</p></div>
+                
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["minimaltreesbrushes_index"] = 0;
+    carousel["minimaltreesbrushes_bullets"] = document.querySelectorAll("#minimaltreesbrushes .carousel__navigation-button")
+    carousel["minimaltreesbrushes_images"] = document.querySelectorAll("#minimaltreesbrushes .carousel-image-item")
+    if (carousel["minimaltreesbrushes_images"].length > 0) document.querySelector("#minimaltreesbrushes_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["minimaltreesbrushes_images"].length; i++) {
+      let image = carousel["minimaltreesbrushes_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["minimaltreesbrushes_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#minimaltreesbrushes_prev-button')) {
+        carousel["minimaltreesbrushes_index"]--;
+        if (carousel["minimaltreesbrushes_index"] < 0) carousel["minimaltreesbrushes_index"] = carousel["minimaltreesbrushes_images"].length - 1;
+        for (let i = 0; i < carousel["minimaltreesbrushes_images"].length; i++) {
+          carousel["minimaltreesbrushes_images"][i].classList.add('hidden');
+          carousel["minimaltreesbrushes_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["minimaltreesbrushes_images"][carousel["minimaltreesbrushes_index"]].classList.remove('hidden')
+        carousel["minimaltreesbrushes_bullets"][carousel["minimaltreesbrushes_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#minimaltreesbrushes_next-button')) {
+        carousel["minimaltreesbrushes_index"]++;
+
+        if (carousel["minimaltreesbrushes_index"] >= carousel["minimaltreesbrushes_images"].length) carousel["minimaltreesbrushes_index"] = 0;
+        for (let i = 0; i < carousel["minimaltreesbrushes_images"].length; i++) {
+          carousel["minimaltreesbrushes_images"][i].classList.add('hidden');
+          carousel["minimaltreesbrushes_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["minimaltreesbrushes_images"][carousel["minimaltreesbrushes_index"]].classList.remove('hidden')
+        carousel["minimaltreesbrushes_bullets"][carousel["minimaltreesbrushes_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
+            <div class="col-md-4 mb-4">
+    
+        
+    
+        
+    
+        
+    
+    <article class="card">
+        
+        <section class="carousel noselect" id='texturespack1'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/texturespack1/">
+              
+              <img src="https://archezinternational.com/images/packages/textures_1.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/textures_11.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            
+              <div id="texturespack1_prev-button" class='prev-button'></div>
+              <div id="texturespack1_next-button" class='next-button'></div>
+            
+          </div>
+        </section>
+        
+        <div id="texturespack1_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/textures_1.png" class="card-img" alt="TEXTURES PACK #1">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/jpg"
+                class="text-primary">JPG |</a>
+            
+            <a href="/categories/textures"
+                class="text-primary">TEXTURES |</a>
+            
+            <a href="/categories/freebies"
+                class="text-primary">FREEBIES |</a>
+            
+            <a href="https://archezinternational.com/shop/texturespack1/" class="h5 d-block my-3">TEXTURES PACK #1</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$0&#43;</p></div>
+                
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["texturespack1_index"] = 0;
+    carousel["texturespack1_bullets"] = document.querySelectorAll("#texturespack1 .carousel__navigation-button")
+    carousel["texturespack1_images"] = document.querySelectorAll("#texturespack1 .carousel-image-item")
+    if (carousel["texturespack1_images"].length > 0) document.querySelector("#texturespack1_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["texturespack1_images"].length; i++) {
+      let image = carousel["texturespack1_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["texturespack1_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#texturespack1_prev-button')) {
+        carousel["texturespack1_index"]--;
+        if (carousel["texturespack1_index"] < 0) carousel["texturespack1_index"] = carousel["texturespack1_images"].length - 1;
+        for (let i = 0; i < carousel["texturespack1_images"].length; i++) {
+          carousel["texturespack1_images"][i].classList.add('hidden');
+          carousel["texturespack1_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["texturespack1_images"][carousel["texturespack1_index"]].classList.remove('hidden')
+        carousel["texturespack1_bullets"][carousel["texturespack1_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#texturespack1_next-button')) {
+        carousel["texturespack1_index"]++;
+
+        if (carousel["texturespack1_index"] >= carousel["texturespack1_images"].length) carousel["texturespack1_index"] = 0;
+        for (let i = 0; i < carousel["texturespack1_images"].length; i++) {
+          carousel["texturespack1_images"][i].classList.add('hidden');
+          carousel["texturespack1_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["texturespack1_images"][carousel["texturespack1_index"]].classList.remove('hidden')
+        carousel["texturespack1_bullets"][carousel["texturespack1_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
+            <div class="col-md-4 mb-4">
+    
+        
+    
+        
+    
+        
+    
+    <article class="card">
+        
+        <section class="carousel noselect" id='texturespack2'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/texturespack2/">
+              
+              <img src="https://archezinternational.com/images/packages/textures_2.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/textures_22.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            
+              <div id="texturespack2_prev-button" class='prev-button'></div>
+              <div id="texturespack2_next-button" class='next-button'></div>
+            
+          </div>
+        </section>
+        
+        <div id="texturespack2_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/textures_2.png" class="card-img" alt="TEXTURES PACK #2">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/jpg"
+                class="text-primary">JPG |</a>
+            
+            <a href="/categories/textures"
+                class="text-primary">TEXTURES |</a>
+            
+            <a href="/categories/freebies"
+                class="text-primary">FREEBIES |</a>
+            
+            <a href="https://archezinternational.com/shop/texturespack2/" class="h5 d-block my-3">TEXTURES PACK #2</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$0&#43;</p></div>
+                
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["texturespack2_index"] = 0;
+    carousel["texturespack2_bullets"] = document.querySelectorAll("#texturespack2 .carousel__navigation-button")
+    carousel["texturespack2_images"] = document.querySelectorAll("#texturespack2 .carousel-image-item")
+    if (carousel["texturespack2_images"].length > 0) document.querySelector("#texturespack2_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["texturespack2_images"].length; i++) {
+      let image = carousel["texturespack2_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["texturespack2_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#texturespack2_prev-button')) {
+        carousel["texturespack2_index"]--;
+        if (carousel["texturespack2_index"] < 0) carousel["texturespack2_index"] = carousel["texturespack2_images"].length - 1;
+        for (let i = 0; i < carousel["texturespack2_images"].length; i++) {
+          carousel["texturespack2_images"][i].classList.add('hidden');
+          carousel["texturespack2_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["texturespack2_images"][carousel["texturespack2_index"]].classList.remove('hidden')
+        carousel["texturespack2_bullets"][carousel["texturespack2_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#texturespack2_next-button')) {
+        carousel["texturespack2_index"]++;
+
+        if (carousel["texturespack2_index"] >= carousel["texturespack2_images"].length) carousel["texturespack2_index"] = 0;
+        for (let i = 0; i < carousel["texturespack2_images"].length; i++) {
+          carousel["texturespack2_images"][i].classList.add('hidden');
+          carousel["texturespack2_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["texturespack2_images"][carousel["texturespack2_index"]].classList.remove('hidden')
+        carousel["texturespack2_bullets"][carousel["texturespack2_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
             
             <div class="col-md-4 mb-4">
     
@@ -531,486 +994,6 @@
 
 
             
-            <div class="col-md-4 mb-4">
-    
-        
-    
-        
-    
-        
-    
-    <article class="card">
-        
-        <section class="carousel noselect" id='texturespack5'>
-          <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/texturespack5/">
-              
-              <img src="https://archezinternational.com/images/packages/textures_55.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/textures_5.png" class='carousel-image-item'/>
-              
-            </a>
-          </div>
-            <aside class="carousel__navigation">
-              <ol class="carousel__navigation-list">
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-              </ol>
-            </aside>
-          <div class="carousel-action-buttons">
-            
-              <div id="texturespack5_prev-button" class='prev-button'></div>
-              <div id="texturespack5_next-button" class='next-button'></div>
-            
-          </div>
-        </section>
-        
-        <div id="texturespack5_single-image-container" class='single-image-container'>
-          
-            <img src="https://archezinternational.com/images/packages/textures_55.png" class="card-img" alt="TEXTURES PACK #5">
-          
-        </div>
-
-        <div class="card-body px-0">
-            
-            <a href="/categories/jpg"
-                class="text-primary">JPG |</a>
-            
-            <a href="/categories/textures"
-                class="text-primary">TEXTURES |</a>
-            
-            <a href="/categories/freebies"
-                class="text-primary">FREEBIES |</a>
-            
-            <a href="https://archezinternational.com/shop/texturespack5/" class="h5 d-block my-3">TEXTURES PACK #5</a>
-            <div class="mb-3 post-meta">
-            </div>
-            <div>
-                <div><p class='font-weight-bold'>$0&#43;</p></div>
-                
-            </div>
-        </div>
-    </article>
-</div>
-
-<script>
-    carousel["texturespack5_index"] = 0;
-    carousel["texturespack5_bullets"] = document.querySelectorAll("#texturespack5 .carousel__navigation-button")
-    carousel["texturespack5_images"] = document.querySelectorAll("#texturespack5 .carousel-image-item")
-    if (carousel["texturespack5_images"].length > 0) document.querySelector("#texturespack5_single-image-container").style = "{vissibility: hidden;}";
-    
-    for (let i = 0; i < carousel["texturespack5_images"].length; i++) {
-      let image = carousel["texturespack5_images"][i];
-      if (i > 0) image.classList.add('hidden');
-      carousel["texturespack5_bullets"][0].classList.add('active');
-      let url = image.dataset.img;
-      image.style.setProperty("background-color", "url("+ url +")");
-    };
-      
-    document.addEventListener('click', function (event) {
-      
-      if (event.target.matches('#texturespack5_prev-button')) {
-        carousel["texturespack5_index"]--;
-        if (carousel["texturespack5_index"] < 0) carousel["texturespack5_index"] = carousel["texturespack5_images"].length - 1;
-        for (let i = 0; i < carousel["texturespack5_images"].length; i++) {
-          carousel["texturespack5_images"][i].classList.add('hidden');
-          carousel["texturespack5_bullets"][i].classList.remove('active');
-        };
-        
-        carousel["texturespack5_images"][carousel["texturespack5_index"]].classList.remove('hidden')
-        carousel["texturespack5_bullets"][carousel["texturespack5_index"]].classList.add('active');
-      }
-  
-      if (event.target.matches('#texturespack5_next-button')) {
-        carousel["texturespack5_index"]++;
-
-        if (carousel["texturespack5_index"] >= carousel["texturespack5_images"].length) carousel["texturespack5_index"] = 0;
-        for (let i = 0; i < carousel["texturespack5_images"].length; i++) {
-          carousel["texturespack5_images"][i].classList.add('hidden');
-          carousel["texturespack5_bullets"][i].classList.remove('active');
-        };
-  
-        carousel["texturespack5_images"][carousel["texturespack5_index"]].classList.remove('hidden')
-        carousel["texturespack5_bullets"][carousel["texturespack5_index"]].classList.add('active');
-      }
-  
-        }, false);
-</script>
-
-
-
-            
-            <div class="col-md-4 mb-4">
-    
-        
-    
-        
-    
-        
-    
-    <article class="card">
-        
-        <section class="carousel noselect" id='texturespack6'>
-          <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/texturespack6/">
-              
-              <img src="https://archezinternational.com/images/packages/textures_66.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/textures_6.png" class='carousel-image-item'/>
-              
-            </a>
-          </div>
-            <aside class="carousel__navigation">
-              <ol class="carousel__navigation-list">
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-              </ol>
-            </aside>
-          <div class="carousel-action-buttons">
-            
-              <div id="texturespack6_prev-button" class='prev-button'></div>
-              <div id="texturespack6_next-button" class='next-button'></div>
-            
-          </div>
-        </section>
-        
-        <div id="texturespack6_single-image-container" class='single-image-container'>
-          
-            <img src="https://archezinternational.com/images/packages/textures_66.png" class="card-img" alt="TEXTURES PACK #6">
-          
-        </div>
-
-        <div class="card-body px-0">
-            
-            <a href="/categories/jpg"
-                class="text-primary">JPG |</a>
-            
-            <a href="/categories/textures"
-                class="text-primary">TEXTURES |</a>
-            
-            <a href="/categories/freebies"
-                class="text-primary">FREEBIES |</a>
-            
-            <a href="https://archezinternational.com/shop/texturespack6/" class="h5 d-block my-3">TEXTURES PACK #6</a>
-            <div class="mb-3 post-meta">
-            </div>
-            <div>
-                <div><p class='font-weight-bold'>$0&#43;</p></div>
-                
-            </div>
-        </div>
-    </article>
-</div>
-
-<script>
-    carousel["texturespack6_index"] = 0;
-    carousel["texturespack6_bullets"] = document.querySelectorAll("#texturespack6 .carousel__navigation-button")
-    carousel["texturespack6_images"] = document.querySelectorAll("#texturespack6 .carousel-image-item")
-    if (carousel["texturespack6_images"].length > 0) document.querySelector("#texturespack6_single-image-container").style = "{vissibility: hidden;}";
-    
-    for (let i = 0; i < carousel["texturespack6_images"].length; i++) {
-      let image = carousel["texturespack6_images"][i];
-      if (i > 0) image.classList.add('hidden');
-      carousel["texturespack6_bullets"][0].classList.add('active');
-      let url = image.dataset.img;
-      image.style.setProperty("background-color", "url("+ url +")");
-    };
-      
-    document.addEventListener('click', function (event) {
-      
-      if (event.target.matches('#texturespack6_prev-button')) {
-        carousel["texturespack6_index"]--;
-        if (carousel["texturespack6_index"] < 0) carousel["texturespack6_index"] = carousel["texturespack6_images"].length - 1;
-        for (let i = 0; i < carousel["texturespack6_images"].length; i++) {
-          carousel["texturespack6_images"][i].classList.add('hidden');
-          carousel["texturespack6_bullets"][i].classList.remove('active');
-        };
-        
-        carousel["texturespack6_images"][carousel["texturespack6_index"]].classList.remove('hidden')
-        carousel["texturespack6_bullets"][carousel["texturespack6_index"]].classList.add('active');
-      }
-  
-      if (event.target.matches('#texturespack6_next-button')) {
-        carousel["texturespack6_index"]++;
-
-        if (carousel["texturespack6_index"] >= carousel["texturespack6_images"].length) carousel["texturespack6_index"] = 0;
-        for (let i = 0; i < carousel["texturespack6_images"].length; i++) {
-          carousel["texturespack6_images"][i].classList.add('hidden');
-          carousel["texturespack6_bullets"][i].classList.remove('active');
-        };
-  
-        carousel["texturespack6_images"][carousel["texturespack6_index"]].classList.remove('hidden')
-        carousel["texturespack6_bullets"][carousel["texturespack6_index"]].classList.add('active');
-      }
-  
-        }, false);
-</script>
-
-
-
-            
-            <div class="col-md-4 mb-4">
-    
-        
-    
-        
-    
-    <article class="card">
-        
-        <section class="carousel noselect" id='tilespack'>
-          <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/tilespack/">
-              
-              <img src="https://archezinternational.com/images/packages/tilespack_1.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/tilespack_3.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/tilespack_4.png" class='carousel-image-item'/>
-              
-            </a>
-          </div>
-            <aside class="carousel__navigation">
-              <ol class="carousel__navigation-list">
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-              </ol>
-            </aside>
-          <div class="carousel-action-buttons">
-            
-              <div id="tilespack_prev-button" class='prev-button'></div>
-              <div id="tilespack_next-button" class='next-button'></div>
-            
-          </div>
-        </section>
-        
-        <div id="tilespack_single-image-container" class='single-image-container'>
-          
-            <img src="https://archezinternational.com/images/packages/tilespack_1.png" class="card-img" alt="TILES PACK">
-          
-        </div>
-
-        <div class="card-body px-0">
-            
-            <a href="/categories/jpg"
-                class="text-primary">JPG |</a>
-            
-            <a href="/categories/textures"
-                class="text-primary">TEXTURES |</a>
-            
-            <a href="https://archezinternational.com/shop/tilespack/" class="h5 d-block my-3">TILES PACK</a>
-            <div class="mb-3 post-meta">
-            </div>
-            <div>
-                <div><p class='font-weight-bold'>$8</p></div>
-                
-            </div>
-        </div>
-    </article>
-</div>
-
-<script>
-    carousel["tilespack_index"] = 0;
-    carousel["tilespack_bullets"] = document.querySelectorAll("#tilespack .carousel__navigation-button")
-    carousel["tilespack_images"] = document.querySelectorAll("#tilespack .carousel-image-item")
-    if (carousel["tilespack_images"].length > 0) document.querySelector("#tilespack_single-image-container").style = "{vissibility: hidden;}";
-    
-    for (let i = 0; i < carousel["tilespack_images"].length; i++) {
-      let image = carousel["tilespack_images"][i];
-      if (i > 0) image.classList.add('hidden');
-      carousel["tilespack_bullets"][0].classList.add('active');
-      let url = image.dataset.img;
-      image.style.setProperty("background-color", "url("+ url +")");
-    };
-      
-    document.addEventListener('click', function (event) {
-      
-      if (event.target.matches('#tilespack_prev-button')) {
-        carousel["tilespack_index"]--;
-        if (carousel["tilespack_index"] < 0) carousel["tilespack_index"] = carousel["tilespack_images"].length - 1;
-        for (let i = 0; i < carousel["tilespack_images"].length; i++) {
-          carousel["tilespack_images"][i].classList.add('hidden');
-          carousel["tilespack_bullets"][i].classList.remove('active');
-        };
-        
-        carousel["tilespack_images"][carousel["tilespack_index"]].classList.remove('hidden')
-        carousel["tilespack_bullets"][carousel["tilespack_index"]].classList.add('active');
-      }
-  
-      if (event.target.matches('#tilespack_next-button')) {
-        carousel["tilespack_index"]++;
-
-        if (carousel["tilespack_index"] >= carousel["tilespack_images"].length) carousel["tilespack_index"] = 0;
-        for (let i = 0; i < carousel["tilespack_images"].length; i++) {
-          carousel["tilespack_images"][i].classList.add('hidden');
-          carousel["tilespack_bullets"][i].classList.remove('active');
-        };
-  
-        carousel["tilespack_images"][carousel["tilespack_index"]].classList.remove('hidden')
-        carousel["tilespack_bullets"][carousel["tilespack_index"]].classList.add('active');
-      }
-  
-        }, false);
-</script>
-
-
-
-            
-            <div class="col-md-4 mb-4">
-    
-        
-    
-        
-        <div class="best-seller">BEST SELLER</div>
-        
-    
-    <article class="card">
-        
-        <section class="carousel noselect" id='treesnplantspack'>
-          <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/treesnplantspack/">
-              
-              <img src="https://archezinternational.com/images/packages/treesnplantspack_1.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/treesnplantspack_2.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/treesnplantspack_3.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/treesnplantspack_4.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/treesnplantspack_5.png" class='carousel-image-item'/>
-              
-            </a>
-          </div>
-            <aside class="carousel__navigation">
-              <ol class="carousel__navigation-list">
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-              </ol>
-            </aside>
-          <div class="carousel-action-buttons">
-            
-              <div id="treesnplantspack_prev-button" class='prev-button'></div>
-              <div id="treesnplantspack_next-button" class='next-button'></div>
-            
-          </div>
-        </section>
-        
-        <div id="treesnplantspack_single-image-container" class='single-image-container'>
-          
-            <img src="https://archezinternational.com/images/packages/treesnplantspack_1.png" class="card-img" alt="TREES N&#39; PLANTS PACK">
-          
-        </div>
-
-        <div class="card-body px-0">
-            
-            <a href="/categories/cad-blocks"
-                class="text-primary">CAD BLOCKS |</a>
-            
-            <a href="/categories/best-seller"
-                class="text-primary">BEST SELLER |</a>
-            
-            <a href="https://archezinternational.com/shop/treesnplantspack/" class="h5 d-block my-3">TREES N' PLANTS PACK</a>
-            <div class="mb-3 post-meta">
-            </div>
-            <div>
-                <div><p class='font-weight-bold'>$8</p></div>
-                
-            </div>
-        </div>
-    </article>
-</div>
-
-<script>
-    carousel["treesnplantspack_index"] = 0;
-    carousel["treesnplantspack_bullets"] = document.querySelectorAll("#treesnplantspack .carousel__navigation-button")
-    carousel["treesnplantspack_images"] = document.querySelectorAll("#treesnplantspack .carousel-image-item")
-    if (carousel["treesnplantspack_images"].length > 0) document.querySelector("#treesnplantspack_single-image-container").style = "{vissibility: hidden;}";
-    
-    for (let i = 0; i < carousel["treesnplantspack_images"].length; i++) {
-      let image = carousel["treesnplantspack_images"][i];
-      if (i > 0) image.classList.add('hidden');
-      carousel["treesnplantspack_bullets"][0].classList.add('active');
-      let url = image.dataset.img;
-      image.style.setProperty("background-color", "url("+ url +")");
-    };
-      
-    document.addEventListener('click', function (event) {
-      
-      if (event.target.matches('#treesnplantspack_prev-button')) {
-        carousel["treesnplantspack_index"]--;
-        if (carousel["treesnplantspack_index"] < 0) carousel["treesnplantspack_index"] = carousel["treesnplantspack_images"].length - 1;
-        for (let i = 0; i < carousel["treesnplantspack_images"].length; i++) {
-          carousel["treesnplantspack_images"][i].classList.add('hidden');
-          carousel["treesnplantspack_bullets"][i].classList.remove('active');
-        };
-        
-        carousel["treesnplantspack_images"][carousel["treesnplantspack_index"]].classList.remove('hidden')
-        carousel["treesnplantspack_bullets"][carousel["treesnplantspack_index"]].classList.add('active');
-      }
-  
-      if (event.target.matches('#treesnplantspack_next-button')) {
-        carousel["treesnplantspack_index"]++;
-
-        if (carousel["treesnplantspack_index"] >= carousel["treesnplantspack_images"].length) carousel["treesnplantspack_index"] = 0;
-        for (let i = 0; i < carousel["treesnplantspack_images"].length; i++) {
-          carousel["treesnplantspack_images"][i].classList.add('hidden');
-          carousel["treesnplantspack_bullets"][i].classList.remove('active');
-        };
-  
-        carousel["treesnplantspack_images"][carousel["treesnplantspack_index"]].classList.remove('hidden')
-        carousel["treesnplantspack_bullets"][carousel["treesnplantspack_index"]].classList.add('active');
-      }
-  
-        }, false);
-</script>
-
-
-
-            
           </div>
         </div>
 
@@ -1018,23 +1001,23 @@
         <div class="col-12 mt-5">
           
     <ul class="pagination pagination-default">
-      <li class="page-item">
-        <a href="/tags/assets/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      <li class="page-item disabled">
+        <a href="#" aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
       </li>
-      <li class="page-item">
-        <a href="/tags/assets/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/assets/" aria-label="Page 1" class="page-link" role="button">1</a>
+      <li class="page-item disabled">
+        <a href="#" aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
       </li>
       <li class="page-item active">
-        <a href="#" aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
+        <a href="#" aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
       </li>
-      <li class="page-item disabled">
-        <a href="#" aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      <li class="page-item">
+        <a href="/categories/freebies/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
       </li>
-      <li class="page-item disabled">
-        <a href="#" aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      <li class="page-item">
+        <a href="/categories/freebies/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/categories/freebies/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
         </div>

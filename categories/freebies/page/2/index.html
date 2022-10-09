@@ -279,7 +279,7 @@
 
   <section class="section-sm">
     <div class="col-lg-8 mx-auto text-center">
-      <h4 class="widget-title">Photoshop</h4>
+      <h4 class="widget-title">FREEBIES</h4>
     </div>
     <div class="container">
       <div class="row">
@@ -303,15 +303,19 @@
     
         
     
+        
+    
+        
+    
     <article class="card">
         
-        <section class="carousel noselect" id='illustration_ebook'>
+        <section class="carousel noselect" id='texturespack5'>
           <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/ebook/">
+            <a href="https://archezinternational.com/shop/texturespack5/">
               
-              <img src="https://archezinternational.com/images/ebook/cover_1.png" class='carousel-image-item'/>
+              <img src="https://archezinternational.com/images/packages/textures_55.png" class='carousel-image-item'/>
               
-              <img src="https://archezinternational.com/images/ebook/cover_2.jpg" class='carousel-image-item'/>
+              <img src="https://archezinternational.com/images/packages/textures_5.png" class='carousel-image-item'/>
               
             </a>
           </div>
@@ -330,28 +334,34 @@
             </aside>
           <div class="carousel-action-buttons">
             
-              <div id="illustration_ebook_prev-button" class='prev-button'></div>
-              <div id="illustration_ebook_next-button" class='next-button'></div>
+              <div id="texturespack5_prev-button" class='prev-button'></div>
+              <div id="texturespack5_next-button" class='next-button'></div>
             
           </div>
         </section>
         
-        <div id="illustration_ebook_single-image-container" class='single-image-container'>
+        <div id="texturespack5_single-image-container" class='single-image-container'>
           
-            <img src="https://archezinternational.com/images/ebook/cover_1.png" class="card-img" alt="HOW TO ILLUSTRATE IN 10 STEPS">
+            <img src="https://archezinternational.com/images/packages/textures_55.png" class="card-img" alt="TEXTURES PACK #5">
           
         </div>
 
         <div class="card-body px-0">
             
-            <a href="/categories/books"
-                class="text-primary">BOOKS |</a>
+            <a href="/categories/jpg"
+                class="text-primary">JPG |</a>
             
-            <a href="https://archezinternational.com/shop/ebook/" class="h5 d-block my-3">HOW TO ILLUSTRATE IN 10 STEPS</a>
+            <a href="/categories/textures"
+                class="text-primary">TEXTURES |</a>
+            
+            <a href="/categories/freebies"
+                class="text-primary">FREEBIES |</a>
+            
+            <a href="https://archezinternational.com/shop/texturespack5/" class="h5 d-block my-3">TEXTURES PACK #5</a>
             <div class="mb-3 post-meta">
             </div>
             <div>
-                <div><p class='font-weight-bold'>$38</p></div>
+                <div><p class='font-weight-bold'>$0&#43;</p></div>
                 
             </div>
         </div>
@@ -359,44 +369,44 @@
 </div>
 
 <script>
-    carousel["illustration_ebook_index"] = 0;
-    carousel["illustration_ebook_bullets"] = document.querySelectorAll("#illustration_ebook .carousel__navigation-button")
-    carousel["illustration_ebook_images"] = document.querySelectorAll("#illustration_ebook .carousel-image-item")
-    if (carousel["illustration_ebook_images"].length > 0) document.querySelector("#illustration_ebook_single-image-container").style = "{vissibility: hidden;}";
+    carousel["texturespack5_index"] = 0;
+    carousel["texturespack5_bullets"] = document.querySelectorAll("#texturespack5 .carousel__navigation-button")
+    carousel["texturespack5_images"] = document.querySelectorAll("#texturespack5 .carousel-image-item")
+    if (carousel["texturespack5_images"].length > 0) document.querySelector("#texturespack5_single-image-container").style = "{vissibility: hidden;}";
     
-    for (let i = 0; i < carousel["illustration_ebook_images"].length; i++) {
-      let image = carousel["illustration_ebook_images"][i];
+    for (let i = 0; i < carousel["texturespack5_images"].length; i++) {
+      let image = carousel["texturespack5_images"][i];
       if (i > 0) image.classList.add('hidden');
-      carousel["illustration_ebook_bullets"][0].classList.add('active');
+      carousel["texturespack5_bullets"][0].classList.add('active');
       let url = image.dataset.img;
       image.style.setProperty("background-color", "url("+ url +")");
     };
       
     document.addEventListener('click', function (event) {
       
-      if (event.target.matches('#illustration_ebook_prev-button')) {
-        carousel["illustration_ebook_index"]--;
-        if (carousel["illustration_ebook_index"] < 0) carousel["illustration_ebook_index"] = carousel["illustration_ebook_images"].length - 1;
-        for (let i = 0; i < carousel["illustration_ebook_images"].length; i++) {
-          carousel["illustration_ebook_images"][i].classList.add('hidden');
-          carousel["illustration_ebook_bullets"][i].classList.remove('active');
+      if (event.target.matches('#texturespack5_prev-button')) {
+        carousel["texturespack5_index"]--;
+        if (carousel["texturespack5_index"] < 0) carousel["texturespack5_index"] = carousel["texturespack5_images"].length - 1;
+        for (let i = 0; i < carousel["texturespack5_images"].length; i++) {
+          carousel["texturespack5_images"][i].classList.add('hidden');
+          carousel["texturespack5_bullets"][i].classList.remove('active');
         };
         
-        carousel["illustration_ebook_images"][carousel["illustration_ebook_index"]].classList.remove('hidden')
-        carousel["illustration_ebook_bullets"][carousel["illustration_ebook_index"]].classList.add('active');
+        carousel["texturespack5_images"][carousel["texturespack5_index"]].classList.remove('hidden')
+        carousel["texturespack5_bullets"][carousel["texturespack5_index"]].classList.add('active');
       }
   
-      if (event.target.matches('#illustration_ebook_next-button')) {
-        carousel["illustration_ebook_index"]++;
+      if (event.target.matches('#texturespack5_next-button')) {
+        carousel["texturespack5_index"]++;
 
-        if (carousel["illustration_ebook_index"] >= carousel["illustration_ebook_images"].length) carousel["illustration_ebook_index"] = 0;
-        for (let i = 0; i < carousel["illustration_ebook_images"].length; i++) {
-          carousel["illustration_ebook_images"][i].classList.add('hidden');
-          carousel["illustration_ebook_bullets"][i].classList.remove('active');
+        if (carousel["texturespack5_index"] >= carousel["texturespack5_images"].length) carousel["texturespack5_index"] = 0;
+        for (let i = 0; i < carousel["texturespack5_images"].length; i++) {
+          carousel["texturespack5_images"][i].classList.add('hidden');
+          carousel["texturespack5_bullets"][i].classList.remove('active');
         };
   
-        carousel["illustration_ebook_images"][carousel["illustration_ebook_index"]].classList.remove('hidden')
-        carousel["illustration_ebook_bullets"][carousel["illustration_ebook_index"]].classList.add('active');
+        carousel["texturespack5_images"][carousel["texturespack5_index"]].classList.remove('hidden')
+        carousel["texturespack5_bullets"][carousel["texturespack5_index"]].classList.add('active');
       }
   
         }, false);
@@ -411,17 +421,17 @@
     
         
     
+        
+    
     <article class="card">
         
-        <section class="carousel noselect" id='pencilpeoplebrushes'>
+        <section class="carousel noselect" id='texturespack6'>
           <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/pencilpeoplebrushes/">
+            <a href="https://archezinternational.com/shop/texturespack6/">
               
-              <img src="https://archezinternational.com/images/packages/pencilpeoplebrushes_1.png" class='carousel-image-item'/>
+              <img src="https://archezinternational.com/images/packages/textures_66.png" class='carousel-image-item'/>
               
-              <img src="https://archezinternational.com/images/packages/pencilpeoplebrushes_2.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/pencilpeoplebrushes_3.png" class='carousel-image-item'/>
+              <img src="https://archezinternational.com/images/packages/textures_6.png" class='carousel-image-item'/>
               
             </a>
           </div>
@@ -436,39 +446,38 @@
                       <div class="carousel__navigation-button"></div>
                     </li>
                   
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
               </ol>
             </aside>
           <div class="carousel-action-buttons">
             
-              <div id="pencilpeoplebrushes_prev-button" class='prev-button'></div>
-              <div id="pencilpeoplebrushes_next-button" class='next-button'></div>
+              <div id="texturespack6_prev-button" class='prev-button'></div>
+              <div id="texturespack6_next-button" class='next-button'></div>
             
           </div>
         </section>
         
-        <div id="pencilpeoplebrushes_single-image-container" class='single-image-container'>
+        <div id="texturespack6_single-image-container" class='single-image-container'>
           
-            <img src="https://archezinternational.com/images/packages/pencilpeoplebrushes_1.png" class="card-img" alt="PENCIL PEOPLE BRUSHES">
+            <img src="https://archezinternational.com/images/packages/textures_66.png" class="card-img" alt="TEXTURES PACK #6">
           
         </div>
 
         <div class="card-body px-0">
             
-            <a href="/categories/abr"
-                class="text-primary">ABR |</a>
+            <a href="/categories/jpg"
+                class="text-primary">JPG |</a>
             
-            <a href="/categories/brushes"
-                class="text-primary">BRUSHES |</a>
+            <a href="/categories/textures"
+                class="text-primary">TEXTURES |</a>
             
-            <a href="https://archezinternational.com/shop/pencilpeoplebrushes/" class="h5 d-block my-3">PENCIL PEOPLE BRUSHES</a>
+            <a href="/categories/freebies"
+                class="text-primary">FREEBIES |</a>
+            
+            <a href="https://archezinternational.com/shop/texturespack6/" class="h5 d-block my-3">TEXTURES PACK #6</a>
             <div class="mb-3 post-meta">
             </div>
             <div>
-                <div><p class='font-weight-bold'>$5</p></div>
+                <div><p class='font-weight-bold'>$0&#43;</p></div>
                 
             </div>
         </div>
@@ -476,44 +485,44 @@
 </div>
 
 <script>
-    carousel["pencilpeoplebrushes_index"] = 0;
-    carousel["pencilpeoplebrushes_bullets"] = document.querySelectorAll("#pencilpeoplebrushes .carousel__navigation-button")
-    carousel["pencilpeoplebrushes_images"] = document.querySelectorAll("#pencilpeoplebrushes .carousel-image-item")
-    if (carousel["pencilpeoplebrushes_images"].length > 0) document.querySelector("#pencilpeoplebrushes_single-image-container").style = "{vissibility: hidden;}";
+    carousel["texturespack6_index"] = 0;
+    carousel["texturespack6_bullets"] = document.querySelectorAll("#texturespack6 .carousel__navigation-button")
+    carousel["texturespack6_images"] = document.querySelectorAll("#texturespack6 .carousel-image-item")
+    if (carousel["texturespack6_images"].length > 0) document.querySelector("#texturespack6_single-image-container").style = "{vissibility: hidden;}";
     
-    for (let i = 0; i < carousel["pencilpeoplebrushes_images"].length; i++) {
-      let image = carousel["pencilpeoplebrushes_images"][i];
+    for (let i = 0; i < carousel["texturespack6_images"].length; i++) {
+      let image = carousel["texturespack6_images"][i];
       if (i > 0) image.classList.add('hidden');
-      carousel["pencilpeoplebrushes_bullets"][0].classList.add('active');
+      carousel["texturespack6_bullets"][0].classList.add('active');
       let url = image.dataset.img;
       image.style.setProperty("background-color", "url("+ url +")");
     };
       
     document.addEventListener('click', function (event) {
       
-      if (event.target.matches('#pencilpeoplebrushes_prev-button')) {
-        carousel["pencilpeoplebrushes_index"]--;
-        if (carousel["pencilpeoplebrushes_index"] < 0) carousel["pencilpeoplebrushes_index"] = carousel["pencilpeoplebrushes_images"].length - 1;
-        for (let i = 0; i < carousel["pencilpeoplebrushes_images"].length; i++) {
-          carousel["pencilpeoplebrushes_images"][i].classList.add('hidden');
-          carousel["pencilpeoplebrushes_bullets"][i].classList.remove('active');
+      if (event.target.matches('#texturespack6_prev-button')) {
+        carousel["texturespack6_index"]--;
+        if (carousel["texturespack6_index"] < 0) carousel["texturespack6_index"] = carousel["texturespack6_images"].length - 1;
+        for (let i = 0; i < carousel["texturespack6_images"].length; i++) {
+          carousel["texturespack6_images"][i].classList.add('hidden');
+          carousel["texturespack6_bullets"][i].classList.remove('active');
         };
         
-        carousel["pencilpeoplebrushes_images"][carousel["pencilpeoplebrushes_index"]].classList.remove('hidden')
-        carousel["pencilpeoplebrushes_bullets"][carousel["pencilpeoplebrushes_index"]].classList.add('active');
+        carousel["texturespack6_images"][carousel["texturespack6_index"]].classList.remove('hidden')
+        carousel["texturespack6_bullets"][carousel["texturespack6_index"]].classList.add('active');
       }
   
-      if (event.target.matches('#pencilpeoplebrushes_next-button')) {
-        carousel["pencilpeoplebrushes_index"]++;
+      if (event.target.matches('#texturespack6_next-button')) {
+        carousel["texturespack6_index"]++;
 
-        if (carousel["pencilpeoplebrushes_index"] >= carousel["pencilpeoplebrushes_images"].length) carousel["pencilpeoplebrushes_index"] = 0;
-        for (let i = 0; i < carousel["pencilpeoplebrushes_images"].length; i++) {
-          carousel["pencilpeoplebrushes_images"][i].classList.add('hidden');
-          carousel["pencilpeoplebrushes_bullets"][i].classList.remove('active');
+        if (carousel["texturespack6_index"] >= carousel["texturespack6_images"].length) carousel["texturespack6_index"] = 0;
+        for (let i = 0; i < carousel["texturespack6_images"].length; i++) {
+          carousel["texturespack6_images"][i].classList.add('hidden');
+          carousel["texturespack6_bullets"][i].classList.remove('active');
         };
   
-        carousel["pencilpeoplebrushes_images"][carousel["pencilpeoplebrushes_index"]].classList.remove('hidden')
-        carousel["pencilpeoplebrushes_bullets"][carousel["pencilpeoplebrushes_index"]].classList.add('active');
+        carousel["texturespack6_images"][carousel["texturespack6_index"]].classList.remove('hidden')
+        carousel["texturespack6_bullets"][carousel["texturespack6_index"]].classList.add('active');
       }
   
         }, false);
@@ -528,6 +537,26 @@
         
         <div class="col-12 mt-5">
           
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/categories/freebies/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/categories/freebies/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/categories/freebies/" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item active">
+        <a href="#" aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item disabled">
+        <a href="#" aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a href="#" aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
         </div>
       </div>
     </div>
