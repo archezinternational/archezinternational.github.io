@@ -2,6 +2,10 @@ p, .paragraph, body {
   color:#222 !important;
 }
 
+.overlay::before {
+  background:transparent !important
+}
+
 img[alt="Archez International"] {
     height: 25px !important;
 }
@@ -490,5 +494,11 @@ ol, li {
     .gumroad-follow-form-embed {
       max-width: 50%;
       margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .gumroad .cart-button {
+      top: 5rem !important;
     }
   }
