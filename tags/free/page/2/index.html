@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet"><head>
     <meta charset="utf-8">
     <meta name="p:domain_verify" content="de2c42f4d5b0e89fcb050a090e181e6a"/>
+    <meta name="facebook-domain-verification" content="yox3mu2yosdhymzduygehl571l79zk" />
     <title>Archez International</title>
   
     <!-- mobile responsive meta -->
@@ -65,7 +66,69 @@
       ga('create', '', 'auto');
       ga('send', 'pageview');
     </script>
+
+    
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1567371243648036');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1567371243648036&ev=PageView&noscript=1"
+  /></noscript>
   
+  <script>
+
+    window.addEventListener('load', function () {
+      var newsLetter = document.querySelector(".pop-up-news-letter.hide.disp-none")
+      var formButton = document.querySelector(".pop-up-news-letter button")
+      var body = document.querySelector("body")
+      
+      if(localStorage.didShowNewsLetterPopUp == undefined) {
+        newsLetter.classList.remove("hide");
+        newsLetter.classList.remove("disp-none");
+        body.classList.add("no-scroll")
+      }
+
+      let hideAction = () => {
+        newsLetter.classList.add("hide");
+        body.classList.remove("no-scroll")
+        localStorage.didShowNewsLetterPopUp = true;
+
+        setTimeout(() => {
+          newsLetter.classList.add("disp-none");
+        }, 500);
+      }
+
+      let validateEmail = () => {
+        let value = document.getElementById('pop-up-news-letter-input').value
+        let form = document.getElementById("pop-news-letter-form");
+        
+        if(value == "") {
+          form.action = "";
+          return;
+        } else {
+          form.action = "https://app.gumroad.com/follow_from_embed_form";
+          hideAction();
+        }
+      }
+      newsLetter.addEventListener('click', hideAction)   
+      formButton.addEventListener('click', validateEmail)   
+      
+      var newsLetterContainer = document.querySelector(".pop-up-news-letter-form-container")
+      newsLetterContainer.addEventListener('click', function(e) {
+        e.stopPropagation();
+      })   
+    }, false);
+
+  </script>
   </head><body><!-- navigation -->
 <header class="navigation">
   <div class="container">
@@ -86,7 +149,7 @@
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://archezinternational.com/ar">Augmented Reality</a>
+            <a class="nav-link" href="https://archezinternational.com/ebook">e-Book</a>
           </li>
           
           
@@ -98,13 +161,19 @@
           
           
           <li class="nav-item">
+            <a class="nav-link" href="https://archezinternational.com/featured">Featured</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
             <a class="nav-link" href="https://archezinternational.com/magazine">Magazine</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://archezinternational.com/featured">Featured</a>
+            <a class="nav-link" href="https://archezinternational.com/ar">Augmented Reality</a>
           </li>
           
           
@@ -135,6 +204,74 @@
   </div>
 </header>
 <!-- /navigation -->
+
+
+<div class="pop-up-news-letter hide disp-none">
+  <div class="flex-v">
+    <div class="pop-up-news-letter-form-container">
+        <div id='newsletter-popup' class="container">
+          <h4 class="home-title w-100">NEWS LETTER</h4>
+          <p class="half-screen-desktop news-letter-description"><i>Subscribe now to our newsletter to receive our <b>special discounts</b>, <b>freebies</b> and <b>news</b>.  Don't worry archifriend, we won't spam you, we promise!</i></p>
+          <form id='pop-news-letter-form' action="" class="form gumroad-follow-form-embed" method="post">
+            <input name="seller_id" type="hidden" value="1030246233100">
+            <input id="pop-up-news-letter-input" name="email" placeholder="Your email address" type="email">
+            <button data-custom-highlight-color="" type="submit">Subscribe</button>
+          </form>
+        </div>
+    </div>
+  </div>
+</div>
+<style>
+
+  .pop-up-news-letter-form-container {
+    margin: 0 auto;
+    width: 660px;
+    max-width: 90%;
+    padding: 22px 22px 60px 22px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .pop-up-news-letter {
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    position: absolute;
+    background-color: rgb(0,0,0,.75);
+    width: 100%;
+    height: 100%;
+  }
+
+  .pop-up-news-letter > div {
+    height: 100%;
+  }
+  .pop-up-news-letter.hide {
+    opacity: 0;
+    transition-property: all;
+    transition: 0.25s ease-in-out;
+  }
+
+  .pop-up-news-letter .half-screen-desktop,
+  .pop-up-news-letter .gumroad-follow-form-embed {
+    max-width: 90% !important;
+  }
+
+  .pop-up-news-letter .news-letter-description {
+    margin: 20px auto!important;
+  }
+  
+  .pop-up-news-letter  .home-title {
+    text-align: center;
+  }
+
+  .disp-none {
+    display: none !important;
+  }
+
+  .no-scroll {
+    overflow: hidden; 
+  }
+</style>
 <script>
   let carousel = {}
   console.log(this)
@@ -154,7 +291,7 @@
           <a href=https://archezinternational.com/categories/coupon/ class="text-primary">coupon</a>
           <a href=https://archezinternational.com/categories/cutouts/ class="text-primary">cutouts</a>
           <a href=https://archezinternational.com/categories/filter/ class="text-primary">filter</a>
-          <a href=https://archezinternational.com/categories/free/ class="text-primary">free</a>
+          <a href=https://archezinternational.com/categories/freebies/ class="text-primary">freebies</a>
           <a href=https://archezinternational.com/categories/textures/ class="text-primary">textures</a>
         </div>
 
@@ -172,13 +309,13 @@
     
     <article class="card">
         
-        <section class="carousel" id='texturespack4'>
+        <section class="carousel noselect" id='texturespack7'>
           <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/texturespack4/">
+            <a href="https://archezinternational.com/shop/texturespack7/">
               
-              <img src="https://archezinternational.com/images/packages/textures_4.png" class='carousel-image-item'/>
+              <img src="https://archezinternational.com/images/packages/textures_7_1.png" class='carousel-image-item'/>
               
-              <img src="https://archezinternational.com/images/packages/textures_44.png" class='carousel-image-item'/>
+              <img src="https://archezinternational.com/images/packages/textures_7_2.png" class='carousel-image-item'/>
               
             </a>
           </div>
@@ -197,15 +334,15 @@
             </aside>
           <div class="carousel-action-buttons">
             
-              <div id="texturespack4_prev-button" class='prev-button'></div>
-              <div id="texturespack4_next-button" class='next-button'></div>
+              <div id="texturespack7_prev-button" class='prev-button'></div>
+              <div id="texturespack7_next-button" class='next-button'></div>
             
           </div>
         </section>
         
-        <div id="texturespack4_single-image-container" class='single-image-container'>
+        <div id="texturespack7_single-image-container" class='single-image-container'>
           
-            <img src="https://archezinternational.com/images/packages/textures_4.png" class="card-img" alt="TEXTURES PACK #4">
+            <img src="https://archezinternational.com/images/packages/textures_7_1.png" class="card-img" alt="TEXTURES PACK #7">
           
         </div>
 
@@ -217,175 +354,59 @@
             <a href="/categories/textures"
                 class="text-primary">TEXTURES |</a>
             
-            <a href="/categories/free"
-                class="text-primary">FREE |</a>
+            <a href="/categories/freebies"
+                class="text-primary">FREEBIES |</a>
             
-            <a href="https://archezinternational.com/shop/texturespack4/" class="h5 d-block my-3">TEXTURES PACK #4</a>
+            <a href="https://archezinternational.com/shop/texturespack7/" class="h5 d-block my-3">TEXTURES PACK #7</a>
             <div class="mb-3 post-meta">
             </div>
             <div>
                 <div><p class='font-weight-bold'>$0&#43;</p></div>
-                <a href="https://archezinternational.com/shop/texturespack4/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+                
             </div>
         </div>
     </article>
 </div>
 
 <script>
-    carousel["texturespack4_index"] = 0;
-    carousel["texturespack4_bullets"] = document.querySelectorAll("#texturespack4 .carousel__navigation-button")
-    carousel["texturespack4_images"] = document.querySelectorAll("#texturespack4 .carousel-image-item")
-    if (carousel["texturespack4_images"].length > 0) document.querySelector("#texturespack4_single-image-container").style = "{vissibility: hidden;}";
+    carousel["texturespack7_index"] = 0;
+    carousel["texturespack7_bullets"] = document.querySelectorAll("#texturespack7 .carousel__navigation-button")
+    carousel["texturespack7_images"] = document.querySelectorAll("#texturespack7 .carousel-image-item")
+    if (carousel["texturespack7_images"].length > 0) document.querySelector("#texturespack7_single-image-container").style = "{vissibility: hidden;}";
     
-    for (let i = 0; i < carousel["texturespack4_images"].length; i++) {
-      let image = carousel["texturespack4_images"][i];
+    for (let i = 0; i < carousel["texturespack7_images"].length; i++) {
+      let image = carousel["texturespack7_images"][i];
       if (i > 0) image.classList.add('hidden');
-      carousel["texturespack4_bullets"][0].classList.add('active');
+      carousel["texturespack7_bullets"][0].classList.add('active');
       let url = image.dataset.img;
       image.style.setProperty("background-color", "url("+ url +")");
     };
       
     document.addEventListener('click', function (event) {
       
-      if (event.target.matches('#texturespack4_prev-button')) {
-        carousel["texturespack4_index"]--;
-        if (carousel["texturespack4_index"] < 0) carousel["texturespack4_index"] = carousel["texturespack4_images"].length - 1;
-        for (let i = 0; i < carousel["texturespack4_images"].length; i++) {
-          carousel["texturespack4_images"][i].classList.add('hidden');
-          carousel["texturespack4_bullets"][i].classList.remove('active');
+      if (event.target.matches('#texturespack7_prev-button')) {
+        carousel["texturespack7_index"]--;
+        if (carousel["texturespack7_index"] < 0) carousel["texturespack7_index"] = carousel["texturespack7_images"].length - 1;
+        for (let i = 0; i < carousel["texturespack7_images"].length; i++) {
+          carousel["texturespack7_images"][i].classList.add('hidden');
+          carousel["texturespack7_bullets"][i].classList.remove('active');
         };
         
-        carousel["texturespack4_images"][carousel["texturespack4_index"]].classList.remove('hidden')
-        carousel["texturespack4_bullets"][carousel["texturespack4_index"]].classList.add('active');
+        carousel["texturespack7_images"][carousel["texturespack7_index"]].classList.remove('hidden')
+        carousel["texturespack7_bullets"][carousel["texturespack7_index"]].classList.add('active');
       }
   
-      if (event.target.matches('#texturespack4_next-button')) {
-        carousel["texturespack4_index"]++;
+      if (event.target.matches('#texturespack7_next-button')) {
+        carousel["texturespack7_index"]++;
 
-        if (carousel["texturespack4_index"] >= carousel["texturespack4_images"].length) carousel["texturespack4_index"] = 0;
-        for (let i = 0; i < carousel["texturespack4_images"].length; i++) {
-          carousel["texturespack4_images"][i].classList.add('hidden');
-          carousel["texturespack4_bullets"][i].classList.remove('active');
+        if (carousel["texturespack7_index"] >= carousel["texturespack7_images"].length) carousel["texturespack7_index"] = 0;
+        for (let i = 0; i < carousel["texturespack7_images"].length; i++) {
+          carousel["texturespack7_images"][i].classList.add('hidden');
+          carousel["texturespack7_bullets"][i].classList.remove('active');
         };
   
-        carousel["texturespack4_images"][carousel["texturespack4_index"]].classList.remove('hidden')
-        carousel["texturespack4_bullets"][carousel["texturespack4_index"]].classList.add('active');
-      }
-  
-        }, false);
-</script>
-
-
-
-            
-            <div class="col-md-4 mb-4">
-    
-        
-    
-        
-    
-        
-    
-    <article class="card">
-        
-        <section class="carousel" id='texturespack5'>
-          <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/texturespack5/">
-              
-              <img src="https://archezinternational.com/images/packages/textures_55.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/textures_5.png" class='carousel-image-item'/>
-              
-            </a>
-          </div>
-            <aside class="carousel__navigation">
-              <ol class="carousel__navigation-list">
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-              </ol>
-            </aside>
-          <div class="carousel-action-buttons">
-            
-              <div id="texturespack5_prev-button" class='prev-button'></div>
-              <div id="texturespack5_next-button" class='next-button'></div>
-            
-          </div>
-        </section>
-        
-        <div id="texturespack5_single-image-container" class='single-image-container'>
-          
-            <img src="https://archezinternational.com/images/packages/textures_55.png" class="card-img" alt="TEXTURES PACK #5">
-          
-        </div>
-
-        <div class="card-body px-0">
-            
-            <a href="/categories/jpg"
-                class="text-primary">JPG |</a>
-            
-            <a href="/categories/textures"
-                class="text-primary">TEXTURES |</a>
-            
-            <a href="/categories/free"
-                class="text-primary">FREE |</a>
-            
-            <a href="https://archezinternational.com/shop/texturespack5/" class="h5 d-block my-3">TEXTURES PACK #5</a>
-            <div class="mb-3 post-meta">
-            </div>
-            <div>
-                <div><p class='font-weight-bold'>$0&#43;</p></div>
-                <a href="https://archezinternational.com/shop/texturespack5/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
-            </div>
-        </div>
-    </article>
-</div>
-
-<script>
-    carousel["texturespack5_index"] = 0;
-    carousel["texturespack5_bullets"] = document.querySelectorAll("#texturespack5 .carousel__navigation-button")
-    carousel["texturespack5_images"] = document.querySelectorAll("#texturespack5 .carousel-image-item")
-    if (carousel["texturespack5_images"].length > 0) document.querySelector("#texturespack5_single-image-container").style = "{vissibility: hidden;}";
-    
-    for (let i = 0; i < carousel["texturespack5_images"].length; i++) {
-      let image = carousel["texturespack5_images"][i];
-      if (i > 0) image.classList.add('hidden');
-      carousel["texturespack5_bullets"][0].classList.add('active');
-      let url = image.dataset.img;
-      image.style.setProperty("background-color", "url("+ url +")");
-    };
-      
-    document.addEventListener('click', function (event) {
-      
-      if (event.target.matches('#texturespack5_prev-button')) {
-        carousel["texturespack5_index"]--;
-        if (carousel["texturespack5_index"] < 0) carousel["texturespack5_index"] = carousel["texturespack5_images"].length - 1;
-        for (let i = 0; i < carousel["texturespack5_images"].length; i++) {
-          carousel["texturespack5_images"][i].classList.add('hidden');
-          carousel["texturespack5_bullets"][i].classList.remove('active');
-        };
-        
-        carousel["texturespack5_images"][carousel["texturespack5_index"]].classList.remove('hidden')
-        carousel["texturespack5_bullets"][carousel["texturespack5_index"]].classList.add('active');
-      }
-  
-      if (event.target.matches('#texturespack5_next-button')) {
-        carousel["texturespack5_index"]++;
-
-        if (carousel["texturespack5_index"] >= carousel["texturespack5_images"].length) carousel["texturespack5_index"] = 0;
-        for (let i = 0; i < carousel["texturespack5_images"].length; i++) {
-          carousel["texturespack5_images"][i].classList.add('hidden');
-          carousel["texturespack5_bullets"][i].classList.remove('active');
-        };
-  
-        carousel["texturespack5_images"][carousel["texturespack5_index"]].classList.remove('hidden')
-        carousel["texturespack5_bullets"][carousel["texturespack5_index"]].classList.add('active');
+        carousel["texturespack7_images"][carousel["texturespack7_index"]].classList.remove('hidden')
+        carousel["texturespack7_bullets"][carousel["texturespack7_index"]].classList.add('active');
       }
   
         }, false);
@@ -477,11 +498,13 @@
         <h6 class="mb-4">FOLLOW US</h6>
         <ul class="list-unstyled">
           
-          <li class="mb-3"><i class="ti-instagram mr-3 text-primary"></i><a class="text-dark" href="https://www.instagram.com/archezinternational">Instagram</a></li>
+          <li class="mb-3"><i class="ti-location-arrow mr-3 text-primary"></i><a class="text-dark" target="_blank" href="https://t.me/archezinternational">Telegram</a></li>
           
-          <li class="mb-3"><i class="ti-facebook mr-3 text-primary"></i><a class="text-dark" href="https://www.facebook.com/archezinternational">Facebook</a></li>
+          <li class="mb-3"><i class="ti-instagram mr-3 text-primary"></i><a class="text-dark" target="_blank" href="https://www.instagram.com/archezinternational">Instagram</a></li>
           
-          <li class="mb-3"><i class="ti-pinterest mr-3 text-primary"></i><a class="text-dark" href="https://www.pinterest.com/archezinternational">Pinterest</a></li>
+          <li class="mb-3"><i class="ti-facebook mr-3 text-primary"></i><a class="text-dark" target="_blank" href="https://www.facebook.com/archezinternational">Facebook</a></li>
+          
+          <li class="mb-3"><i class="ti-pinterest mr-3 text-primary"></i><a class="text-dark" target="_blank" href="https://www.pinterest.com/archezinternational">Pinterest</a></li>
           
         </ul>
       </div>
@@ -489,13 +512,15 @@
         <h6 class="mb-4">QUICK LINKS</h6>
         <ul class="list-unstyled">
           
-          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/ar">Augmented Reality</a></li>
+          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/ebook">e-Book</a></li>
           
           <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/shop">Shop</a></li>
           
+          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/featured">Featured</a></li>
+          
           <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/magazine">Magazine</a></li>
           
-          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/featured">Featured</a></li>
+          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/ar">Augmented Reality</a></li>
           
           <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/about">About</a></li>
           
