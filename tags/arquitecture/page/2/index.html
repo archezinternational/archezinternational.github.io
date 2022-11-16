@@ -6,11 +6,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet"><head>
     <meta charset="utf-8">
     <meta name="p:domain_verify" content="de2c42f4d5b0e89fcb050a090e181e6a"/>
+    <meta name="facebook-domain-verification" content="yox3mu2yosdhymzduygehl571l79zk" />
     <title>Archez International</title>
   
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Architecture and Augmented reality. Magazine &#43; Inspiration &#43; Shop">
+    <meta name="description" content="Digital architectural illustration studio. Resources &#43; e-Book &#43; Magazine">
     <meta name="author" content="Archez International">
     <meta name="generator" content="Hugo 0.86.0" />
   
@@ -65,7 +66,69 @@
       ga('create', '', 'auto');
       ga('send', 'pageview');
     </script>
+
+    
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1567371243648036');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1567371243648036&ev=PageView&noscript=1"
+  /></noscript>
   
+  <script>
+
+    window.addEventListener('load', function () {
+      var newsLetter = document.querySelector(".pop-up-news-letter.hide.disp-none")
+      var formButton = document.querySelector(".pop-up-news-letter button")
+      var body = document.querySelector("body")
+      
+      if(localStorage.didShowNewsLetterPopUp == undefined) {
+        newsLetter.classList.remove("hide");
+        newsLetter.classList.remove("disp-none");
+        body.classList.add("no-scroll")
+      }
+
+      let hideAction = () => {
+        newsLetter.classList.add("hide");
+        body.classList.remove("no-scroll")
+        localStorage.didShowNewsLetterPopUp = true;
+
+        setTimeout(() => {
+          newsLetter.classList.add("disp-none");
+        }, 500);
+      }
+
+      let validateEmail = () => {
+        let value = document.getElementById('pop-up-news-letter-input').value
+        let form = document.getElementById("pop-news-letter-form");
+        
+        if(value == "") {
+          form.action = "";
+          return;
+        } else {
+          form.action = "https://app.gumroad.com/follow_from_embed_form";
+          hideAction();
+        }
+      }
+      newsLetter.addEventListener('click', hideAction)   
+      formButton.addEventListener('click', validateEmail)   
+      
+      var newsLetterContainer = document.querySelector(".pop-up-news-letter-form-container")
+      newsLetterContainer.addEventListener('click', function(e) {
+        e.stopPropagation();
+      })   
+    }, false);
+
+  </script>
   </head><body><!-- navigation -->
 <header class="navigation">
   <div class="container">
@@ -86,7 +149,7 @@
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://archezinternational.com/ar">Augmented Reality</a>
+            <a class="nav-link" href="https://archezinternational.com/ebook">e-Book</a>
           </li>
           
           
@@ -98,13 +161,19 @@
           
           
           <li class="nav-item">
+            <a class="nav-link" href="https://archezinternational.com/featured">Featured</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
             <a class="nav-link" href="https://archezinternational.com/magazine">Magazine</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://archezinternational.com/featured">Featured</a>
+            <a class="nav-link" href="https://archezinternational.com/ar">Augmented Reality</a>
           </li>
           
           
@@ -135,6 +204,74 @@
   </div>
 </header>
 <!-- /navigation -->
+
+
+<div class="pop-up-news-letter hide disp-none">
+  <div class="flex-v">
+    <div class="pop-up-news-letter-form-container">
+        <div id='newsletter-popup' class="container">
+          <h4 class="home-title w-100">NEWS LETTER</h4>
+          <p class="half-screen-desktop news-letter-description"><i>Subscribe now to our newsletter to receive our <b>special discounts</b>, <b>freebies</b> and <b>news</b>.  Don't worry archifriend, we won't spam you, we promise!</i></p>
+          <form id='pop-news-letter-form' action="" class="form gumroad-follow-form-embed" method="post">
+            <input name="seller_id" type="hidden" value="1030246233100">
+            <input id="pop-up-news-letter-input" name="email" placeholder="Your email address" type="email">
+            <button data-custom-highlight-color="" type="submit">Subscribe</button>
+          </form>
+        </div>
+    </div>
+  </div>
+</div>
+<style>
+
+  .pop-up-news-letter-form-container {
+    margin: 0 auto;
+    width: 660px;
+    max-width: 90%;
+    padding: 22px 22px 60px 22px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .pop-up-news-letter {
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    position: absolute;
+    background-color: rgb(0,0,0,.75);
+    width: 100%;
+    height: 100%;
+  }
+
+  .pop-up-news-letter > div {
+    height: 100%;
+  }
+  .pop-up-news-letter.hide {
+    opacity: 0;
+    transition-property: all;
+    transition: 0.25s ease-in-out;
+  }
+
+  .pop-up-news-letter .half-screen-desktop,
+  .pop-up-news-letter .gumroad-follow-form-embed {
+    max-width: 90% !important;
+  }
+
+  .pop-up-news-letter .news-letter-description {
+    margin: 20px auto!important;
+  }
+  
+  .pop-up-news-letter  .home-title {
+    text-align: center;
+  }
+
+  .disp-none {
+    display: none !important;
+  }
+
+  .no-scroll {
+    overflow: hidden; 
+  }
+</style>
 <script>
   let carousel = {}
   console.log(this)
@@ -154,7 +291,7 @@
           <a href=https://archezinternational.com/categories/coupon/ class="text-primary">coupon</a>
           <a href=https://archezinternational.com/categories/cutouts/ class="text-primary">cutouts</a>
           <a href=https://archezinternational.com/categories/filter/ class="text-primary">filter</a>
-          <a href=https://archezinternational.com/categories/free/ class="text-primary">free</a>
+          <a href=https://archezinternational.com/categories/freebies/ class="text-primary">freebies</a>
           <a href=https://archezinternational.com/categories/textures/ class="text-primary">textures</a>
         </div>
 
@@ -170,13 +307,13 @@
     
     <article class="card">
         
-        <section class="carousel" id='vehiclebrushes'>
+        <section class="carousel noselect" id='vehiclespack'>
           <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/vehiclebrushes/">
+            <a href="https://archezinternational.com/shop/watercolortrees/">
               
-              <img src="https://archezinternational.com/images/packages/vehiclebrushes1.png" class='carousel-image-item'/>
+              <img src="https://archezinternational.com/images/packages/WATERCOLOR%20TREES.png" class='carousel-image-item'/>
               
-              <img src="https://archezinternational.com/images/packages/vehiclebrushes2.png" class='carousel-image-item'/>
+              <img src="https://archezinternational.com/images/packages/WATERCOLOR%20TREES2.png" class='carousel-image-item'/>
               
             </a>
           </div>
@@ -195,15 +332,15 @@
             </aside>
           <div class="carousel-action-buttons">
             
-              <div id="vehiclebrushes_prev-button" class='prev-button'></div>
-              <div id="vehiclebrushes_next-button" class='next-button'></div>
+              <div id="vehiclespack_prev-button" class='prev-button'></div>
+              <div id="vehiclespack_next-button" class='next-button'></div>
             
           </div>
         </section>
         
-        <div id="vehiclebrushes_single-image-container" class='single-image-container'>
+        <div id="vehiclespack_single-image-container" class='single-image-container'>
           
-            <img src="https://archezinternational.com/images/packages/vehiclebrushes1.png" class="card-img" alt="VEHICLE BRUSHES">
+            <img src="https://archezinternational.com/images/packages/WATERCOLOR%20TREES.png" class="card-img" alt="WATERCOLOR TREES BRUSHES">
           
         </div>
 
@@ -215,56 +352,56 @@
             <a href="/categories/brushes"
                 class="text-primary">BRUSHES |</a>
             
-            <a href="https://archezinternational.com/shop/vehiclebrushes/" class="h5 d-block my-3">VEHICLE BRUSHES</a>
+            <a href="https://archezinternational.com/shop/watercolortrees/" class="h5 d-block my-3">WATERCOLOR TREES BRUSHES</a>
             <div class="mb-3 post-meta">
             </div>
             <div>
-                <div><p class='font-weight-bold'>$1</p></div>
-                <a href="https://archezinternational.com/shop/vehiclebrushes/" class="btn btn-outline-primary col-sm-6">QUICK VIEW</a>
+                <div><p class='font-weight-bold'>$5</p></div>
+                
             </div>
         </div>
     </article>
 </div>
 
 <script>
-    carousel["vehiclebrushes_index"] = 0;
-    carousel["vehiclebrushes_bullets"] = document.querySelectorAll("#vehiclebrushes .carousel__navigation-button")
-    carousel["vehiclebrushes_images"] = document.querySelectorAll("#vehiclebrushes .carousel-image-item")
-    if (carousel["vehiclebrushes_images"].length > 0) document.querySelector("#vehiclebrushes_single-image-container").style = "{vissibility: hidden;}";
+    carousel["vehiclespack_index"] = 0;
+    carousel["vehiclespack_bullets"] = document.querySelectorAll("#vehiclespack .carousel__navigation-button")
+    carousel["vehiclespack_images"] = document.querySelectorAll("#vehiclespack .carousel-image-item")
+    if (carousel["vehiclespack_images"].length > 0) document.querySelector("#vehiclespack_single-image-container").style = "{vissibility: hidden;}";
     
-    for (let i = 0; i < carousel["vehiclebrushes_images"].length; i++) {
-      let image = carousel["vehiclebrushes_images"][i];
+    for (let i = 0; i < carousel["vehiclespack_images"].length; i++) {
+      let image = carousel["vehiclespack_images"][i];
       if (i > 0) image.classList.add('hidden');
-      carousel["vehiclebrushes_bullets"][0].classList.add('active');
+      carousel["vehiclespack_bullets"][0].classList.add('active');
       let url = image.dataset.img;
       image.style.setProperty("background-color", "url("+ url +")");
     };
       
     document.addEventListener('click', function (event) {
       
-      if (event.target.matches('#vehiclebrushes_prev-button')) {
-        carousel["vehiclebrushes_index"]--;
-        if (carousel["vehiclebrushes_index"] < 0) carousel["vehiclebrushes_index"] = carousel["vehiclebrushes_images"].length - 1;
-        for (let i = 0; i < carousel["vehiclebrushes_images"].length; i++) {
-          carousel["vehiclebrushes_images"][i].classList.add('hidden');
-          carousel["vehiclebrushes_bullets"][i].classList.remove('active');
+      if (event.target.matches('#vehiclespack_prev-button')) {
+        carousel["vehiclespack_index"]--;
+        if (carousel["vehiclespack_index"] < 0) carousel["vehiclespack_index"] = carousel["vehiclespack_images"].length - 1;
+        for (let i = 0; i < carousel["vehiclespack_images"].length; i++) {
+          carousel["vehiclespack_images"][i].classList.add('hidden');
+          carousel["vehiclespack_bullets"][i].classList.remove('active');
         };
         
-        carousel["vehiclebrushes_images"][carousel["vehiclebrushes_index"]].classList.remove('hidden')
-        carousel["vehiclebrushes_bullets"][carousel["vehiclebrushes_index"]].classList.add('active');
+        carousel["vehiclespack_images"][carousel["vehiclespack_index"]].classList.remove('hidden')
+        carousel["vehiclespack_bullets"][carousel["vehiclespack_index"]].classList.add('active');
       }
   
-      if (event.target.matches('#vehiclebrushes_next-button')) {
-        carousel["vehiclebrushes_index"]++;
+      if (event.target.matches('#vehiclespack_next-button')) {
+        carousel["vehiclespack_index"]++;
 
-        if (carousel["vehiclebrushes_index"] >= carousel["vehiclebrushes_images"].length) carousel["vehiclebrushes_index"] = 0;
-        for (let i = 0; i < carousel["vehiclebrushes_images"].length; i++) {
-          carousel["vehiclebrushes_images"][i].classList.add('hidden');
-          carousel["vehiclebrushes_bullets"][i].classList.remove('active');
+        if (carousel["vehiclespack_index"] >= carousel["vehiclespack_images"].length) carousel["vehiclespack_index"] = 0;
+        for (let i = 0; i < carousel["vehiclespack_images"].length; i++) {
+          carousel["vehiclespack_images"][i].classList.add('hidden');
+          carousel["vehiclespack_bullets"][i].classList.remove('active');
         };
   
-        carousel["vehiclebrushes_images"][carousel["vehiclebrushes_index"]].classList.remove('hidden')
-        carousel["vehiclebrushes_bullets"][carousel["vehiclebrushes_index"]].classList.add('active');
+        carousel["vehiclespack_images"][carousel["vehiclespack_index"]].classList.remove('hidden')
+        carousel["vehiclespack_bullets"][carousel["vehiclespack_index"]].classList.add('active');
       }
   
         }, false);
@@ -356,11 +493,13 @@
         <h6 class="mb-4">FOLLOW US</h6>
         <ul class="list-unstyled">
           
-          <li class="mb-3"><i class="ti-instagram mr-3 text-primary"></i><a class="text-dark" href="https://www.instagram.com/archezinternational">Instagram</a></li>
+          <li class="mb-3"><i class="ti-location-arrow mr-3 text-primary"></i><a class="text-dark" target="_blank" href="https://t.me/archezinternational">Telegram</a></li>
           
-          <li class="mb-3"><i class="ti-facebook mr-3 text-primary"></i><a class="text-dark" href="https://www.facebook.com/archezinternational">Facebook</a></li>
+          <li class="mb-3"><i class="ti-instagram mr-3 text-primary"></i><a class="text-dark" target="_blank" href="https://www.instagram.com/archezinternational">Instagram</a></li>
           
-          <li class="mb-3"><i class="ti-pinterest mr-3 text-primary"></i><a class="text-dark" href="https://www.pinterest.com/archezinternational">Pinterest</a></li>
+          <li class="mb-3"><i class="ti-facebook mr-3 text-primary"></i><a class="text-dark" target="_blank" href="https://www.facebook.com/archezinternational">Facebook</a></li>
+          
+          <li class="mb-3"><i class="ti-pinterest mr-3 text-primary"></i><a class="text-dark" target="_blank" href="https://www.pinterest.com/archezinternational">Pinterest</a></li>
           
         </ul>
       </div>
@@ -368,13 +507,15 @@
         <h6 class="mb-4">QUICK LINKS</h6>
         <ul class="list-unstyled">
           
-          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/ar">Augmented Reality</a></li>
+          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/ebook">e-Book</a></li>
           
           <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/shop">Shop</a></li>
           
+          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/featured">Featured</a></li>
+          
           <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/magazine">Magazine</a></li>
           
-          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/featured">Featured</a></li>
+          <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/ar">Augmented Reality</a></li>
           
           <li class="mb-3"><a class="text-dark" href="https://archezinternational.com/about">About</a></li>
           

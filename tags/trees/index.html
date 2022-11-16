@@ -903,6 +903,117 @@
 
 
             
+            <div class="col-md-4 mb-4">
+    
+        
+    
+        
+    
+    <article class="card">
+        
+        <section class="carousel noselect" id='vehiclespack'>
+          <div class="carousel-images-container">
+            <a href="https://archezinternational.com/shop/watercolortrees/">
+              
+              <img src="https://archezinternational.com/images/packages/WATERCOLOR%20TREES.png" class='carousel-image-item'/>
+              
+              <img src="https://archezinternational.com/images/packages/WATERCOLOR%20TREES2.png" class='carousel-image-item'/>
+              
+            </a>
+          </div>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+                    <li class="carousel__navigation-item">
+                      <div class="carousel__navigation-button"></div>
+                    </li>
+                  
+              </ol>
+            </aside>
+          <div class="carousel-action-buttons">
+            
+              <div id="vehiclespack_prev-button" class='prev-button'></div>
+              <div id="vehiclespack_next-button" class='next-button'></div>
+            
+          </div>
+        </section>
+        
+        <div id="vehiclespack_single-image-container" class='single-image-container'>
+          
+            <img src="https://archezinternational.com/images/packages/WATERCOLOR%20TREES.png" class="card-img" alt="WATERCOLOR TREES BRUSHES">
+          
+        </div>
+
+        <div class="card-body px-0">
+            
+            <a href="/categories/abr"
+                class="text-primary">ABR |</a>
+            
+            <a href="/categories/brushes"
+                class="text-primary">BRUSHES |</a>
+            
+            <a href="https://archezinternational.com/shop/watercolortrees/" class="h5 d-block my-3">WATERCOLOR TREES BRUSHES</a>
+            <div class="mb-3 post-meta">
+            </div>
+            <div>
+                <div><p class='font-weight-bold'>$5</p></div>
+                
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    carousel["vehiclespack_index"] = 0;
+    carousel["vehiclespack_bullets"] = document.querySelectorAll("#vehiclespack .carousel__navigation-button")
+    carousel["vehiclespack_images"] = document.querySelectorAll("#vehiclespack .carousel-image-item")
+    if (carousel["vehiclespack_images"].length > 0) document.querySelector("#vehiclespack_single-image-container").style = "{vissibility: hidden;}";
+    
+    for (let i = 0; i < carousel["vehiclespack_images"].length; i++) {
+      let image = carousel["vehiclespack_images"][i];
+      if (i > 0) image.classList.add('hidden');
+      carousel["vehiclespack_bullets"][0].classList.add('active');
+      let url = image.dataset.img;
+      image.style.setProperty("background-color", "url("+ url +")");
+    };
+      
+    document.addEventListener('click', function (event) {
+      
+      if (event.target.matches('#vehiclespack_prev-button')) {
+        carousel["vehiclespack_index"]--;
+        if (carousel["vehiclespack_index"] < 0) carousel["vehiclespack_index"] = carousel["vehiclespack_images"].length - 1;
+        for (let i = 0; i < carousel["vehiclespack_images"].length; i++) {
+          carousel["vehiclespack_images"][i].classList.add('hidden');
+          carousel["vehiclespack_bullets"][i].classList.remove('active');
+        };
+        
+        carousel["vehiclespack_images"][carousel["vehiclespack_index"]].classList.remove('hidden')
+        carousel["vehiclespack_bullets"][carousel["vehiclespack_index"]].classList.add('active');
+      }
+  
+      if (event.target.matches('#vehiclespack_next-button')) {
+        carousel["vehiclespack_index"]++;
+
+        if (carousel["vehiclespack_index"] >= carousel["vehiclespack_images"].length) carousel["vehiclespack_index"] = 0;
+        for (let i = 0; i < carousel["vehiclespack_images"].length; i++) {
+          carousel["vehiclespack_images"][i].classList.add('hidden');
+          carousel["vehiclespack_bullets"][i].classList.remove('active');
+        };
+  
+        carousel["vehiclespack_images"][carousel["vehiclespack_index"]].classList.remove('hidden')
+        carousel["vehiclespack_bullets"][carousel["vehiclespack_index"]].classList.add('active');
+      }
+  
+        }, false);
+</script>
+
+
+
+            
           </div>
         </div>
 

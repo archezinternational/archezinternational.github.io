@@ -11,7 +11,7 @@
   
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Digital architectural illustration studio. Resources &#43; e-Book &#43; Magazine">
+    <meta name="description" content="Watercolor trees brushes">
     <meta name="author" content="Archez International">
     <meta name="generator" content="Hugo 0.86.0" />
   
@@ -272,185 +272,199 @@
     overflow: hidden; 
   }
 </style>
-<script>
-  let carousel = {}
-  console.log(this)
-</script>
 
-  <section class="section-sm">
-    <div class="col-lg-8 mx-auto text-center">
-      <h4 class="widget-title">BRUSHES</h4>
-    </div>
-    <div class="container">
-      <div class="row">
-        
-        <div class="tags-container flex-h w-100">
-          <a href=https://archezinternational.com/categories/books/ class="text-primary">books</a>
-          <a href=https://archezinternational.com/categories/brushes/ class="text-primary">brushes</a>
-          <a href=https://archezinternational.com/categories/cad-blocks/ class="text-primary">cad blocks</a>
-          <a href=https://archezinternational.com/categories/coupon/ class="text-primary">coupon</a>
-          <a href=https://archezinternational.com/categories/cutouts/ class="text-primary">cutouts</a>
-          <a href=https://archezinternational.com/categories/filter/ class="text-primary">filter</a>
-          <a href=https://archezinternational.com/categories/freebies/ class="text-primary">freebies</a>
-          <a href=https://archezinternational.com/categories/textures/ class="text-primary">textures</a>
-        </div>
-
-        <div class="col-lg-12 mb-5 mb-lg-0">
-          <div class="row">
-            
-            
-            <div class="col-md-4 mb-4">
-    
-        
-    
-        
-    
-    <article class="card">
-        
-        <section class="carousel noselect" id='vehiclespack'>
-          <div class="carousel-images-container">
-            <a href="https://archezinternational.com/shop/watercolortrees/">
-              
-              <img src="https://archezinternational.com/images/packages/WATERCOLOR%20TREES.png" class='carousel-image-item'/>
-              
-              <img src="https://archezinternational.com/images/packages/WATERCOLOR%20TREES2.png" class='carousel-image-item'/>
-              
-            </a>
-          </div>
-            <aside class="carousel__navigation">
-              <ol class="carousel__navigation-list">
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-                    <li class="carousel__navigation-item">
-                      <div class="carousel__navigation-button"></div>
-                    </li>
-                  
-              </ol>
-            </aside>
-          <div class="carousel-action-buttons">
-            
-              <div id="vehiclespack_prev-button" class='prev-button'></div>
-              <div id="vehiclespack_next-button" class='next-button'></div>
-            
-          </div>
-        </section>
-        
-        <div id="vehiclespack_single-image-container" class='single-image-container'>
-          
-            <img src="https://archezinternational.com/images/packages/WATERCOLOR%20TREES.png" class="card-img" alt="WATERCOLOR TREES BRUSHES">
-          
-        </div>
-
-        <div class="card-body px-0">
-            
-            <a href="/categories/abr"
-                class="text-primary">ABR |</a>
-            
-            <a href="/categories/brushes"
-                class="text-primary">BRUSHES |</a>
-            
-            <a href="https://archezinternational.com/shop/watercolortrees/" class="h5 d-block my-3">WATERCOLOR TREES BRUSHES</a>
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="row">
+          <div class="col-lg-6 flex-v">
+            <div>
+				    
+					  <a href="/categories/abr" class="text-primary">ABR |</a>
+			      
+					  <a href="/categories/brushes" class="text-primary">BRUSHES |</a>
+			      
+			      </div>
+            <h2>WATERCOLOR TREES BRUSHES</h2>
             <div class="mb-3 post-meta">
             </div>
+            
             <div>
-                <div><p class='font-weight-bold'>$5</p></div>
-                
+              <div class="col-12 row mb-4 flex-h">
+                <div class='col-sm-6'>
+                    <div class='row align-items-center price'>
+                        <p class='text-center w-100'>
+                             $5
+                        </p>
+                    </div>
+                </div>
+                <a class="gumroad-button" href="https://archezinternational.gumroad.com/l/oxavy" target="_blank">BUY NOW</a>
+              </div>
             </div>
-        </div>
-    </article>
-</div>
-
-<script>
-    carousel["vehiclespack_index"] = 0;
-    carousel["vehiclespack_bullets"] = document.querySelectorAll("#vehiclespack .carousel__navigation-button")
-    carousel["vehiclespack_images"] = document.querySelectorAll("#vehiclespack .carousel-image-item")
-    if (carousel["vehiclespack_images"].length > 0) document.querySelector("#vehiclespack_single-image-container").style = "{vissibility: hidden;}";
-    
-    for (let i = 0; i < carousel["vehiclespack_images"].length; i++) {
-      let image = carousel["vehiclespack_images"][i];
-      if (i > 0) image.classList.add('hidden');
-      carousel["vehiclespack_bullets"][0].classList.add('active');
-      let url = image.dataset.img;
-      image.style.setProperty("background-color", "url("+ url +")");
-    };
-      
-    document.addEventListener('click', function (event) {
-      
-      if (event.target.matches('#vehiclespack_prev-button')) {
-        carousel["vehiclespack_index"]--;
-        if (carousel["vehiclespack_index"] < 0) carousel["vehiclespack_index"] = carousel["vehiclespack_images"].length - 1;
-        for (let i = 0; i < carousel["vehiclespack_images"].length; i++) {
-          carousel["vehiclespack_images"][i].classList.add('hidden');
-          carousel["vehiclespack_bullets"][i].classList.remove('active');
-        };
-        
-        carousel["vehiclespack_images"][carousel["vehiclespack_index"]].classList.remove('hidden')
-        carousel["vehiclespack_bullets"][carousel["vehiclespack_index"]].classList.add('active');
-      }
-  
-      if (event.target.matches('#vehiclespack_next-button')) {
-        carousel["vehiclespack_index"]++;
-
-        if (carousel["vehiclespack_index"] >= carousel["vehiclespack_images"].length) carousel["vehiclespack_index"] = 0;
-        for (let i = 0; i < carousel["vehiclespack_images"].length; i++) {
-          carousel["vehiclespack_images"][i].classList.add('hidden');
-          carousel["vehiclespack_bullets"][i].classList.remove('active');
-        };
-  
-        carousel["vehiclespack_images"][carousel["vehiclespack_index"]].classList.remove('hidden')
-        carousel["vehiclespack_bullets"][carousel["vehiclespack_index"]].classList.add('active');
-      }
-  
-        }, false);
-</script>
-
-
-
             
           </div>
+          <div class="col-lg-6" id='single-container-parent'>
+            
+            
+              <section class="carousel noselect">
+                <a href="https://archezinternational.gumroad.com/l/oxavy" target="_blank">
+                  <div class="carousel-images-container">
+                  
+                    <img src="https://archezinternational.com/images/packages/WATERCOLOR%20TREES.png" class='carousel-image-item'/>
+                  
+                    <img src="https://archezinternational.com/images/packages/WATERCOLOR%20TREES2.png" class='carousel-image-item'/>
+                  
+                  </div>
+                </a>
+                  <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                        
+                          <li class="carousel__navigation-item"></li>
+                            <div class="carousel__navigation-button"></div>
+                          </li>
+                        
+                          <li class="carousel__navigation-item"></li>
+                            <div class="carousel__navigation-button"></div>
+                          </li>
+                        
+                    </ol>
+                  </aside>
+                <div class="carousel-action-buttons">
+                  
+                  <div class="prev-button"></div>
+                  <div class="next-button"></div>
+                  
+                </div>
+              </section>
+            
+            
+            
+            <div id="single-image-container">
+              <p>../images/packages/WATERCOLOR TREES.png</p>
+              <img src="https://archezinternational.com/images/packages/WATERCOLOR%20TREES.png" class="card-img" alt="WATERCOLOR TREES BRUSHES">
+            </div>
+          </div>
         </div>
+        <div class="content">
+          <hr>
+<p>Hi archifriend! Below we leave you this product specification:</p>
+<p>You will receive: <strong>15 trees-in-top-view brushes</strong> and <strong>25 trees-in-elevation brushes</strong>, in total, there are <strong>40 brushes each with a different kind of tree</strong>, that you can edit and use on your post-productions and illustrations. You can buy them <strong>together</strong> or <strong>separately</strong>.</p>
+<p>With just a couple of clicks you will be able to:</p>
+<p>· <strong>Edit</strong> colors, textures and opacities creating unique finishes in your illustrations</p>
+<p>· <strong>Get aesthetic and quality results</strong> using this brushes pack</p>
+<p>· <strong>Save time</strong> setting your illustrations in less than 5 minutes</p>
+<p><strong>File size</strong>: 8.70 MB</p>
+<p><strong>Format</strong>: ABR</p>
+<p><strong>Software compatibility</strong>: Adobe Photoshop</p>
+<hr>
+<p>¡Hola archifriend! A continuación te dejamos todas las especificaciones de este producto:</p>
+<p>Recibirás en contenido: <strong>15 pinceles de vista en planta</strong> y <strong>25 pinceles en elevación</strong>, en total son <strong>40 pinceles cada uno con un tipo diferente de árbol</strong>, que puedes editar y usar en tus postproducciones e ilustraciones. Puedes comparlos <strong>juntos</strong> o por <strong>separado</strong>.</p>
+<p>Con solo un par de clicks vas a poder:</p>
+<p>· <strong>Editar</strong> colores, texturas y opacidades creando acabados únicos en tus ilustraciones</p>
+<p>· <strong>Conseguir resultados esteticos y de calidad</strong> usando solo este pack de pinceles</p>
+<p>· <strong>Ahorrar tu tiempo</strong> ambientando tus ilustraciones en menos de 5 minutos</p>
+<p><strong>Tamaño de archivo</strong>: 8.70 MB</p>
+<p><strong>Formato</strong>: ABR</p>
+<p><strong>Compatibilidad de software</strong>: Adobe Photoshop</p>
 
-        
-        <div class="col-12 mt-5">
-          
-    <ul class="pagination pagination-default">
-      <li class="page-item">
-        <a href="/categories/brushes/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/brushes/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/brushes/" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item active">
-        <a href="#" aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item disabled">
-        <a href="#" aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a href="#" aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
         </div>
+        <div class="flex-h w-100 mt-5">
+          <a class="gumroad-button" href="https://archezinternational.gumroad.com/l/oxavy" target="_blank">BUY NOW</a>
+        </div>
+        
+        
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
+<style>
+  .section-sm {
+    padding-bottom: 0px !important;
+  }
+</style>
+<script type="application/ld+json">
+  {
+    "@context":"https://archezinternational.com/shop/vehiclespack",
+    "@type":"Product",
+    "productID":"vehiclespack",
+    "name":"WATERCOLOR TREES BRUSHES",
+    "description":"Watercolor trees brushes",
+    "url":"https://archezinternational.com/shop/vehiclespack",
+    
+      
+        "image":"https:\/\/archezinternational.com\/images\/packages\/WATERCOLOR%20TREES.png",
+      
+    
+    
+    "brand":"archezinternational",
+    "offers": [
+      {
+        "@type": "Offer",
+        "price": "5",
+        "priceCurrency": "USD",
+        "itemCondition": "new",
+        "availability": "in stock"
+      }
+    ]
+  }
+  </script>
+<script>
+  
+  let carouselIndex = 0;
+  
+	let images = document.getElementsByClassName("carousel-image-item")
+  if (images.length > 0) document.getElementById("single-image-container").classList.add('hidden')
+  let bullets = document.getElementsByClassName("carousel__navigation-button")
+
+  let imageHeight = document.querySelector("#single-image-container").clientHeight
+  let imageContainer = document.querySelector("#single-container-parent")
+  imageContainer.style.height = imageHeight + "px"
+  
+  for (let i = 0; i < images.length; i++) {
+    let image = images[i];
+    if (i > 0) image.classList.add('hidden');
+    bullets[0].classList.add('active');
+    let url = image.dataset.img;
+    image.style.setProperty("background-color", "url("+ url +")");
+  };
+	
+document.addEventListener('click', function (event) {
+	if (event.target.matches('.prev-button')) {
+      event.preventDefault()
+      carouselIndex--;
+      if (carouselIndex < 0) carouselIndex = images.length - 1;
+      for (let i = 0; i < images.length; i++) {
+        images[i].classList.add('hidden');
+        bullets[i].classList.remove('active');
+      };
+
+      images[carouselIndex].classList.remove('hidden')
+      bullets[carouselIndex].classList.add('active');
+	}
+
+	if (event.target.matches('.next-button')) {
+      event.preventDefault()  
+      carouselIndex++;
+      if (carouselIndex >= images.length) carouselIndex = 0;
+      for (let i = 0; i < images.length; i++) {
+        images[i].classList.add('hidden');
+        bullets[i].classList.remove('active');
+      };
+
+      images[carouselIndex].classList.remove('hidden')
+      bullets[carouselIndex].classList.add('active');
+	}
+}, false);
+</script>
 
 <style>
   .carousel__navigation {
-    margin-bottom: -90% !important;
-  }
-
-  .carousel-action-buttons {
-    margin-top: 50% !important;
+    margin-bottom: 45px !important;
   }
 </style>
+
 
 
 <footer>
